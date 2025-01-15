@@ -1,0 +1,198 @@
+\documentclass[answers,a4paper,12pt]{exam}
+\input{preamble.tex}
+
+\title{{\bf{FYS101 Mekanikk}} \\ \Large{\answersareprinted Oblig XX}} 
+\author{Institutt for Fysikk, REALTEK}
+\date{Uke xx}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+\question Definer nøkkelbegreper i "Del A":
+\begin{parts}
+
+\part Definer terminalfart:
+\begin{solution}
+Terminalfart er den største farten et legeme oppnår ved fall gjennom luft fra store høyder. Det skjer når tyngdekraften er balansert av luftmotstanden.
+\end{solution}
+
+\part Definer sentripetalkraft:
+\begin{solution}
+Sentripetalkraft er netto kraft som påvirker et legeme til å følge en sirkulær bane. Den virker mot sentrum av sirkelen.
+\end{solution}
+
+\part Definer sentrifugalkraft:
+\begin{solution}
+Sentrifugalkraft er en fiktiv kraft som brukes til å forklare bevegelse i et akselerert referansesystem. Den oppleves som en kraft som trekker et legeme bort fra sentrum av sirkulær bevegelse.
+\end{solution}
+
+\part Definer massesenter:
+\begin{solution}
+Massesenter, også kjent som tyngdepunktet i et homogent tyngdefelt, er det punktet i (eller utenfor) et legeme som beveger seg som om legemets masse var samlet i dette punktet. Det er også det punktet der et legeme kan balanseres.
+\end{solution}
+
+\end{parts}
+
+\question Del B: Eks-bok i ro på bordet
+\begin{parts}
+
+\part Forklar tyngdekraften og normalkraften på boka:
+\begin{solution}
+Tyngdekraften på boka ($F_g$) er en fjernkraft, som virker mellom legemer som ikke er i fysisk kontakt. Den virker mellom boka og jorda. Normalkraften på boka ($F_n$) er en kontaktkraft, som virker mellom legemer som er i kontakt med hverandre, i dette tilfellet mellom boka og bordet. Ettersom boka er i ro har vi $\sum F = 0$.
+\end{solution}
+
+\part Analyser kreftene i y-retning:
+\begin{solution}
+For y-retningen (der vi har definert nedover som positiv) har vi:
+\begin{align}
+\sum F_{y} &= 0 \\
+F_{g} - F_{n} &= 0 \\
+F_{g} &= F_{n}
+\end{align}
+De er altså like store og motsatt rettet fordi boka er i ro, men de er ulike typer krefter og har sine respektive motkrefter.
+\end{solution}
+
+\part Illustrer kreftene med grafikk:
+\begin{solution}
+\centering
+\includegraphics[width=0.5\linewidth]{path/to/image} \\
+$F_{n}$ - Normalkraft \\
+$F_{n}^{\prime}$ - Motkraft til normalkraft \\
+$F_{g}$ - Tyngdekraft \\
+$F_{g}^{\prime}$ - Motkraft til tyngdekraft
+\end{solution}
+
+\end{parts}
+
+latex
+\question Del C: Beregn akselerasjonen og hastigheten til kloss 2
+\begin{parts}
+
+\part Gitt data:
+\begin{solution}
+\centering
+\begin{align}
+m_{1} &= \SI{250}{\gram} = \SI{0.250}{\kilo\gram} \\
+m_{2} &= \SI{200}{\gram} = \SI{0.200}{\kilo\gram} \\
+\theta &= 30^{\circ} \\
+\mu_{k} &= 0.100 \\
+\Delta y &= \SI{30.0}{\centi\meter} = \SI{0.300}{\meter}
+\end{align}
+\end{solution}
+
+\part Analyser hvert delsystem for å finne akselerasjonen:
+\begin{solution}
+Vi deler opp systemet i to delsystemer:
+\begin{itemize}
+    \item Delsystem 1: Kloss på skrått plan, koordinatsystem parallelt med bevegelsesretning.
+    \item Delsystem 2: Kloss som faller, definert positiv retning nedover.
+\end{itemize}
+
+For delsystem 1, dekomponerer vi tyngdekraften:
+\centering
+\begin{align}
+F_{g x} &= F_{g} \sin \theta = m_{1} g \sin \theta \\
+F_{g y} &= F_{g} \cos \theta = m_{1} g \cos \theta \\
+f &= \mu_{k} F_{n}
+\end{align}
+
+Bruker Newtons andre lov i y-retning:
+\begin{align}
+\sum F_{y} &= m_{1} a_{y} = 0 \\
+F_{n} - m_{1} g \cos \theta &= 0 \\
+F_{n} &= m_{1} g \cos \theta
+\end{align}
+
+I x-retning:
+\begin{align}
+\sum F_{x} &= m_{1} a \\
+T_{1} - m_{1} g \sin \theta - \mu_{k} F_{n} &= m_{1} a
+\end{align}
+
+Setter inn for \( F_{n} \):
+\begin{equation*}
+T_{1} - m_{1} g \sin \theta - \mu_{k} m_{1} g \cos \theta = m_{1} a \tag{*}
+\end{equation*}
+
+For delsystem 2, i y-retning:
+\begin{align}
+\sum F_{y} &= m_{2} a \\
+-T_{2} + m_{2} g &= m_{2} a \\
+T_{2} &= m_{2} g - m_{2} a
+\end{align}
+
+Setter \( T_{1} = T_{2} = T \) og inn i (*):
+\begin{align}
+m_{2} g - m_{2} a - m_{1} g \sin \theta - \mu_{k} m_{1} g \cos \theta &= m a \\
+a(m_{1} + m_{2}) &= g(m_{2} - m_{1} \sin \theta - \mu_{k} m_{1} g \cos \theta)
+\end{align}
+
+Løser mhp \( a \):
+\begin{align}
+a &= \frac{g(m_{2} - m_{1} \sin \theta - \mu_{k} m_{1} g \cos \theta)}{m_{1} + m_{2}}
+\end{align}
+
+Setter inn verdier:
+\begin{align}
+a &= \frac{\SI{9.81}{\meter\per\second\squared} \left(\SI{0.200}{\kilo\gram} - \SI{0.250}{\kilo\gram} \cdot \sin 30^{\circ} - 0.100 \cdot \SI{9.81}{\meter\per\second\squared} \cdot \cos 30^{\circ}\right)}{\SI{0.250}{\kilo\gram} + \SI{0.200}{\kilo\gram}} \\
+&= \doubleunderline{\SI{1.163}{\meter\per\second\squared}}
+\end{align}
+\end{solution}
+
+\part Beregn hastigheten til kloss 2:
+\begin{solution}
+Bruker bevegelsesligningen:
+\begin{align}
+v^{2} &= v_{0}^{2} + 2 a \Delta y, \quad v_{0} = 0 \\
+v &= \sqrt{2 a \Delta y} \\
+&= \sqrt{2 \cdot \SI{1.163}{\meter\per\second\squared} \cdot \SI{0.300}{\meter}} \\
+&= \doubleunderline{\SI{0.84}{\meter\per\second}}
+\end{align}
+
+(To gjeldende siffer i svaret på grunn av \(30^{\circ}\) kan variere fra \(29.6^{\circ}\) til \(30.4^{\circ}\))
+\end{solution}
+
+\end{parts}
+
+
+latex
+\question Beregn sentripetalkraften for en bil:
+\begin{parts}
+
+\part Gitt data for hastighet:
+\begin{solution}
+\centering
+\begin{align}
+v & = \SI{90}{\kilo\meter\per\hour} \\
+  & = \SI{90}{\kilo\meter\per\hour} \cdot \frac{\SI{1000}{\meter}}{\SI{1}{\kilo\meter}} \cdot \frac{\SI{1}{\hour}}{\SI{3600}{\second}} \\
+  & = \doubleunderline{\SI{25}{\meter\per\second}}
+\end{align}
+\end{solution}
+
+\part Beregn sentripetalkraften:
+\begin{solution}
+\centering
+\includegraphics[width=0.5\linewidth]{path/to/image} \\
+\begin{align}
+F_c & = m \cdot \frac{v^2}{r} \\
+    & = \SI{750}{\kilo\gram} \cdot \frac{\left(\SI{25}{\meter\per\second}\right)^2}{\SI{160}{\meter}} \\
+    & = \doubleunderline{\SI{2921.875}{\newton}}
+\end{align}
+\end{solution}
+
+\part Forklar kreftene i $x$- og $y$-retning:
+\begin{solution}
+Når kraften fra underlaget skal stå normalt på underlaget, må friksjonskraften på bilen være null. Vi dekomponerer kreftene i $x$- og $y$-retning (se figur - disse er ikke parallelt og normalt på skråplanet slik vi pleier).
+
+\begin{align}
+\sum F_{x} &= m a_{x}, \quad a_{x} = \frac{v^2}{r} \quad \text{(sentripetalakselerasjon)} \\
+F_{n x} &= \frac{v^2}{r} \\
+F_{n} \sin \theta &= \frac{v^2}{r} \quad (*)
+\end{align}
+\end{solution}
+
+\end{parts}
+
+\end{questions}
+\end{document}

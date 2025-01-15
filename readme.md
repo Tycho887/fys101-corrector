@@ -44,6 +44,13 @@ This project automates the processing and correction of LaTeX documents containi
    - `postamble.txt`: Contains the LaTeX postamble.
    - `prompt.txt`: Contains the initial text to guide GPT-4.
 
+5. **Set up the API key**:
+   Create a `.env` file in the project root directory with the following content:
+   ```env
+   OPENAI_API_KEY=your_openai_api_key
+   ```
+   Replace `your_openai_api_key` with your actual OpenAI API key.
+
 ## Usage
 
 1. Place `.tex` files in the `inputs` directory.

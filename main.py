@@ -1,5 +1,12 @@
 import os
 from openai import OpenAI
+from dotenv import load_dotenv
+
+# Load the OpenAI API key from the environment
+
+load_dotenv()
+
+api_key = os.getenv("OPENAI_API_KEY")
 
 
 def load_file(file_path):
@@ -48,7 +55,7 @@ def correct_problem(problem_text, prompt_start):
     """
     from openai import OpenAI
 
-    client = OpenAI()
+    client = OpenAI(api_key=api_key)
 
     # Construct the prompt for the model
     prompt = f"""
