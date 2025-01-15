@@ -1,0 +1,11 @@
+\documentclass[answers,a4paper,12pt]{exam}
+\input{preamble.tex}
+
+\title{{\bf{FYS101 Mekanikk}} \\ \Large{\answersareprinted Oblig XX}} 
+\author{Institutt for Fysikk, REALTEK}
+\date{Uke xx}
+
+\begin{document}
+\maketitle
+
+\begin{questions}

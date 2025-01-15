@@ -1,0 +1,54 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment directories
+env/
+venv/
+ENV/
+myenv/
+.venv/
+.ENV/
+
+# Distribution files
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# Test coverage files
+.coverage
+*.cover
+.hypothesis/
+
+# MyPy cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest cache
+.pytest_cache/
+
+# Django stuff
+*.sqlite3
+db.sqlite3
+
+# IDE-specific files
+.idea/
+.vscode/
+*.code-workspace
+
+# MacOS system files
+.DS_Store

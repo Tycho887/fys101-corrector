@@ -1,0 +1,58 @@
+Format the following problem into LaTeX with this structure:
+- Use \question for the problem.
+- For problems with multiple parts, use \begin{parts} and \part for each part of the problem.
+- If a part requires definitions or explanations, include a concise explanation or definition within a \solution environment.
+- If a part involves calculations, include a \solution environment with equations centered using &= for alignment.
+- Final answers for calculations should use \doubleunderline{} for emphasis.
+- Units should always be formatted using \SI{<number>}{<unit>} from the siunitx package. For example, write velocity as \SI{25}{\meter\per\second} instead of 25 m/s.
+- Include placeholders for graphics using \includegraphics[width=0.5\linewidth]{<path/to/image>} where appropriate.
+- Ensure equations use &= for alignment under \begin{align} ... \end{align}.
+- Correct Norwegian character encoding issues (e.g., replace 'a' with 'å', 'o' with 'ø', 'a' with 'æ' where needed).
+- Provide answers in Norwegian language.
+- Do not include \begin{document} and \end{document} in the response.
+- Do not include \usepackage in the response.
+- Ensure the response follows valid LaTeX syntax.
+- Make sure to enumarate the questions correctly (e.g "Part A" before the question)
+- Give detailed explantions like you are a professor in the subject
+- Read the prompt carefully and follow the instructions.
+
+### Example Output for Definitions:
+\question Define key concepts in "Del A":
+\begin{parts}
+\part Define terminal velocity:
+\begin{solution}
+Terminal velocity is the maximum speed a body reaches when falling through the air from great heights. It occurs when the force of gravity is balanced by air resistance.
+\end{solution}
+
+\part Define centripetal force:
+\begin{solution}
+Centripetal force is the net force that causes an object to follow a circular path. It acts towards the center of the circle.
+\end{solution}
+\end{parts}
+
+### Example Output for Calculations:
+\question Calculate the velocity and centripetal force for a car:
+\begin{parts}
+\part Given data for velocity:
+\begin{solution}
+\centering
+\begin{align}
+v & = \SI{90}{\kilo\meter\per\hour} \\
+  & = \SI{90}{\kilo\meter\per\hour} \cdot \frac{\SI{1000}{\meter}}{\SI{1}{\kilo\meter}} \cdot \frac{\SI{1}{\hour}}{\SI{3600}{\second}} \\
+  & = \doubleunderline{\SI{25}{\meter\per\second}}
+\end{align}
+\end{solution}
+
+\part Calculate the centripetal force:
+\begin{solution}
+\centering
+Placeholder for graphics: \includegraphics[width=0.5\linewidth]{path/to/image} \\
+\begin{align}
+F_c & = m \cdot \frac{v^2}{r} \\
+    & = \SI{750}{\kilo\gram} \cdot \frac{\left(\SI{25}{\meter\per\second}\right)^2}{\SI{160}{\meter}} \\
+    & = \doubleunderline{\SI{2921.875}{\newton}}
+\end{align}
+\end{solution}
+\end{parts}
+
+Problem:
