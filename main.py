@@ -72,7 +72,7 @@ def correct_problem(problem_text, prompt_start):
         response = client.chat.completions.create(
             model="gpt-4o",
             messages=[{"role": "system", "content": prompt}],
-            max_tokens=1500,
+            max_tokens=2500,
             temperature=0.2,
         )
 
@@ -96,8 +96,8 @@ def postprocess_content(content):
         str: The cleaned content.
     """
     artifacts = [
-        "```",            # Markdown code block delimiter
         "```latex",       # LaTeX-specific code block delimiter
+        "```",            # Markdown code block delimiter
     ]
 
     # Remove each artifact from the content
@@ -132,26 +132,34 @@ def process_files_in_directory(input_dir="inputs", output_dir="output", marker="
     for file_name in os.listdir(input_dir):
         if file_name.endswith(".tex"):
             input_path = os.path.join(input_dir, file_name)
-            output_path_1 = os.path.join(output_dir, f"v1_{file_name}")
-            output_path_2 = os.path.join(output_dir, f"v2_{file_name}")
+
+            # Create subdirectory for the output files inside the output directory
+
+            sub_dir = file_name.split(".")[0]
+
+            if not os.path.exists(os.path.join(output_dir, sub_dir)):
+                os.makedirs(os.path.join(output_dir, sub_dir))
+
+            output_path_1 = os.path.join(output_dir, sub_dir, f"{file_name.split('.')[0]}_corrected_1.tex")
+            # output_path_2 = os.path.join(output_dir, sub_dir, f"{file_name.split('.')[0]}_corrected_2.tex")
 
             print(f"Processing file: {file_name}...")
             latex_content = load_file(input_path)
 
             # Generate the first corrected version
-            print("Processing version 1...")
+            # print("Processing version 1...")
             corrected_content_1 = process_latex_content(latex_content, preamble, postamble, prompt, marker)
 
-            # Generate the second corrected version (e.g., with a different temperature or approach if desired)
-            print("Processing version 2...")
-            corrected_content_2 = process_latex_content(latex_content, preamble, postamble, prompt, marker)
+            # # Generate the second corrected version (e.g., with a different temperature or approach if desired)
+            # print("Processing version 2...")
+            # corrected_content_2 = process_latex_content(latex_content, preamble, postamble, prompt, marker)
 
             # Save both versions
             save_file(output_path_1, corrected_content_1)
             print(f"Saved corrected file version 1 to: {output_path_1}")
 
-            save_file(output_path_2, corrected_content_2)
-            print(f"Saved corrected file version 2 to: {output_path_2}")
+            # save_file(output_path_2, corrected_content_2)
+            # print(f"Saved corrected file version 2 to: {output_path_2}")
 
 
 if __name__ == "__main__":

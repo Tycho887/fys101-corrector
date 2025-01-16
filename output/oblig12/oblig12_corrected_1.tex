@@ -1,0 +1,252 @@
+\documentclass[answers,a4paper,12pt]{exam}
+\input{preamble.tex}
+
+\title{{\bf{FYS101 Mekanikk}} \\ \Large{\answersareprinted Oblig XX}} 
+\author{Institutt for Fysikk, REALTEK}
+\date{Uke xx}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+\question FILL QUESTION
+\begin{parts}
+
+\part Del A: Forklar refraksjon.
+\begin{solution}
+Refraksjon er fenomenet der bølger, som lys eller lyd, endrer retning når de passerer gjennom en grenseflate mellom to medier med forskjellige brytningsindekser. Dette skjer fordi bølgehastigheten endres når bølgen går fra ett medium til et annet, noe som fører til en endring i bølgens retning.
+\end{solution}
+
+\part Del B: Forklar diffraksjon.
+\begin{solution}
+Diffraksjon er fenomenet som oppstår når bølger treffer en hindring eller passerer gjennom en åpning. Bølgene vil bøyes rundt hindringen eller spre seg ut etter å ha passert gjennom åpningen. Dette fører til at bølgene kan fortsette å spre seg selv om de møter en hindring.
+\end{solution}
+
+\part Del C: Forklar overlagring av bølger.
+\begin{solution}
+Overlagring av bølger er prinsippet der to eller flere bølger møtes og kombineres for å danne en resultantbølge. Denne resultantbølgen er summen av de individuelle bølgene. Overlagring kan føre til konstruktiv interferens (forsterkning) eller destruktiv interferens (svekkelse) avhengig av bølgenes faseforhold.
+\end{solution}
+
+\part Del D: Forklar Dopplereffekten.
+\begin{solution}
+Dopplereffekten er endringen i frekvensen eller bølgelengden til en bølge i forhold til en observatør som beveger seg i forhold til bølgekilden. Når kilden og observatøren beveger seg mot hverandre, oppleves bølgene som kortere (høyere frekvens), og når de beveger seg fra hverandre, oppleves bølgene som lengre (lavere frekvens).
+\end{solution}
+
+\part Del E: Forklar sjokkbølger.
+\begin{solution}
+Sjokkbølger oppstår når en kilde beveger seg raskere enn bølgehastigheten i mediet. Dette fører til at bølgene ikke kan spre seg foran kilden, men i stedet samles opp bak kilden i form av en sjokkbølge. Dette fenomenet er kjent fra fly som bryter lydmuren, hvor en kraftig lydbølge (sonisk boom) oppstår.
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Del A: Bestem retningen og farten til bølgen.
+\begin{solution}
+Bølgefunksjonen er gitt ved:
+\[
+y(x, t) = (1.00 \, \mathrm{mm}) \cdot \sin(62.8 \, \mathrm{m}^{-1} x + 314 \, \mathrm{s}^{-1} t)
+\]
+Dette kan sammenlignes med den generelle formen:
+\[
+y(x, t) = A \sin(kx - \omega t)
+\]
+hvor \( k \) er bølgetallet og \( \omega \) er vinkelfrekvensen. Når bølgefunksjonen har formen \( y(x, t) = A \sin(kx + \omega t) \), beveger bølgen seg i negativ \( x \)-retning.
+
+For å finne farten til bølgen, bruker vi formelen:
+\begin{align}
+v &= \frac{\omega}{k} = \frac{314 \, \mathrm{s}^{-1}}{62.8 \, \mathrm{m}^{-1}} \\
+v &= \doubleunderline{\SI{5.00}{\meter\per\second}}
+\end{align}
+Bølgen beveger seg med en fart på \SI{5.00}{\meter\per\second} i negativ \( x \)-retning.
+\end{solution}
+
+\part Del B: Bestem bølgelengden, frekvensen og perioden til bølgen.
+\begin{solution}
+Bølgelengden \( \lambda \) er gitt ved:
+\begin{align}
+\lambda &= \frac{2\pi}{k} = \frac{2\pi}{62.8 \, \mathrm{m}^{-1}} \\
+\lambda &= \doubleunderline{\SI{0.10}{\meter}}
+\end{align}
+Bølgelengden er \SI{0.10}{\meter}.
+
+Frekvensen \( f \) er gitt ved:
+\begin{align}
+f &= \frac{\omega}{2\pi} = \frac{314 \, \mathrm{Hz}}{2\pi} \\
+f &= \doubleunderline{\SI{50.0}{\hertz}}
+\end{align}
+Frekvensen er \SI{50.0}{\hertz}.
+
+Perioden \( T \) er gitt ved:
+\begin{align}
+T &= \frac{1}{f} = \frac{1}{\SI{50.0}{\hertz}} \\
+T &= \doubleunderline{\SI{0.0200}{\second}}
+\end{align}
+Perioden er \SI{0.0200}{\second}.
+\end{solution}
+
+\part Del C: Finn maksimalfarten til partikkelen i bølgen.
+\begin{solution}
+Maksimalfarten \( v_{\max} \) kan finnes ved å derivere posisjonen med hensyn til tid:
+\begin{align}
+v_{\max} &= A \omega \\
+&= 1.00 \times 10^{-3} \, \mathrm{m} \cdot 314 \, \mathrm{s}^{-1} \\
+v_{\max} &= \doubleunderline{\SI{0.314}{\meter\per\second}}
+\end{align}
+Maksimalfarten langs bølgen er \SI{0.314}{\meter\per\second}.
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Part A: Beregn avstanden der lydintensiteten er lik $I_2$.
+\begin{solution}
+Effekten levert fra kilden er uavhengig av posisjonens lydintensitet, altså, effekten levert er det samme. Vi bruker derfor at:
+
+\begin{align}
+P_1 &= P_2, \quad \text{og at} \\
+I &= \frac{P_{av}}{A}.
+\end{align}
+
+Dette gir oss:
+
+\begin{align}
+I_1 A_1 &= I_2 A_2 \quad \left(A = 4 \pi r^2 \text{ for en sfærisk overflate}\right).
+\end{align}
+
+Ved å sette inn verdiene får vi:
+
+\begin{align}
+I_1 \cdot 4 \pi r_1^2 &= I_2 \cdot 4 \pi r_2^2 \\
+r_2 &= r_1 \sqrt{\frac{I_1}{I_2}} \\
+r_2 &= 10.0 \, \mathrm{m} \cdot \sqrt{\frac{1.00 \cdot 10^{-4} \, \mathrm{W/m^2}}{1.00 \cdot 10^{-6} \, \mathrm{W/m^2}}} \\
+r_2 &= \doubleunderline{100 \, \mathrm{m}}
+\end{align}
+
+Ved en avstand på \SI{100}{\meter} vil lydintensiteten være \SI{1.00e-6}{\watt\per\meter\squared}.
+\end{solution}
+
+\part Part B: Beregn effekten avgitt av kilden.
+\begin{solution}
+Effekten avgitt av kilden kan beregnes ved:
+
+\begin{align}
+P_{av} &= 4 \pi r_1^2 I_1 \\
+&= 4 \pi (10.0 \, \mathrm{m})^2 \cdot 1.00 \cdot 10^{-4} \, \mathrm{W/m^2} \\
+P_{av} &= \doubleunderline{\SI{126}{\milli\watt}}
+\end{align}
+
+Effekten levert av kilden er \SI{126}{\milli\watt}.
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Beregn forskjellen i lydintensitetsnivå:
+\begin{solution}
+Lydintensitetsnivået er gitt ved formelen:
+\begin{align}
+\beta &= (10 \, \mathrm{dB}) \log \left(\frac{I}{I_{0}}\right)
+\end{align}
+For å finne forskjellen i lydintensitetsnivå mellom to nivåer, bruker vi:
+\begin{align}
+\Delta \beta &= \beta_{1} - \beta_{2} \\
+&= 90 \, \mathrm{dB} - 70 \, \mathrm{dB} \\
+&= \SI{20}{\decibel}
+\end{align}
+\end{solution}
+
+\part Beregn forholdet mellom intensitetene $I_{90}$ og $I_{70}$:
+\begin{solution}
+Vi starter med uttrykket for forskjellen i lydintensitetsnivå:
+\begin{align}
+\Delta \beta &= (10 \, \mathrm{dB}) \cdot \log \left(\frac{I_{90}}{I_{70}}\right) \\
+20 \, \mathrm{dB} &= (10 \, \mathrm{dB}) \cdot \log \left(\frac{I_{90}}{I_{70}}\right)
+\end{align}
+Del begge sider med $10 \, \mathrm{dB}$:
+\begin{align}
+2 &= \log \left(\frac{I_{90}}{I_{70}}\right)
+\end{align}
+For å løse for $\frac{I_{90}}{I_{70}}$, ta antilogaritmen:
+\begin{align}
+\frac{I_{90}}{I_{70}} &= 10^2 \\
+&= 100
+\end{align}
+\end{solution}
+
+\part Beregn prosentvis reduksjon i levert effekt:
+\begin{solution}
+Vi ser på endringsandelen for å finne reduksjonen:
+\begin{align}
+\frac{I_{90} - I_{70}}{I_{90}} &= \frac{100I_{70} - I_{70}}{100I_{70}} \\
+&= \frac{99I_{70}}{100I_{70}} \\
+&= 0.99
+\end{align}
+Dette tilsvarer en \doubleunderline{\SI{99}{\percent}} reduksjon i levert effekt fra lydkilden.
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Bruker likningen for beskrivelse av dopplereffekt å utlede frekvenser mottatt av regndråpene:
+\begin{solution}
+Dopplereffekten beskriver hvordan frekvensen av en bølge endres for en observatør som beveger seg i forhold til bølgekilden. For å utlede frekvensene mottatt av regndråpene, bruker vi følgende likninger:
+
+\begin{align}
+f_{r} &= \frac{c + u_{r}}{c} \cdot f_{s} \tag{I}
+\end{align}
+
+Her er $f_{r}$ frekvensen mottatt av regndråpene, $c$ er lysets hastighet, $u_{r}$ er hastigheten til regndråpene, og $f_{s}$ er den opprinnelige frekvensen.
+
+Når regndråpene reflekterer bølgene, kan vi betrakte dem som en kilde som beveger seg mot den opprinnelige kilden:
+
+\begin{align}
+f_{r}^{\prime} &= \frac{c}{c - u_{s}} \cdot f_{r} \tag{II}
+\end{align}
+
+Ved å sette likning (I) inn i likning (II), får vi:
+
+\begin{align}
+f_{r}^{\prime} &= \left(\frac{c}{c-u_{s}}\right)\left(\frac{c+u_{r}}{c}\right) f_{s} \\
+&= \frac{c+u_{r}}{c-u_{s}} \cdot f_{s} \\
+f_{r}^{\prime} &= \left(1+\frac{u_{r}}{c}\right)\left(1-\frac{u_{s}}{c}\right)^{-1} f_{s}
+\end{align}
+
+Siden $u_{r} \ll c$ og $u_{s} \ll c$, kan vi tilnærme:
+
+\begin{align}
+1-\frac{u_{s}}{c} &\approx 1-\frac{u_{r}}{c} \quad \text{og} \quad \left(1-\frac{u_{r}}{c}\right)^{-1} \approx 1+\frac{u_{r}}{c} \\
+f_{r}^{\prime} &= \left(1+\frac{u_{r}}{c}\right)^{2} \cdot f_{s} \\
+&\approx 1+\frac{2 u_{r}}{c} \\
+f_{r}^{\prime} &= \left(1+\frac{2 u_{r}}{c}\right) f_{s}
+\end{align}
+
+Endringen i frekvens, $\Delta f$, er gitt ved:
+
+\begin{align}
+\Delta f &= f_{r}^{\prime} - f_{s} \\
+&= \left(1+\frac{2 u_{r}}{c}\right) f_{s} - f_{s} \\
+&= \frac{2 u_{r}}{c} f_{s}
+\end{align}
+
+Ved å løse for $u_{r}$, får vi:
+
+\begin{align}
+u_{r} &= \frac{c}{2 f_{s}} \Delta f \\
+&= \frac{3.00 \times 10^{8} \, \mathrm{m/s} \cdot 325 \, \mathrm{Hz}}{2 \cdot 625 \times 10^{6} \, \mathrm{Hz}} \\
+&= \doubleunderline{\SI{78.0}{\meter\per\second}}
+\end{align}
+
+Derfor er hastigheten til regndråpene \SI{78.0}{\meter\per\second}.
+\end{solution}
+
+\end{parts}
+\end{questions}
+\end{document}

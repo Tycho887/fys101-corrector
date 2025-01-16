@@ -1,0 +1,223 @@
+\documentclass[answers,a4paper,12pt]{exam}
+\input{preamble.tex}
+
+\title{{\bf{FYS101 Mekanikk}} \\ \Large{\answersareprinted Oblig XX}} 
+\author{Institutt for Fysikk, REALTEK}
+\date{Uke xx}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+\question Ser på superposisjoner av de to bølgene
+\begin{parts}
+
+\part Finner amplituden til resultantbølgen ved $\delta=\frac{\pi}{6}$:
+\begin{solution}
+Vi har uttrykket for amplituden til resultantbølgen som:
+\begin{align}
+A &= 2 y_{0} \cos \left(\frac{1}{2} \delta\right) \\
+  &= 2 \cdot \SI{0.020}{\meter} \cdot \cos \left(\frac{\pi}{12}\right) \\
+  &= \doubleunderline{\SI{0.039}{\meter}}
+\end{align}
+Her har vi brukt verdien $\delta = \frac{\pi}{6}$ for å finne amplituden. Resultatet er \SI{3.9}{\centi\meter}.
+\end{solution}
+
+\part Finner amplituden til resultantbølgen ved $\delta=\frac{\pi}{3}$:
+\begin{solution}
+På samme måte bruker vi uttrykket for amplituden:
+\begin{align}
+A &= 2 y_{0} \cos \left(\frac{1}{2} \delta\right) \\
+  &= 2 \cdot \SI{0.020}{\meter} \cdot \cos \left(\frac{\pi}{6}\right) \\
+  &= \doubleunderline{\SI{0.035}{\meter}}
+\end{align}
+Her har vi brukt verdien $\delta = \frac{\pi}{3}$ for å finne amplituden. Resultatet er \SI{3.5}{\centi\meter}.
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Finner fase differansen: purikt $p$
+\begin{solution}
+Vi skal finne faseforskjellen mellom to punkter i en bølge. Først beregner vi bølgelengden $\lambda$ ved hjelp av formelen for bølgefart $v = f \cdot \lambda$:
+
+\centering
+\begin{align}
+v &= f \cdot \lambda \\
+\lambda &= \frac{v}{f} \\
+&= \frac{\SI{343}{\meter\per\second}}{\SI{100}{\hertz}} \\
+\lambda &= \SI{3.43}{\meter}
+\end{align}
+
+Nå kan vi beregne faseforskjellen $\delta$:
+
+\begin{align}
+\delta &= 2 \pi \frac{\Delta x}{\lambda} \\
+&= 2 \pi \frac{(x_{2} - x_{1})}{\lambda} \\
+&= 2 \pi \frac{(\SI{5.85}{\meter} - \SI{5.00}{\meter})}{\SI{3.43}{\meter}} \\
+&= 2 \pi \frac{\SI{0.85}{\meter}}{\SI{3.43}{\meter}} \\
+&= 1.557 \, \text{rad} \\
+\delta &\approx \doubleunderline{\SI{1.6}{\radian}}
+\end{align}
+\end{solution}
+
+\part Finner amplituden til resultantbølgen i punktet $P$
+\begin{solution}
+Amplituden til resultantbølgen kan beregnes ved hjelp av formelen:
+
+\centering
+\begin{align}
+A &= 2 y_{0} \cos \left(\frac{1}{2} \delta\right) \\
+&= 2 y_{0} \cos \left(\frac{1}{2} \cdot \SI{1.557}{\radian}\right) \\
+A &\approx 1.4 y_{0}
+\end{align}
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Part A: Beregn frekvensen $f_2$ gitt at $f_{\text{beat}} = \SI{4.0}{\hertz}$ og $f_1 = \SI{500}{\hertz}$.
+\begin{solution}
+Vi starter med formelen for beat-frekvensen:
+\begin{align}
+f_{\text{beat}} &= \Delta f \\
+f_{\text{beat}} &= \pm\left(f_2 - f_1\right)
+\end{align}
+Vi ønsker å finne $f_2$, så vi omorganiserer ligningen:
+\begin{align}
+f_2 &= f_1 \pm f_{\text{beat}} \\
+    &= \SI{500}{\hertz} \pm \SI{4.0}{\hertz} \\
+    &= \SI{504}{\hertz} \text{ eller } \SI{496}{\hertz}
+\end{align}
+Dermed kan $f_2$ være enten \doubleunderline{\SI{504}{\hertz}} eller \doubleunderline{\SI{496}{\hertz}}.
+\end{solution}
+
+\part Part B: Diskuter hvordan endringer i $f_{\text{beat}}$ påvirker $f_1$.
+\begin{solution}
+Dersom $f_{\text{beat}} < \SI{4.0}{\hertz}$, vil $f_1$ nærme seg verdien til $f_2$. Dette betyr at $f_1$ kan være \SI{496}{\hertz}.
+
+På den annen side, dersom $f_{\text{beat}} > \SI{4.0}{\hertz}$, vil $f_1$ bevege seg bort fra verdien til $f_2$. Dette indikerer at $f_1$ kan være \SI{504}{\hertz}.
+
+Dette viser hvordan endringer i beat-frekvensen kan gi innsikt i forholdet mellom de to frekvensene $f_1$ og $f_2$.
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Part A: Beregn bølgelengden
+\begin{solution}
+Bølgelengden $\lambda$ kan beregnes ved hjelp av bølgetallet $k$. Formelen for bølgelengde er gitt ved:
+\begin{align}
+\lambda &= \frac{2 \pi}{k} \\
+        &= \frac{2 \pi}{0.200 \cdot 10^{-2} \, \si{\per\meter}} \\
+        &= \doubleunderline{\SI{31.4}{\centi\meter}}
+\end{align}
+\end{solution}
+
+\part Part B: Beregn frekvensen
+\begin{solution}
+Frekvensen $f$ kan beregnes ved hjelp av vinkelfrekvensen $w$. Formelen for frekvens er:
+\begin{align}
+f &= \frac{w}{2 \pi} \\
+  &= \frac{300 \, \si{\per\second}}{2 \pi} \\
+  &= \doubleunderline{\SI{47.7}{\hertz}}
+\end{align}
+\end{solution}
+
+\part Part C: Beregn bølgefarten
+\begin{solution}
+Bølgefarten $v$ kan beregnes ved å bruke forholdet mellom vinkelfrekvens $w$ og bølgetall $k$:
+\begin{align}
+v &= \frac{w}{k} \\
+  &= \frac{300 \, \si{\per\second}}{0.200 \cdot 10^{-2} \, \si{\per\meter}} \\
+  &= \doubleunderline{\SI{15}{\meter\per\second}}
+\end{align}
+\end{solution}
+
+\part Part D: Beregn lengden for $n=4$
+\begin{solution}
+Lengden $L$ for en stående bølge med $n$ antall noder er gitt ved:
+\begin{align}
+L &= \frac{n \cdot \lambda}{2}, \quad n=1,2,3,\ldots \\
+L_4 &= \frac{4 \cdot \lambda}{2} \\
+    &= 2 \cdot \lambda \\
+    &= 2 \cdot \SI{31.4}{\centi\meter} \\
+    &= \doubleunderline{\SI{62.8}{\centi\meter}}
+\end{align}
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Beregn lengden for å spille en A:
+\begin{solution}
+Vi bruker formelen for lengden av strengen når frekvensen endres:
+\begin{align}
+L_A &= \frac{f_G \cdot L_G}{f_A} \\
+    &= \frac{\SI{196}{\hertz} \cdot \SI{0.300}{\meter}}{\SI{220}{\hertz}} \\
+    &= \SI{0.267}{\meter}
+\end{align}
+Forskjellen i lengde er:
+\begin{align}
+L_G - L_A &= \SI{0.300}{\meter} - \SI{0.267}{\meter} \\
+          &= \doubleunderline{\SI{3.27}{\centi\meter}}
+\end{align}
+Fingeren må plasseres \SI{3.27}{\centi\meter} fra enden for å spille en A.
+\end{solution}
+
+\part Beregn lengden for å spille en B:
+\begin{solution}
+\begin{align}
+L_B &= \frac{f_G \cdot L_G}{f_B} \\
+    &= \frac{\SI{196}{\hertz} \cdot \SI{0.300}{\meter}}{\SI{247}{\hertz}} \\
+    &= \SI{0.238}{\meter}
+\end{align}
+Forskjellen i lengde er:
+\begin{align}
+L_G - L_B &= \SI{0.300}{\meter} - \SI{0.238}{\meter} \\
+          &= \doubleunderline{\SI{6.19}{\centi\meter}}
+\end{align}
+Fingeren må plasseres \SI{6.19}{\centi\meter} fra enden for å spille en B.
+\end{solution}
+
+\part Beregn lengden for å spille en C:
+\begin{solution}
+\begin{align}
+L_C &= \frac{f_G \cdot L_G}{f_C} \\
+    &= \frac{\SI{196}{\hertz} \cdot \SI{0.300}{\meter}}{\SI{262}{\hertz}} \\
+    &= \SI{0.224}{\meter}
+\end{align}
+Forskjellen i lengde er:
+\begin{align}
+L_G - L_C &= \SI{0.300}{\meter} - \SI{0.224}{\meter} \\
+          &= \doubleunderline{\SI{7.56}{\centi\meter}}
+\end{align}
+Fingeren må plasseres \SI{7.56}{\centi\meter} fra enden for å spille en C.
+\end{solution}
+
+\part Beregn lengden for å spille en D:
+\begin{solution}
+\begin{align}
+L_0 &= \frac{f_G \cdot L_G}{f_0} \\
+    &= \frac{\SI{196}{\hertz} \cdot \SI{0.300}{\meter}}{\SI{294}{\hertz}} \\
+    &= \SI{0.200}{\meter}
+\end{align}
+Forskjellen i lengde er:
+\begin{align}
+L_G - L_0 &= \SI{0.300}{\meter} - \SI{0.200}{\meter} \\
+          &= \doubleunderline{\SI{10.0}{\centi\meter}}
+\end{align}
+Fingeren må plasseres \SI{10.0}{\centi\meter} fra enden for å spille en D.
+\end{solution}
+
+\end{parts}
+\end{questions}
+\end{document}

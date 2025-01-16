@@ -1,0 +1,219 @@
+\documentclass[answers,a4paper,12pt]{exam}
+\input{preamble.tex}
+
+\title{{\bf{FYS101 Mekanikk}} \\ \Large{\answersareprinted Oblig XX}} 
+\author{Institutt for Fysikk, REALTEK}
+\date{Uke xx}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+\question FILL QUESTION
+\begin{parts}
+
+\part Bruker Newtons andre lov (N2L) for blokken i $y$-retning:
+\begin{solution}
+Siden hastigheten $v$ er konstant, er akselerasjonen $a = 0$. Derfor kan vi skrive:
+\begin{align}
+\sum F_{y} &= m \cdot a \\
+T - F_{g} &= 0 \\
+T &= m \cdot g \\
+  &= 2000 \, \mathrm{kg} \cdot 9.81 \, \mathrm{m/s^2} \\
+  &= \SI{19620}{\newton} \\
+T &= \doubleunderline{\SI{19.62}{\kilo\newton}}
+\end{align}
+\end{solution}
+
+\part Finner kraftmomentet fra tauet på trommelen:
+\begin{solution}
+\begin{align}
+\tau &= T \cdot r \\
+     &= \SI{19620}{\newton} \cdot \SI{0.30}{\meter} \\
+     &= \SI{5886}{\newton\meter} \\
+\tau &= \doubleunderline{\SI{5.89}{\kilo\newton\meter}}
+\end{align}
+\end{solution}
+
+\part Vinkelfarten til trommelen har samme fart som tauet som ligger på overflaten:
+\begin{solution}
+\begin{align}
+v &= \omega \cdot r \\
+\omega &= \frac{v}{r} \\
+       &= \frac{\SI{0.08}{\meter\per\second}}{\SI{0.30}{\meter}} \\
+       &= \SI{0.2667}{\radian\per\second} \\
+\omega &= \doubleunderline{\SI{0.27}{\radian\per\second}}
+\end{align}
+\end{solution}
+
+\part Beregn effekten $P$:
+\begin{solution}
+\begin{align}
+P &= \tau \cdot \omega \\
+  &= \SI{5886}{\newton\meter} \cdot \SI{0.2667}{\radian\per\second} \\
+  &= \SI{1569.8}{\watt} \\
+P &= \doubleunderline{\SI{1.57}{\kilo\watt}}
+\end{align}
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Part A: Bruker N2L for rotasjon til å finne et uttrykk for friksjonskraften $f_s$.
+\begin{solution}
+Vi starter med Newtons andre lov for rotasjon:
+\begin{align*}
+\sum \tau &= I \alpha \quad \left(\alpha = \frac{a}{r}, \, I = \frac{1}{2} m r^2 \, (\text{tabell } 9.1, \text{ Tipler})\right) \\
+f_s r &= \frac{1}{2} m r^2 \frac{a}{r} \\
+f_s &= \frac{1}{2} m a \tag{I}
+\end{align*}
+Dette uttrykket viser at friksjonskraften $f_s$ er halvparten av produktet av massen $m$ og akselerasjonen $a$.
+\end{solution}
+
+\part Part B: Bruker N2L i $x$-retning for å finne akselerasjonen til massesenteret til sylinderen.
+\begin{solution}
+Vi anvender Newtons andre lov i $x$-retning:
+\begin{align*}
+\sum F_x &= m a_x \quad (a_x = a) \\
+F_{gx} - f_s &= m a \quad (\text{setter inn (I)}) \\
+F_g \sin \theta - \frac{1}{2} m a &= m a \\
+\frac{3}{2} m a &= m g \sin \theta \\
+a &= \frac{2}{3} g \sin \theta
+\end{align*}
+Akselerasjonen $a$ til massesenteret er dermed $\frac{2}{3} g \sin \theta$.
+\end{solution}
+
+\part Part C: Finner et uttrykk for friksjonskraften ved å benytte likning (I) og sette inn resultatet fra del A for akselerasjonen.
+\begin{solution}
+Vi bruker likning (I) for å finne friksjonskraften:
+\begin{align*}
+f_s &= \frac{1}{2} m a \\
+&= \frac{1}{2} m \cdot \frac{2}{3} g \sin \theta \\
+f_s &= \frac{1}{3} m g \sin \theta
+\end{align*}
+Friksjonskraften $f_s$ er dermed $\frac{1}{3} m g \sin \theta$.
+\end{solution}
+
+\part Part D: Må finne et uttrykk for den maksimale friksjonskraften der statisk friksjon kan ha før flatene begynner å gli mot hverandre.
+\begin{solution}
+Den maksimale statiske friksjonskraften er gitt ved:
+\begin{align*}
+f_{s, \max} &= \mu_s \cdot F_n
+\end{align*}
+Vi bruker N2L i $y$-retning for å finne et uttrykk for $F_n$:
+\begin{align*}
+\sum F_y &= m a_y \quad (a_y = 0) \\
+F_{gy} - F_n &= 0 \\
+F_n &= F_g \cos \theta \\
+F_n &= m g \cos \theta
+\end{align*}
+Dermed får vi uttrykket:
+\begin{align*}
+f_{s, \max} &= \mu_s m g \cos \theta
+\end{align*}
+\end{solution}
+
+\part Part E: Resultatet fra del B gir friksjonskraften like før sylinderen begynner å gli, og vi setter derfor denne lik $f_{s, \max}$ for å finne maksimal vinkel $\theta = \theta_{\text{max}}$.
+\begin{solution}
+Vi setter friksjonskraften lik den maksimale friksjonskraften:
+\begin{align*}
+f_s &= f_{s, \max} \\
+\frac{1}{3} m g \sin \theta_{\text{max}} &= \mu_s m g \cos \theta_{\text{max}} \\
+\frac{1}{3} \tan \theta_{\text{max}} &= \mu_s \\
+\tan \theta_{\text{max}} &= 3 \mu_s \\
+\theta_{\text{max}} &= \tan^{-1}(3 \mu_s)
+\end{align*}
+Den maksimale vinkelen $\theta_{\text{max}}$ er dermed $\tan^{-1}(3 \mu_s)$.
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Part A: Beregn spinnet om sirkelens senter
+\begin{solution}
+Spinnet (eller det angulære momentet) til en partikkel som beveger seg i en sirkelbane kan beregnes ved hjelp av formelen:
+\begin{align}
+L &= m \cdot v \cdot r \\
+  &= \SI{2.0}{\kilo\gram} \cdot \SI{3.5}{\meter\per\second} \cdot \SI{4.0}{\meter} \\
+  &= \doubleunderline{\SI{28}{\kilo\gram\meter\squared\per\second}}
+\end{align}
+Spinnet har en størrelse på \SI{28}{\kilo\gram\meter\squared\per\second} vinkelrett på sirkelbanen partikkelen beveger seg langs, med retning vekk fra oss.
+\end{solution}
+
+\part Part B: Beregn treghetsmomentet til partikkelen om en akse vinkelrett på sirkelbanen, gjennom sirkelbanens senter
+\begin{solution}
+Treghetsmomentet \( I \) kan beregnes ved å bruke forholdet mellom spinnet \( L \) og vinkelhastigheten \( \omega \):
+\begin{align}
+L &= I \cdot \omega \quad \left(\omega = \frac{v}{r}\right) \\
+I &= \frac{L \cdot r}{v} \\
+  &= \frac{\SI{28}{\kilo\gram\meter\squared\per\second} \cdot \SI{4.0}{\meter}}{\SI{3.5}{\meter\per\second}} \\
+  &= \doubleunderline{\SI{32}{\kilo\gram\meter\squared}}
+\end{align}
+\end{solution}
+
+\part Part C: Beregn vinkelhastigheten
+\begin{solution}
+Vinkelhastigheten \( \omega \) kan beregnes som:
+\begin{align}
+\omega &= \frac{v}{r} \\
+       &= \frac{\SI{3.5}{\meter\per\second}}{\SI{4.0}{\meter}} \\
+       &= \doubleunderline{\SI{0.88}{\radian\per\second}}
+\end{align}
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Part A: Beregn vinkelhastigheten etter at vektene er trukket inn mot kroppen.
+\begin{solution}
+Plattformen er friksjonsfri, noe som betyr at spinnet er bevart. Vi har følgende ligninger for bevaring av vinkelmoment:
+\begin{align}
+L_1 &= L_2 \\
+I_1 \omega_1 &= I_2 \omega_2 \\
+\omega_2 &= \frac{I_1}{I_2} \omega_1
+\end{align}
+
+Ved å sette inn de gitte verdiene:
+\begin{align}
+\omega_2 &= \frac{6.0 \, \mathrm{kg \, m^2}}{1.8 \, \mathrm{kg \, m^2}} \cdot 1.5 \, \frac{\mathrm{rev}}{3} \\
+&= \frac{6.0}{1.8} \cdot 0.5 \, \mathrm{rev/s} \\
+&= \doubleunderline{5.0 \, \mathrm{rev/s}}
+\end{align}
+
+Vinkelhastigheten etter at vektene er trukket inn mot kroppen er \SI{5.0}{\rev\per\second}.
+\end{solution}
+
+\part Part B: Beregn endringen i kinetisk energi.
+\begin{solution}
+Endringen i kinetisk energi kan beregnes som:
+\begin{align}
+\Delta K &= K_2 - K_1 \\
+&= \frac{1}{2} I_2 \omega_2^2 - \frac{1}{2} I_1 \omega_1^2
+\end{align}
+
+Ved å sette inn de gitte verdiene:
+\begin{align}
+\Delta K &= \frac{1}{2} \cdot 1.8 \, \mathrm{kg \, m^2} \cdot \left(5.0 \, \frac{\mathrm{rev}}{\mathrm{s}} \cdot \frac{2\pi \, \mathrm{rad}}{\mathrm{rev}}\right)^2 \\
+&\quad - \frac{1}{2} \cdot 6.0 \, \mathrm{kg \, m^2} \cdot \left(0.5 \, \frac{\mathrm{rev}}{\mathrm{s}} \cdot \frac{2\pi \, \mathrm{rad}}{\mathrm{rev}}\right)^2 \\
+&= \doubleunderline{0.62 \, \mathrm{kJ}}
+\end{align}
+
+Endringen i kinetisk energi er \SI{0.62}{\kilo\joule}.
+\end{solution}
+
+\part Part C: Forklar hvorfor den kinetiske energien endres.
+\begin{solution}
+Endringen i den kinetiske energien skyldes at radiusen reduseres når vektene trekkes mot kroppen. På grunn av bevaring av spinn (plattformen er friksjonsfri), må vinkelhastigheten øke når radiusen reduseres, siden massen er konstant.
+
+Kvadreringen av vinkelhastigheten når endringen i kinetisk energi beregnes, gjør at endringen i vinkelhastighet ofte får mest å si for den resulterende kinetiske energien. Vinkelhastigheten øker, og det gjør også den kinetiske energien.
+\end{solution}
+
+\end{parts}
+\end{questions}
+\end{document}

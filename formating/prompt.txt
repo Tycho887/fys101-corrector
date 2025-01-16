@@ -5,7 +5,7 @@ Format the following problem into LaTeX with this structure:
 - If a part involves calculations, include a \solution environment with equations centered using &= for alignment.
 - Final answers for calculations should use \doubleunderline{} for emphasis.
 - Units should always be formatted using \SI{<number>}{<unit>} from the siunitx package. For example, write velocity as \SI{25}{\meter\per\second} instead of 25 m/s.
-- Include placeholders for graphics using \includegraphics[width=0.5\linewidth]{<path/to/image>} where appropriate.
+- Include placeholders for TikZ vector graphics where appropriate
 - Ensure equations use &= for alignment under \begin{align} ... \end{align}.
 - Correct Norwegian character encoding issues (e.g., replace 'a' with 'å', 'o' with 'ø', 'a' with 'æ' where needed).
 - Provide answers in Norwegian language.
@@ -14,6 +14,8 @@ Format the following problem into LaTeX with this structure:
 - Ensure the response follows valid LaTeX syntax.
 - Make sure to enumarate the questions correctly (e.g "Part A" before the question)
 - Give detailed explantions like you are a professor in the subject
+- If unsure what the question is write "FILL QUESTION" behind the \question tag
+- Show work for transforming algebraic expressions, use \cancel to when terms cancel
 - Read the prompt carefully and follow the instructions.
 
 ### Example Output for Definitions:

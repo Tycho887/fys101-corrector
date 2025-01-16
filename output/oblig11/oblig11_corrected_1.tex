@@ -1,0 +1,262 @@
+\documentclass[answers,a4paper,12pt]{exam}
+\input{preamble.tex}
+
+\title{{\bf{FYS101 Mekanikk}} \\ \Large{\answersareprinted Oblig XX}} 
+\author{Institutt for Fysikk, REALTEK}
+\date{Uke xx}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+\question FILL QUESTION
+\begin{parts}
+
+\part Forklar hva som menes med fasekonstanten i en svingning:
+\begin{solution}
+Fasekonstanten, ofte betegnet som $\delta$, er en konstant som bestemmer den innledende fasen til en svingning ved tiden $t=0$. I uttrykket $x = A \cos(\omega t + \delta)$, representerer $(\omega t + \delta)$ bevegelsens fase. Fasekonstanten gir oss informasjon om hvor svingningen starter i sin syklus.
+\end{solution}
+
+\part Hva er resonans, og hvordan påvirker det et system?
+\begin{solution}
+Resonans er et fenomen som oppstår når frekvensen til en ytre, periodisk kraft er lik egenfrekvensen til systemet. Når dette skjer, vil systemet oppleve en betydelig økning i amplitude, noe som kan føre til store svingninger. Dette er fordi energien fra den ytre kraften overføres effektivt til systemet.
+\end{solution}
+
+\part Definer Q-verdi og dens betydning i dempede svingninger:
+\begin{solution}
+Q-verdi beskriver kvaliteten av dempede svingninger og er relatert til hvor mye energi som tapes i en svingesyklus. Den er gitt ved formelen:
+\begin{align}
+Q = \frac{2 \pi}{\left(\frac{\Delta E}{E}\right) \text{ syklus }}
+\end{align}
+En høy Q-verdi indikerer at systemet mister lite energi per syklus, noe som betyr at svingningene vil fortsette i lang tid før de dempes betydelig.
+\end{solution}
+
+\part Forklar tidskonstanten $\tau$ i konteksten av dempede svingninger:
+\begin{solution}
+Tidskonstanten $\tau$ er tiden det tar for energien i en svingning å reduseres til $e^{-1}$ (ca. 37\%) av sin opprinnelige verdi. Det er en målestokk for hvor raskt svingningene dempes. En kort tidskonstant betyr at systemet mister energi raskt, mens en lang tidskonstant indikerer at systemet beholder energien lenger.
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Finner frekvensen:
+\begin{solution}
+Frekvensen til en partikkel kan finnes ved å bruke forholdet mellom vinkelfrekvens og frekvens. Vinkelfrekvensen $\omega$ er gitt som $6\pi$ i likningen for posisjonen. Vi bruker formelen:
+\begin{align}
+\omega &= 2\pi f \\
+f &= \frac{\omega}{2\pi} \\
+  &= \frac{6\pi}{2\pi} \\
+  &= \SI{3.0}{\hertz}
+\end{align}
+Frekvensen til partikkelen er dermed \doubleunderline{\SI{3.0}{\hertz}}.
+\end{solution}
+
+\part Perioden til partikkelen:
+\begin{solution}
+Perioden $T$ er den inverse av frekvensen $f$:
+\begin{align}
+T &= \frac{1}{f} \\
+  &= \frac{1}{\SI{3.0}{\hertz}} \\
+  &= \SI{0.33}{\second}
+\end{align}
+Partikkelen bruker \doubleunderline{\SI{0.33}{\second}} på én full svingning.
+\end{solution}
+
+\part Finner amplituden fra funksjonen som beskriver posisjonen:
+\begin{solution}
+Amplituden $A$ kan leses direkte fra uttrykket for posisjonen $x = (7.0 \mathrm{~cm}) \cos (6 \pi t)$:
+\begin{align}
+x &= A \cos (\omega t + \phi) \\
+A &= \SI{7.0}{\centi\meter}
+\end{align}
+Amplituden for svingningene er \doubleunderline{\SI{7.0}{\centi\meter}} fra likevektsposisjonen.
+\end{solution}
+
+\part Partikkelen er ved likevekt for første gang etter $t=0$:
+\begin{solution}
+Partikkelen er ved likevekt når $\cos(6\pi t) = 0$. Dette skjer når argumentet til cosinusfunksjonen er lik $\frac{\pi}{2}$ pluss et multiplum av $\pi$:
+\begin{align}
+6\pi t &= n\pi + \frac{\pi}{2}, \quad n = 0, \pm 1, \pm 2, \ldots \\
+t &= \frac{1}{12} \\
+t &= \SI{0.083}{\second}
+\end{align}
+Partikkelen er i likevekt etter \doubleunderline{\SI{0.083}{\second}} etter $t=0$, og beveger seg i negativ $x$-retning.
+\end{solution}
+
+\end{parts}
+
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Finner vinkelfrekvensen til bevegelsen når klossen slippes:
+\begin{solution}
+Vinkelfrekvensen, $\omega$, for en harmonisk oscillator er gitt ved:
+\begin{align}
+\omega &= \sqrt{\frac{k}{m}} \\
+       &= \sqrt{\frac{\SI{700}{\newton\per\meter}}{\SI{5.00}{\kilogram}}} \\
+       &= \doubleunderline{\SI{11.832}{\radian\per\second}}
+\end{align}
+\end{solution}
+
+\part Finner frekvensen:
+\begin{solution}
+Frekvensen, $f$, er relatert til vinkelfrekvensen ved:
+\begin{align}
+f &= \frac{\omega}{2\pi} \\
+  &= \frac{\SI{11.832}{\radian\per\second}}{2\pi} \\
+  &= \doubleunderline{\SI{1.883}{\hertz}}
+\end{align}
+Frekvensen når klossen slippes er \SI{1.88}{\hertz}, og siden underlaget er friksjonsløst, vil frekvensen forbli konstant.
+\end{solution}
+
+\part Finner perioden:
+\begin{solution}
+Perioden, $T$, er den inverse av frekvensen:
+\begin{align}
+T &= \frac{1}{f} \\
+  &= \frac{1}{\SI{1.883}{\hertz}} \\
+  &= \doubleunderline{\SI{0.531}{\second}}
+\end{align}
+Klossen bruker \SI{0.531}{\second} på én full svingning.
+\end{solution}
+
+\part Finner amplituden ved å anvende likningen for posisjonen:
+\begin{solution}
+Vi starter med posisjonslikningen:
+\begin{align}
+v &= \frac{dx}{dt} = \frac{d}{dt}(\cos(\omega t + \delta)) \\
+v &= -\omega A \sin(\omega t + \delta)
+\end{align}
+For å finne $\delta$, bruker vi at $v(0) = v_0 = 0$:
+\begin{align}
+\sin(\delta) &= 0 \\
+\delta &= 0
+\end{align}
+Dermed er:
+\begin{align}
+x_0 &= A \cos(\omega \cdot 0 + 0) \\
+A &= x_0 \\
+A &= \doubleunderline{\SI{8.00}{\centi\meter}}
+\end{align}
+Amplituden bestemmes av hvor langt klossen strekkes siden underlaget er friksjonsløst, og amplituden blir \SI{8.00}{\centi\meter}.
+\end{solution}
+
+\part Finner maksimalhastigheten:
+\begin{solution}
+Maksimalhastigheten er gitt ved:
+\begin{align}
+v &= \omega A \\
+  &= \SI{11.832}{\radian\per\second} \cdot \SI{8.00e-2}{\meter} \\
+  &= \doubleunderline{\SI{0.947}{\meter\per\second}}
+\end{align}
+Maksimal hastighet til klossen er \SI{0.947}{\meter\per\second}.
+\end{solution}
+
+\part Finner maksimalakselerasjonen:
+\begin{solution}
+Maksimalakselerasjonen er gitt ved:
+\begin{align}
+a &= -\omega^2 A \cos(\omega t + \delta) \\
+a &= \omega^2 A \\
+  &= \left(\SI{11.832}{\radian\per\second}\right)^2 \cdot \SI{8.00e-2}{\meter} \\
+  &= \doubleunderline{\SI{11.2}{\meter\per\second\squared}}
+\end{align}
+\end{solution}
+
+\part Finner et uttrykk for tid ved $x=0$:
+\begin{solution}
+Vi bruker posisjonslikningen:
+\begin{align}
+x &= \SI{8.00e-2}{\meter} \cdot \cos(\omega t) \\
+\cos(\omega t) &= 0 \\
+\omega t &= \frac{\pi}{2} \\
+t &= \frac{\pi}{2 \cdot \SI{11.832}{\radian\per\second}} \\
+t &= \doubleunderline{\SI{0.133}{\second}}
+\end{align}
+\end{solution}
+
+\end{parts}
+
+
+\question Finner resonansfrekvens for elastisk pendel:
+\begin{parts}
+
+\part Definer resonansfrekvens for en elastisk pendel:
+\begin{solution}
+Resonansfrekvensen for en elastisk pendel er frekvensen der systemet naturlig oscillerer når det ikke er noen dempende krefter til stede. Den avhenger av fjærkonstanten $k$ og massen $m$ i systemet.
+\end{solution}
+
+\part Beregn resonansfrekvensen når $k = \SI{400}{\newton\per\meter}$ og $m = \SI{10}{\kilogram}$:
+\begin{solution}
+Resonansfrekvensen $f$ kan beregnes ved hjelp av formelen:
+\begin{align}
+f &= \frac{1}{2\pi} \sqrt{\frac{k}{m}} \\
+  &= \frac{1}{2\pi} \sqrt{\frac{\SI{400}{\newton\per\meter}}{\SI{10}{\kilogram}}} \\
+  &= \frac{1}{2\pi} \sqrt{\SI{40}{\per\second\squared}} \\
+  &= \frac{1}{2\pi} \cdot \SI{6.32}{\per\second} \\
+  &= \doubleunderline{\SI{1.0}{\hertz}}
+\end{align}
+\end{solution}
+
+\part Beregn resonansfrekvensen for en elastisk pendel der $k = \SI{800}{\newton\per\meter}$ og $m = \SI{5.0}{\kilogram}$:
+\begin{solution}
+\begin{align}
+f &= \frac{1}{2\pi} \sqrt{\frac{k}{m}} \\
+  &= \frac{1}{2\pi} \sqrt{\frac{\SI{800}{\newton\per\meter}}{\SI{5.0}{\kilogram}}} \\
+  &= \frac{1}{2\pi} \sqrt{\SI{160}{\per\second\squared}} \\
+  &= \frac{1}{2\pi} \cdot \SI{12.65}{\per\second} \\
+  &= \doubleunderline{\SI{2.0}{\hertz}}
+\end{align}
+\end{solution}
+
+\part Beregn resonansfrekvensen for en matematisk pendel med $L = \SI{2.0}{\meter}$ og $m = \SI{40}{\kilogram}$:
+\begin{solution}
+For en matematisk pendel, resonansfrekvensen $f$ er gitt ved:
+\begin{align}
+f &= \frac{1}{2\pi} \sqrt{\frac{g}{L}} \\
+  &= \frac{1}{2\pi} \sqrt{\frac{\SI{9.81}{\meter\per\second\squared}}{\SI{2.0}{\meter}}} \\
+  &= \frac{1}{2\pi} \sqrt{\SI{4.905}{\per\second\squared}} \\
+  &= \frac{1}{2\pi} \cdot \SI{2.21}{\per\second} \\
+  &= \doubleunderline{\SI{0.35}{\hertz}}
+\end{align}
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Part A: Finn egenfrekvensen til blokkens svingning
+\begin{solution}
+Egenfrekvensen til en svingende blokk kan beregnes ved å bruke formelen for vinkelfrekvensen:
+
+\begin{align}
+\omega_{0} &= \sqrt{\frac{k}{m}} \\
+           &= \sqrt{\frac{\SI{400}{\newton\per\meter}}{\SI{200}{\kilo\gram}}} \\
+           &= \doubleunderline{\SI{1.414}{\radian\per\second}}
+\end{align}
+
+Her er \( k \) fjærkonstanten og \( m \) massen til blokken. Resultatet viser at egenfrekvensen er \(\SI{1.414}{\radian\per\second}\).
+\end{solution}
+
+\part Part B: Beregn amplituden ved resonans
+\begin{solution}
+Resonans oppstår ved den naturlige frekvensen \(\omega_{0} = \SI{1.414}{\radian\per\second}\). Ved en vinkelhastighet på \(\SI{14}{\radian\per\second}\) vil svingningene oppnå resonansfrekvensen. Amplituden kan beregnes ved:
+
+\begin{align}
+A &= \frac{F_{0}}{\sqrt{m^{2}\left(\omega_{0}^{2} - \omega_{d}^{2}\right)^{2} + (b \omega_{d})^{2}}}
+\end{align}
+
+Her er \( F_{0} \) den påførte kraften, \( \omega_{d} \) den påførte vinkelhastigheten, og \( b \) dempingskonstanten. For å finne den nøyaktige verdien av \( A \), må vi kjenne verdiene til \( F_{0} \) og \( b \).
+\end{solution}
+
+\end{parts}
+
+\begin{center}
+Placeholder for graphics: \includegraphics[width=0.5\linewidth]{path/to/image}
+\end{center}
+\end{questions}
+\end{document}

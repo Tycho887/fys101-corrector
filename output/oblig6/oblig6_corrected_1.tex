@@ -1,0 +1,173 @@
+\documentclass[answers,a4paper,12pt]{exam}
+\input{preamble.tex}
+
+\title{{\bf{FYS101 Mekanikk}} \\ \Large{\answersareprinted Oblig XX}} 
+\author{Institutt for Fysikk, REALTEK}
+\date{Uke xx}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+\question FILL QUESTION
+\begin{parts}
+
+\part Part A: Definer vinkelfart (u) og banehastighet (v_t):
+\begin{solution}
+Vinkelfart, ofte betegnet som \( u \), er hastigheten som et objekt roterer rundt en akse. Den måles vanligvis i radianer per sekund. Banehastighet, \( v_t \), er hastigheten til et punkt på en roterende kropp langs sin bane. Den er relatert til vinkelfarten ved formelen:
+\begin{align}
+v_{t} &= r \cdot u
+\end{align}
+hvor \( r \) er radiusen til banen.
+\end{solution}
+
+\part Part B: Definer vinkelakselerasjon (\(\alpha\)) og tangentiell baneakselerasjon (\(a_t\)):
+\begin{solution}
+Vinkelakselerasjon, \(\alpha\), er endringen i vinkelfart over tid. Den beskriver hvor raskt et objekt akselererer i rotasjon og måles i radianer per sekund kvadrat. Tangentiell baneakselerasjon, \(a_t\), er akselerasjonen langs banen til et punkt på en roterende kropp. Den er relatert til vinkelakselerasjonen ved formelen:
+\begin{align}
+a_{t} &= r \cdot \alpha
+\end{align}
+hvor \( r \) er radiusen til banen.
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+\part Forklar Newtons 2. lov for rotasjon:
+\begin{solution}
+Newtons andre lov for rotasjon sier at summen av de eksterne dreiemomentene (\(\sum_{i} \tau_{i}\)) som virker på et legeme er lik produktet av treghetsmomentet (\(I\)) og vinkelakselerasjonen (\(\alpha\)). Dette kan uttrykkes som:
+\begin{align}
+\sum_{i} \tau_{i} &= I \alpha
+\end{align}
+Summen av de eksterne kraftmomentene er altså lik treghetsmomentet multiplisert med vinkelakselerasjonen.
+\end{solution}
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Part A: Beregn vinkelfarten
+\begin{solution}
+Vinkelfarten, også kjent som den vinkelrette hastigheten, kan beregnes ved å bruke formelen for vinkelfart:
+
+\begin{align}
+\omega &= \frac{v}{r} \\
+       &= \frac{\SI{25}{\meter\per\second}}{\SI{90}{\meter}} \\
+\omega &= \doubleunderline{\SI{0.28}{\radian\per\second}}
+\end{align}
+
+Vinkelfarten er altså \SI{0.28}{\radian\per\second}.
+\end{solution}
+
+\part Part B: Beregn antall omdreininger i løpet av \SI{30}{\second}
+\begin{solution}
+Antall omdreininger kan beregnes ved å multiplisere vinkelfarten med tiden og deretter konvertere til omdreininger:
+
+\begin{align}
+\theta &= \omega \cdot t \\
+       &= \SI{0.28}{\radian\per\second} \cdot \SI{30}{\second} \cdot \frac{1 \text{ rev}}{2\pi \text{ rad}} \\
+\theta &= \doubleunderline{\SI{1.3}{rev}}
+\end{align}
+
+Antall omdreininger i løpet av \SI{30}{\second} er \SI{1.3}{rev}.
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Beregn den opprinnelige vinkelfarten $w_0$:
+\begin{solution}
+Vi starter med å bruke formelen for konstant vinkelakselerasjon:
+
+\begin{align}
+\omega_1 &= \omega_0 + \alpha \cdot t \\
+\alpha &= \frac{\omega_1 - \omega_0}{t} \\
+\alpha &= \frac{-\omega_0}{t} \quad \text{(siden $\omega_1 = 0$)}
+\end{align}
+
+Sett inn i bevegelseslikningen:
+
+\begin{align}
+\theta_1 &= \theta_0 + \omega_0 t + \frac{1}{2} \alpha t^2 \\
+\theta_1 &= \theta_0 + \omega_0 t - \frac{1}{2} \frac{\omega_0}{t} t^2 \\
+\theta_1 &= \omega_0 t - \frac{1}{2} \omega_0 t \\
+\theta_1 &= \frac{1}{2} \omega_0 t
+\end{align}
+
+Løs for $\omega_0$:
+
+\begin{align}
+\omega_0 &= \frac{2 \theta_1}{t} \\
+&= \frac{2 \times 5.0 \, \text{rad}}{2.8 \, \text{s}} \\
+\omega_0 &= \doubleunderline{3.6 \, \text{rad/s}}
+\end{align}
+
+Vinkelfarten var altså $\SI{3.6}{\radian\per\second}$ før hjulet begynte å bremse.
+\end{solution}
+
+\end{parts}
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Beregn treghetsmomentet for en solid sfære som roterer om en akse tangent til overflaten:
+\begin{solution}
+For å finne treghetsmomentet når sfæren roterer om en tangentakse, bruker vi parallellakse-teoremet. Treghetsmomentet om massesenteret er gitt ved:
+
+\[
+I_{\mathrm{cm}} = \frac{2}{5} M R^{2}
+\]
+
+Ved bruk av parallellakse-teoremet, der \( h = R \), får vi:
+
+\[
+I = I_{\mathrm{cm}} + M h^{2}
+\]
+
+Setter inn uttrykket for \( I_{\mathrm{cm}} \):
+
+\begin{align}
+I &= \frac{2}{5} M R^{2} + M R^{2} \\
+  &= \frac{2}{5} M R^{2} + \frac{5}{5} M R^{2} \\
+  &= \frac{7}{5} M R^{2}
+\end{align}
+
+Derfor er treghetsmomentet når sfæren roterer om en tangentakse \doubleunderline{\(\frac{7}{5} M R^{2}\)}.
+\end{solution}
+
+\end{parts}
+
+\question Beregn treghetsmomentet for et hjul:
+\begin{parts}
+\part Del A: Definer treghetsmoment for ulike komponenter
+\begin{solution}
+Treghetsmomentet, også kjent som rotasjonsinerti, er et mål på hvor vanskelig det er å endre rotasjonstilstanden til et objekt. For en masse \( M \) som roterer rundt en akse, er treghetsmomentet gitt ved:
+\[
+I_{\text{hjul}} = M R^2
+\]
+For en stang med masse \( m \) og lengde \( L \), som roterer rundt en ende, er treghetsmomentet:
+\[
+I_{\text{eike}} = \frac{1}{3} m L^2
+\]
+\end{solution}
+
+\part Del B: Beregn hele hjulets treghetsmoment
+\begin{solution}
+Vi har at \( R = L = \frac{D}{2} \). Hele hjulets treghetsmoment er summen av alle delkomponentenes treghetsmoment:
+\begin{align}
+I & = I_{\text{hjul}} + 6 \cdot I_{\text{eike}} \\
+  & = M R^2 + 6 \cdot \frac{1}{3} m L^2 \\
+  & = \frac{1}{4} M D^2 + \frac{1}{2} m D^2 \\
+  & = \frac{1}{4}(M + 2m) D^2 \\
+  & = \frac{1}{4}(8.00 \, \mathrm{kg} + 2 \cdot 1.20 \, \mathrm{kg}) \cdot (1.00 \, \mathrm{m})^2 \\
+  & = \frac{1}{4}(8.00 + 2.40) \, \mathrm{kg} \cdot 1.00 \, \mathrm{m}^2 \\
+  & = \frac{1}{4} \cdot 10.40 \, \mathrm{kg} \cdot 1.00 \, \mathrm{m}^2 \\
+  & = \doubleunderline{2.60 \, \mathrm{kg \cdot m^2}}
+\end{align}
+\end{solution}
+\end{parts}
+\end{questions}
+\end{document}
