@@ -1,0 +1,224 @@
+\documentclass[answers,a4paper,12pt]{exam}
+\input{preamble.tex}
+
+\title{{\bf{FYS101 Mekanikk}} \\ \Large{\answersareprinted Oblig XX}} 
+\author{Institutt for Fysikk, REALTEK}
+\date{Uke xx}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+
+\question Bruk Newtons lover for å løse følgende problem:
+\begin{parts}
+
+\part Bruk Newtons andre lov for rotasjon:
+\begin{solution}
+Vi starter med å bruke Newtons andre lov for rotasjon, som er gitt ved:
+\begin{align}
+\Sigma \tau &= I \alpha \quad (a = \alpha R)
+\end{align}
+Her er momentet $\Sigma \tau = T R$, og treghetsmomentet $I = \frac{2}{5} M R^2$. Vi setter inn:
+\begin{align}
+T R &= \frac{2}{5} M R^2 \cdot \frac{a}{R} \\
+T &= \frac{2}{5} M a \quad \text{(I)}
+\end{align}
+\end{solution}
+
+\part Bruk Newtons andre lov for klossen i $y$-retning:
+\begin{solution}
+For klossen bruker vi Newtons andre lov i $y$-retning:
+\begin{align}
+\sum F_y &= m a \quad (a_y = a, \text{all bevegelse skjer i } y\text{-retning}) \\
+E_g - T &= m a \quad \text{(II)}
+\end{align}
+Setter likning (I) inn i likning (II):
+\begin{align}
+m g - \frac{2}{5} M a &= m a \\
+a\left(m + \frac{2}{5} M\right) &= m g \\
+a &= \frac{m}{m + \frac{2}{5} M} g \quad \text{(III)}
+\end{align}
+\end{solution}
+
+\part Beregn spenningen $T$ ved å sette likning (III) inn i likning (I):
+\begin{solution}
+Vi setter likning (III) inn i likning (I) for å finne spenningen $T$:
+\begin{align}
+T &= \frac{2}{5} M \frac{m}{m + \frac{2}{5} M} g \\
+T &= \frac{2 m M}{5 m + 2 M} g \\
+T &= \doubleunderline{\frac{2 g}{\frac{5}{M} + \frac{2}{m}}}
+\end{align}
+\end{solution}
+
+\end{parts}
+
+
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Finner spinnet når hjulet roterer:
+\begin{solution}
+For å finne spinnet, bruker vi formelen for angulært moment \( L \):
+\begin{align}
+L & = m_h \cdot r \cdot \omega \\
+  & = \frac{F_{gh}}{g} \cdot \omega \cdot r^2 \\
+  & = \frac{\SI{30}{\newton}}{\SI{9.81}{\meter\per\second\squared}} \cdot \SI{12}{\radian\per\second} \cdot \left(\SI{28e-2}{\meter}\right)^2 \\
+  & = \doubleunderline{\SI{18}{\kilogram\meter\squared\per\second}}
+\end{align}
+Spinnet er altså \SI{18}{\kilogram\meter\squared\per\second} når hjulet roterer.
+\end{solution}
+
+\part Utrikket for presesjonsvinkelhastighet:
+\begin{solution}
+Presesjonsvinkelhastigheten \(\omega_p\) er gitt ved:
+\begin{align}
+\omega_p & = \frac{F_{gh} \cdot D}{2 \cdot L} \\
+         & = \frac{\SI{30}{\newton} \cdot \SI{0.50}{\meter}}{2 \cdot \SI{18}{\kilogram\meter\squared\per\second}} \\
+         & = \doubleunderline{\SI{0.42}{\radian\per\second}}
+\end{align}
+Presesjonsvinkelhastigheten er \SI{0.42}{\radian\per\second}.
+\end{solution}
+
+\part Finner tiden \( T \):
+\begin{solution}
+Tiden \( T \) er relatert til frekvensen \( f \) ved:
+\begin{align}
+T & = \frac{1}{f} \quad \left(f = \frac{\omega}{2\pi}\right) \\
+  & = \frac{2\pi}{\omega} \\
+  & = \frac{2\pi}{\SI{0.42}{\radian\per\second}} \\
+  & = \doubleunderline{\SI{15}{\second}}
+\end{align}
+Tiden \( T \) er \SI{15}{\second}.
+\end{solution}
+
+\part Spinnet assosiert med bevegelse til massesenteret:
+\begin{solution}
+Spinnet \( L_p \) er gitt ved:
+\begin{align}
+L_p & = I_{cm} \cdot \omega_p \quad \left(I_{cm} = m \left(\frac{D}{2}\right)^2\right) \\
+    & = \frac{F_{gh} \cdot D^2 \cdot \omega_p}{4 \cdot g} \\
+    & = \frac{\SI{30}{\newton} \cdot \left(\SI{0.50}{\meter}\right)^2 \cdot \SI{0.42}{\radian\per\second}}{4 \cdot \SI{9.81}{\meter\per\second\squared}} \\
+    & = \doubleunderline{\SI{0.080}{\kilogram\meter\squared}}
+\end{align}
+Spinnet grunnet presesjon er \SI{0.080}{\kilogram\meter\squared}.
+\end{solution}
+
+\end{parts}
+
+
+\question FILL QUESTION
+\begin{parts}
+\part Forklar hva lineær kinetisk energi er:
+\begin{solution}
+Lineær kinetisk energi er energien et objekt har på grunn av sin bevegelse langs en rett linje. Den beregnes ved hjelp av formelen:
+\[
+E_k = \frac{1}{2} m v^2
+\]
+hvor \(E_k\) er den kinetiske energien, \(m\) er massen til objektet, og \(v\) er hastigheten.
+\end{solution}
+
+\part Beregn den lineære kinetiske energien for et objekt med masse \SI{5}{\kilo\gram} og hastighet \SI{10}{\meter\per\second}:
+\begin{solution}
+\centering
+\begin{align}
+E_k &= \frac{1}{2} \cdot m \cdot v^2 \\
+    &= \frac{1}{2} \cdot \SI{5}{\kilo\gram} \cdot \left(\SI{10}{\meter\per\second}\right)^2 \\
+    &= \frac{1}{2} \cdot \SI{5}{\kilo\gram} \cdot \SI{100}{\meter\squared\per\second\squared} \\
+    &= \SI{250}{\joule} \\
+    &= \doubleunderline{\SI{250}{\joule}}
+\end{align}
+\end{solution}
+\end{parts}
+
+\question Calculate the moment of inertia for a solid cylinder:
+\begin{parts}
+\part Define the moment of inertia for a solid cylinder:
+\begin{solution}
+Moment of inertia, often denoted as \(I\), is a measure of an object's resistance to changes in its rotation. For a solid cylinder, the moment of inertia is given by the formula:
+\[
+I = \frac{1}{2} M R^2
+\]
+where \(M\) is the mass of the cylinder and \(R\) is the radius.
+\end{solution}
+
+\part Calculate the moment of inertia given \(M = \SI{5}{\kilogram}\) and \(R = \SI{0.3}{\meter}\):
+\begin{solution}
+\centering
+\begin{align}
+I & = \frac{1}{2} M R^2 \\
+  & = \frac{1}{2} \times \SI{5}{\kilogram} \times \left(\SI{0.3}{\meter}\right)^2 \\
+  & = \frac{1}{2} \times \SI{5}{\kilogram} \times \SI{0.09}{\meter\squared} \\
+  & = \SI{0.225}{\kilogram\meter\squared} \\
+  & = \doubleunderline{\SI{0.225}{\kilogram\meter\squared}}
+\end{align}
+\end{solution}
+\end{parts}
+
+
+\question FILL QUESTION
+\begin{parts}
+\part Forklar hva angulær kinetisk energi er:
+\begin{solution}
+Angulær kinetisk energi er energien som et roterende objekt har på grunn av sin rotasjon. Den er avhengig av objektets treghetsmoment \( I \) og dets vinkelhastighet \( \omega \). Formelen for angulær kinetisk energi er gitt ved:
+\[
+E_{\text{rot}} = \frac{1}{2} I \omega^2
+\]
+\end{solution}
+
+\part Beregn angulær kinetisk energi gitt \( I = \SI{10}{\kilogram\meter\squared} \) og \( \omega = \SI{5}{\radian\per\second} \):
+\begin{solution}
+\centering
+\begin{align}
+E_{\text{rot}} &= \frac{1}{2} I \omega^2 \\
+               &= \frac{1}{2} \times \SI{10}{\kilogram\meter\squared} \times \left(\SI{5}{\radian\per\second}\right)^2 \\
+               &= \frac{1}{2} \times \SI{10}{\kilogram\meter\squared} \times \SI{25}{\radian\squared\per\second\squared} \\
+               &= \SI{125}{\joule} \\
+               &= \doubleunderline{\SI{125}{\joule}}
+\end{align}
+\end{solution}
+\end{parts}
+
+
+
+\question Beregn massen til et svinghjul som kan stoppe en bil ved å konvertere all bilens kinetiske energi til rotasjonsenergi i svinghjulet.
+\begin{parts}
+
+\part Gitt data for bilen:
+\begin{solution}
+\begin{align}
+m &= \SI{1200}{\kilo\gram} \\
+v &= \SI{120}{\kilo\meter\per\hour} \\
+  &= \SI{120}{\kilo\meter\per\hour} \cdot \frac{\SI{1000}{\meter}}{\SI{1}{\kilo\meter}} \cdot \frac{\SI{1}{\hour}}{\SI{3600}{\second}} \\
+  &= \SI{33.33}{\meter\per\second}
+\end{align}
+\end{solution}
+
+\part Gitt data for svinghjulet:
+\begin{solution}
+\begin{align}
+R &= \SI{12e-2}{\meter} \\
+I &= \frac{1}{2} M R^{2} \\
+\omega &= \SI{60000}{\revolutions\per\minute} \\
+       &= \SI{60000}{\revolutions\per\minute} \cdot \frac{2\pi \, \text{rad}}{\SI{1}{\revolution}} \cdot \frac{\SI{1}{\minute}}{\SI{60}{\second}} \\
+       &= \SI{6283.19}{\radian\per\second}
+\end{align}
+\end{solution}
+
+\part Beregn massen til svinghjulet:
+\begin{solution}
+\begin{align}
+K_{\text{bil}} &= K_{\text{svinghjul}} \\
+\frac{1}{2} m v^{2} &= \frac{1}{2} I \omega^{2} \\
+\frac{1}{2} m v^{2} &= \frac{1}{2} \cdot \frac{1}{2} M R^{2} \omega^{2} \\
+M &= \frac{2 m v^{2}}{R^{2} \omega^{2}} \\
+  &= \frac{2 \cdot \SI{1200}{\kilo\gram} \cdot \left(\SI{33.33}{\meter\per\second}\right)^{2}}{\left(\SI{12e-2}{\meter}\right)^{2} \cdot \left(\SI{6283.19}{\radian\per\second}\right)^{2}} \\
+  &= \doubleunderline{\SI{4.7}{\kilo\gram}}
+\end{align}
+\end{solution}
+
+\end{parts}
+
+\end{questions}
+\end{document}

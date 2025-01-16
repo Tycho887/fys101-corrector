@@ -1,0 +1,245 @@
+\documentclass[answers,a4paper,12pt]{exam}
+\input{preamble.tex}
+
+\title{{\bf{FYS101 Mekanikk}} \\ \Large{\answersareprinted Oblig XX}} 
+\author{Institutt for Fysikk, REALTEK}
+\date{Uke xx}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+\question Definer nøkkelbegreper i "Del A":
+\begin{parts}
+\part Definer referansesystem:
+\begin{solution}
+Et referansesystem er et system vi beskriver bevegelser i forhold til. Det gir oss et fast punkt eller rammeverk for å måle og beskrive posisjoner og bevegelser.
+\end{solution}
+
+\part Definer treghetssystem:
+\begin{solution}
+Et treghetssystem er et referansesystem som ikke er under akselerasjon. I et slikt system vil et objekt i bevegelse fortsette i en rett linje med konstant hastighet med mindre det påvirkes av en ytre kraft.
+\end{solution}
+
+\part Definer uavhengighetsprinsippet:
+\begin{solution}
+Uavhengighetsprinsippet innebærer at man kan dekomponere vektorer og analysere hver retning for seg. Hver retning er uavhengig av hverandre, noe som betyr at bevegelse i én retning ikke påvirker bevegelse i en annen retning.
+\end{solution}
+
+\part Definer friksjonskraft:
+\begin{solution}
+Friksjonskraft er kraften mellom to objekter som er i kontakt med hverandre, som motvirker glidning mellom objektene. Denne kraften virker i motsatt retning av bevegelsen eller den potensielle bevegelsen.
+\end{solution}
+\end{parts}
+
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Del B: Forklar hvordan friksjonskrefter virker:
+\begin{solution}
+Friksjonskrefter virker parallelt med kontaktoverflatene mellom to objekter. Disse kreftene har en retning som motarbeider glidning mellom objektene. Friksjon oppstår på grunn av ujevnheter i overflatene som griper inn i hverandre, og den kan deles inn i statisk friksjon (før bevegelse starter) og kinetisk friksjon (under bevegelse).
+\end{solution}
+
+\part Del C: FILL QUESTION
+\begin{solution}
+FILL SOLUTION
+\end{solution}
+
+\end{parts}
+
+
+\question Hookes lov
+\begin{parts}
+\part Forklar Hookes lov:
+\begin{solution}
+Hookes lov beskriver hvordan kraften som virker på en fjær er proporsjonal med forskyvningen fra dens likevektsposisjon. Loven er gitt ved ligningen:
+\[
+F_{x} = -k x
+\]
+hvor \(k\) er fjærkonstanten, som er et mål på fjærens stivhet. En negativ verdi av \(x\) betyr at fjæren har blitt presset sammen en avstand \(|x|\) fra likevektsposisjonen. Det negative fortegnet i ligningen indikerer at når fjæren blir strukket eller presset sammen i en retning, virker kraften i motsatt retning.
+\end{solution}
+
+\part Hva betyr fjærkonstanten \(k\)?
+\begin{solution}
+Fjærkonstanten \(k\) er et mål på hvor stiv fjæren er. En høy verdi av \(k\) betyr at fjæren er veldig stiv og krever mer kraft for å bli strukket eller presset sammen. En lav verdi av \(k\) betyr at fjæren er mer fleksibel.
+\end{solution}
+
+\part Hvordan påvirker forskyvningen \(x\) kraften \(F_x\)?
+\begin{solution}
+Forskyvningen \(x\) er avstanden fjæren er strukket eller presset sammen fra sin likevektsposisjon. Kraften \(F_x\) er proporsjonal med denne forskyvningen, noe som betyr at jo større forskyvningen er, desto større er kraften som virker på fjæren. Retningen av kraften er motsatt av forskyvningen, som indikert av det negative fortegnet i ligningen.
+\end{solution}
+\end{parts}
+
+
+\question Beregn snordraget $\vec{T}$ og normalkraften $\vec{F}_{n}$ for en blokk på en skråplan:
+\begin{parts}
+\part Del A: Beregn snordraget $\vec{T}$ og normalkraften $\vec{F}_{n}$
+\begin{solution}
+Vi starter med å bruke Newtons 2. lov i $x$-retning:
+
+\begin{align}
+\sum F_{x} &= m a_{x} \quad \text{hvor} \quad a_{x} = 0 \quad (v = 0) \\
+\sum F_{x} &= 0 \\
+T - F_{g x} &= 0 \\
+T &= F_{g x} \\
+T &= F_{g} \cdot \sin \theta \\
+T &= m \cdot g \cdot \sin \theta \\
+T &= 50 \, \mathrm{kg} \cdot 9,81 \, \mathrm{m/s^2} \cdot \sin 60^{\circ} \\
+T &= \doubleunderline{\SI{0.42}{\kilo\newton}}
+\end{align}
+
+Nå bruker vi Newtons 2. lov i $y$-retning:
+
+\begin{align}
+\sum F_{y} &= m a_{y} \quad \text{hvor} \quad a_{y} = 0 \quad (v = 0) \\
+\sum F_{y} &= 0 \\
+F_{n} - F_{g y} &= 0 \\
+F_{n} &= F_{g y} \\
+F_{n} &= F_{g} \cdot \cos \theta \\
+F_{n} &= m \cdot g \cdot \cos \theta \\
+F_{n} &= 50 \, \mathrm{kg} \cdot 9,81 \, \mathrm{m/s^2} \cdot \cos 60^{\circ} \\
+F_{n} &= \doubleunderline{\SI{0.25}{\kilo\newton}}
+\end{align}
+
+Snordraget er \SI{0.42}{\kilo\newton} og normalkraften er \SI{0.25}{\kilo\newton}.
+\end{solution}
+
+\part Del B: Finn snordraget som en funksjon av $\theta$ og $m$
+\begin{solution}
+Vi bruker resonementet fra deloppgave A:
+
+\begin{align}
+T &= m \cdot g \cdot \sin \theta
+\end{align}
+
+Når $\theta = 0^{\circ}$, har vi $\sin 0^{\circ} = 0$:
+
+\begin{align}
+T &= 0
+\end{align}
+
+Når $\theta = 90^{\circ}$, har vi $\sin 90^{\circ} = 1$:
+
+\begin{align}
+T &= m \cdot g = F_{g}
+\end{align}
+
+Disse resultatene er begge rimelige.
+\end{solution}
+\end{parts}
+
+
+
+\question Analyser kreftene som virker på en skråplan:
+\begin{parts}
+
+\part Newtons 2. lov i $y$-retningen:
+\begin{solution}
+For et objekt på et skråplan, kan vi bruke Newtons 2. lov for å analysere kreftene i $y$-retningen (vinkelrett på skråplanet). Vi har:
+
+\begin{align}
+\sum F_{y} &= m \cdot a_{y} \quad \text{(siden det ikke er akselerasjon i $y$-retningen, er $a_{y} = 0$)} \\
+\sum F_{y} &= 0 \\
+F_{n} - F_{g_y} &= 0 \\
+F_{n} &= F_{g_y} \\
+F_{n} &= F_{g} \cdot \cos \theta \\
+F_{n} &= m \cdot g \cdot \cos \theta
+\end{align}
+
+Hvor $F_{n}$ er normalkraften, $F_{g_y}$ er komponenten av tyngdekraften i $y$-retningen, $m$ er massen, $g$ er tyngdeakselerasjonen, og $\theta$ er vinkelen til skråplanet.
+
+For en masse $m = \SI{65}{\kilo\gram}$ og en vinkel $\theta = 30^{\circ}$, finner vi:
+
+\begin{align}
+F_{n} &= \SI{65}{\kilo\gram} \cdot \SI{9.81}{\meter\per\second\squared} \cdot \cos 30^{\circ} \\
+F_{n} &= \doubleunderline{\SI{0.55}{\kilo\newton}}
+\end{align}
+\end{solution}
+
+\part Forklar kraftmålingen på skråplanet:
+\begin{solution}
+Kraftmålingen på skråplanet viser at normalkraften $F_{n}$ er \SI{0.55}{\kilo\newton}. Dette er i samsvar med beregningene våre, som viser at normalkraften balanserer komponenten av tyngdekraften vinkelrett på skråplanet.
+\end{solution}
+
+\end{parts}
+
+
+
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Del A: Finn $a_{x}$ og $T$ uttrykt ved $\theta, m_{1}, g, m_{2}$
+
+\begin{solution}
+Newtons 2. lov for $m_{1}$ i $x$-retning:
+
+\begin{align}
+\sum F_{1 x} &= m_{1} a_{1 x} \\
+T - F_{g x 1} &= m_{1} a_{x} \\
+T &= m_{1} a_{x} + F_{g x 1} \\
+T &= m_{1} a_{x} + m_{1} \cdot g \cdot \sin \theta
+\end{align}
+
+Newtons 2. lov for $m_{2}$ i $x$-retning:
+
+\begin{align}
+\sum F_{2 x} &= m_{2} a_{2 x} \\
+F_{g 2} - T &= m_{2} a_{x} \\
+T &= F_{g 2} - m_{2} a_{x} \\
+T &= m_{2} \cdot g - m_{2} a_{x}
+\end{align}
+
+Vi har nå to uttrykk for $T$. Vi setter de lik hverandre og løser for $a_{x}$:
+
+\begin{align}
+m_{1} a_{x} + m_{1} g \sin \theta &= m_{2} g - m_{2} a_{x} \\
+m_{1} a_{x} + m_{2} a_{x} &= m_{2} g - m_{1} g \sin \theta \\
+a_{x}(m_{1} + m_{2}) &= g(m_{2} - m_{1} \sin \theta) \\
+a_{x} &= \frac{g(m_{2} - m_{1} \sin \theta)}{m_{1} + m_{2}}
+\end{align}
+
+Vi kan nå sette $a_{x}$ inn i en av de to uttrykkene for $T$ og løse for $T$. Vi setter inn i den andre:
+
+\begin{align}
+T &= m_{2} g - m_{2} a_{x} \\
+T &= m_{2} g - m_{2} \cdot \frac{g(m_{2} - m_{1} \sin \theta)}{m_{1} + m_{2}} \\
+T &= \frac{m_{2}(m_{1} + m_{2}) - m_{2}(m_{2} - m_{1} \sin \theta)}{m_{1} + m_{2}} g \\
+T &= \frac{m_{2}(m_{1} + m_{2} - m_{2} + m_{1} \sin \theta)}{m_{1} + m_{2}} g \\
+T &= \frac{m_{1} m_{2}(1 + \sin \theta)}{m_{1} + m_{2}} g
+\end{align}
+\end{solution}
+
+\part Del B: Når $m_{1} = m_{2} = m = \SI{5.0}{\kilo\gram}$, $\theta = 30^{\circ}$
+
+Finn $a_{x}$:
+
+\begin{solution}
+\begin{align}
+a_{x} &= \frac{g(m_{2} - m_{1} \sin \theta)}{m_{1} + m_{2}} \\
+a_{x} &= \frac{g(m - m \sin \theta)}{m + m} \\
+a_{x} &= \frac{mg(1 - \sin \theta)}{2m} \\
+a_{x} &= \frac{1}{2} g(1 - \sin \theta) \\
+a_{x} &= \frac{1}{2} \cdot \SI{9.81}{\meter\per\second\squared} \cdot (1 - \sin 30^{\circ}) \\
+a_{x} &= \doubleunderline{\SI{2.5}{\meter\per\second\squared}}
+\end{align}
+\end{solution}
+
+Finn $T$:
+
+\begin{solution}
+\begin{align}
+T &= \frac{m_{1} m_{2}(1 + \sin \theta)}{m_{1} + m_{2}} g \\
+T &= \frac{m \cdot m(1 + \sin \theta)}{m + m} g \\
+T &= \frac{1}{2} mg(1 + \sin \theta) \\
+T &= \frac{1}{2} \cdot \SI{5.0}{\kilo\gram} \cdot \SI{9.81}{\meter\per\second\squared} \cdot (1 + \sin 30^{\circ}) \\
+T &= \doubleunderline{\SI{37}{\newton}}
+\end{align}
+\end{solution}
+
+Akselerasjonen er \SI{2.5}{\meter\per\second\squared} og snordraget er \SI{37}{\newton}.
+\end{parts}
+
+\end{questions}
+\end{document}

@@ -9,165 +9,205 @@
 \maketitle
 
 \begin{questions}
-\question FILL QUESTION
+\question Definer nøkkelbegreper i "Del A":
 \begin{parts}
-
-\part Part A: Definer vinkelfart (u) og banehastighet (v_t):
+\part Definer vinkelhastighet (u) og banehastighet (v_t):
 \begin{solution}
-Vinkelfart, ofte betegnet som \( u \), er hastigheten som et objekt roterer rundt en akse. Den måles vanligvis i radianer per sekund. Banehastighet, \( v_t \), er hastigheten til et punkt på en roterende kropp langs sin bane. Den er relatert til vinkelfarten ved formelen:
+Vinkelhastighet, ofte betegnet som \( u \), er hastigheten med hvilken en gjenstand roterer rundt en akse. Banehastighet, \( v_t \), er den lineære hastigheten til et punkt på en roterende gjenstand, som kan uttrykkes som:
 \begin{align}
-v_{t} &= r \cdot u
+v_{t} &= r \cdot u \cdot t
 \end{align}
-hvor \( r \) er radiusen til banen.
+hvor \( r \) er radiusen til rotasjonen, \( u \) er vinkelhastigheten, og \( t \) er tiden.
 \end{solution}
 
-\part Part B: Definer vinkelakselerasjon (\(\alpha\)) og tangentiell baneakselerasjon (\(a_t\)):
+\part Definer vinkelakselerasjon (\(\alpha\)) og tangentiell banakselerasjon (\(a_t\)):
 \begin{solution}
-Vinkelakselerasjon, \(\alpha\), er endringen i vinkelfart over tid. Den beskriver hvor raskt et objekt akselererer i rotasjon og måles i radianer per sekund kvadrat. Tangentiell baneakselerasjon, \(a_t\), er akselerasjonen langs banen til et punkt på en roterende kropp. Den er relatert til vinkelakselerasjonen ved formelen:
+Vinkelakselerasjon, \(\alpha\), er endringen i vinkelhastighet over tid. Tangentiell banakselerasjon, \(a_t\), er akselerasjonen langs en bane som er tangent til rotasjonsbanen, og kan uttrykkes som:
 \begin{align}
 a_{t} &= r \cdot \alpha
 \end{align}
-hvor \( r \) er radiusen til banen.
+hvor \( r \) er radiusen til rotasjonen og \(\alpha\) er vinkelakselerasjonen.
 \end{solution}
-
 \end{parts}
 
-\question FILL QUESTION
+
+\question Definer nøkkelkonsepter i "Del B":
 \begin{parts}
 \part Forklar Newtons 2. lov for rotasjon:
 \begin{solution}
-Newtons andre lov for rotasjon sier at summen av de eksterne dreiemomentene (\(\sum_{i} \tau_{i}\)) som virker på et legeme er lik produktet av treghetsmomentet (\(I\)) og vinkelakselerasjonen (\(\alpha\)). Dette kan uttrykkes som:
+Newtons 2. lov for rotasjon sier at summen av de ytre dreiemomentene er lik produktet av treghetsmomentet og vinkelakselerasjonen. Matematisk uttrykt som:
 \begin{align}
 \sum_{i} \tau_{i} &= I \alpha
 \end{align}
-Summen av de eksterne kraftmomentene er altså lik treghetsmomentet multiplisert med vinkelakselerasjonen.
+Her er \(\tau_{i}\) det ytre dreiemomentet, \(I\) er treghetsmomentet, og \(\alpha\) er vinkelakselerasjonen.
 \end{solution}
 \end{parts}
+
 
 \question FILL QUESTION
 \begin{parts}
 
-\part Part A: Beregn vinkelfarten
+\part Beregn vinkelfarten:
 \begin{solution}
-Vinkelfarten, også kjent som den vinkelrette hastigheten, kan beregnes ved å bruke formelen for vinkelfart:
+Vinkelfarten \( w \) kan beregnes ved å bruke formelen for vinkelfart, som er forholdet mellom den lineære hastigheten \( v \) og radiusen \( r \) av sirkelen:
 
 \begin{align}
-\omega &= \frac{v}{r} \\
-       &= \frac{\SI{25}{\meter\per\second}}{\SI{90}{\meter}} \\
-\omega &= \doubleunderline{\SI{0.28}{\radian\per\second}}
+w &= \frac{v}{r} \\
+  &= \frac{\SI{25}{\meter\per\second}}{\SI{90}{\meter}} \\
+w &= \doubleunderline{\SI{0.28}{\radian\per\second}}
 \end{align}
 
-Vinkelfarten er altså \SI{0.28}{\radian\per\second}.
+Vinkelfarten er altså \(\SI{0.28}{\radian\per\second}\).
 \end{solution}
 
-\part Part B: Beregn antall omdreininger i løpet av \SI{30}{\second}
+\part Beregn antall omdreininger i løpet av \( t = \SI{30}{\second} \):
 \begin{solution}
-Antall omdreininger kan beregnes ved å multiplisere vinkelfarten med tiden og deretter konvertere til omdreininger:
+Antall omdreininger kan beregnes ved å multiplisere vinkelfarten \( w \) med tiden \( t \), og deretter konvertere fra radianer til omdreininger:
 
 \begin{align}
-\theta &= \omega \cdot t \\
+\theta &= w \cdot t \\
        &= \SI{0.28}{\radian\per\second} \cdot \SI{30}{\second} \cdot \frac{1 \text{ rev}}{2\pi \text{ rad}} \\
-\theta &= \doubleunderline{\SI{1.3}{rev}}
+\theta &= \doubleunderline{\SI{1.3}{\text{ rev}}}
 \end{align}
 
-Antall omdreininger i løpet av \SI{30}{\second} er \SI{1.3}{rev}.
+Antall omdreininger i løpet av \(\SI{30}{\second}\) er \(\SI{1.3}{\text{ rev}}\).
 \end{solution}
 
 \end{parts}
 
-\question FILL QUESTION
+\question Beregn vinkelfarten for et hjul:
 \begin{parts}
-
-\part Beregn den opprinnelige vinkelfarten $w_0$:
+\part Gitt data:
 \begin{solution}
-Vi starter med å bruke formelen for konstant vinkelakselerasjon:
-
-\begin{align}
-\omega_1 &= \omega_0 + \alpha \cdot t \\
-\alpha &= \frac{\omega_1 - \omega_0}{t} \\
-\alpha &= \frac{-\omega_0}{t} \quad \text{(siden $\omega_1 = 0$)}
-\end{align}
-
-Sett inn i bevegelseslikningen:
-
-\begin{align}
-\theta_1 &= \theta_0 + \omega_0 t + \frac{1}{2} \alpha t^2 \\
-\theta_1 &= \theta_0 + \omega_0 t - \frac{1}{2} \frac{\omega_0}{t} t^2 \\
-\theta_1 &= \omega_0 t - \frac{1}{2} \omega_0 t \\
-\theta_1 &= \frac{1}{2} \omega_0 t
-\end{align}
-
-Løs for $\omega_0$:
-
-\begin{align}
-\omega_0 &= \frac{2 \theta_1}{t} \\
-&= \frac{2 \times 5.0 \, \text{rad}}{2.8 \, \text{s}} \\
-\omega_0 &= \doubleunderline{3.6 \, \text{rad/s}}
-\end{align}
-
-Vinkelfarten var altså $\SI{3.6}{\radian\per\second}$ før hjulet begynte å bremse.
+Vi har følgende initialbetingelser:
+\begin{align*}
+\omega_{1} &= 0 \\
+\theta_{1} &= \SI{5.0}{\radian} \\
+\theta_{0} &= 0 \\
+t &= \SI{2.8}{\second}
+\end{align*}
 \end{solution}
 
+\part Beregn vinkelakselerasjonen:
+\begin{solution}
+Den konstante vinkelakselerasjonen er gitt ved:
+\begin{align}
+\omega_{1} &= \omega_{0} + \alpha \cdot t \\
+\alpha &= \frac{\omega_{1} - \omega_{0}}{t} \\
+\alpha &= \frac{-\omega_{0}}{t} \quad \text{(I)}
+\end{align}
+\end{solution}
+
+\part Sett inn likning (I) i bevegelseslikningen:
+\begin{solution}
+Vi bruker bevegelseslikningen for vinkel:
+\begin{align}
+\theta_{1} &= \theta_{0} + \omega_{0} t + \frac{1}{2} \alpha t^{2}
+\end{align}
+Setter inn likning (I):
+\begin{align}
+\theta_{1} &= \theta_{0} + \omega_{0} t - \frac{1}{2} \frac{\omega_{0}}{t} t^{2} \\
+&= \omega_{0} t - \frac{1}{2} \omega_{0} t \\
+\theta_{1} &= \frac{1}{2} \omega_{0} t
+\end{align}
+\end{solution}
+
+\part Løs for $\omega_{0}$:
+\begin{solution}
+Vi løser med hensyn på $\omega_{0}$:
+\begin{align}
+\omega_{0} &= \frac{2 \theta_{1}}{t} \\
+&= \frac{2 \times \SI{5.0}{\radian}}{\SI{2.8}{\second}} \\
+\omega_{0} &= \doubleunderline{\SI{3.6}{\radian\per\second}}
+\end{align}
+\end{solution}
 \end{parts}
 
-\question FILL QUESTION
-\begin{parts}
-
-\part Beregn treghetsmomentet for en solid sfære som roterer om en akse tangent til overflaten:
+\question Forklar resultatet:
 \begin{solution}
-For å finne treghetsmomentet når sfæren roterer om en tangentakse, bruker vi parallellakse-teoremet. Treghetsmomentet om massesenteret er gitt ved:
+Vinkelfarten var på \SI{3.6}{\radian\per\second} før hjulet begynte å bremse. Dette betyr at hjulet roterte med denne hastigheten før noen bremsekraft ble påført.
+\end{solution}
 
+
+\question Beregn treghetsmomentet for en solid sfære:
+\begin{parts}
+\part Treghetsmomentet for en solid sfære om sitt eget massesenter er gitt ved:
+\begin{solution}
+Treghetsmomentet for en solid sfære om sitt eget massesenter er gitt ved formelen:
 \[
 I_{\mathrm{cm}} = \frac{2}{5} M R^{2}
 \]
+hvor \( M \) er massen til sfæren og \( R \) er radiusen.
+\end{solution}
 
-Ved bruk av parallellakse-teoremet, der \( h = R \), får vi:
-
+\part Bruk parallellakse-teoremet for å finne treghetsmomentet når sfæren roterer om en akse tangent til overflaten:
+\begin{solution}
+Parallellakse-teoremet sier at treghetsmomentet om en akse som er parallell med en akse gjennom massesenteret er gitt ved:
 \[
 I = I_{\mathrm{cm}} + M h^{2}
 \]
+hvor \( h = R \) for en tangent akse.
 
 Setter inn uttrykket for \( I_{\mathrm{cm}} \):
-
 \begin{align}
 I &= \frac{2}{5} M R^{2} + M R^{2} \\
   &= \frac{2}{5} M R^{2} + \frac{5}{5} M R^{2} \\
   &= \frac{7}{5} M R^{2}
 \end{align}
-
-Derfor er treghetsmomentet når sfæren roterer om en tangentakse \doubleunderline{\(\frac{7}{5} M R^{2}\)}.
+Derfor er treghetsmomentet når sfæren roterer om en tangent akse \doubleunderline{\(\frac{7}{5} M R^{2}\)}.
 \end{solution}
-
 \end{parts}
+
+
 
 \question Beregn treghetsmomentet for et hjul:
 \begin{parts}
-\part Del A: Definer treghetsmoment for ulike komponenter
+
+\part Gitt data:
 \begin{solution}
-Treghetsmomentet, også kjent som rotasjonsinerti, er et mål på hvor vanskelig det er å endre rotasjonstilstanden til et objekt. For en masse \( M \) som roterer rundt en akse, er treghetsmomentet gitt ved:
-\[
-I_{\text{hjul}} = M R^2
-\]
-For en stang med masse \( m \) og lengde \( L \), som roterer rundt en ende, er treghetsmomentet:
-\[
-I_{\text{eike}} = \frac{1}{3} m L^2
-\]
+\centering
+\begin{align}
+M & = \SI{8.00}{\kilo\gram} \\
+m & = \SI{1.20}{\kilo\gram} \\
+d & = \SI{1.00}{\meter}
+\end{align}
 \end{solution}
 
-\part Del B: Beregn hele hjulets treghetsmoment
+\part Treghetsmoment for massen M:
 \begin{solution}
-Vi har at \( R = L = \frac{D}{2} \). Hele hjulets treghetsmoment er summen av alle delkomponentenes treghetsmoment:
+Treghetsmomentet for massen M (navet) er gitt ved:
 \begin{align}
-I & = I_{\text{hjul}} + 6 \cdot I_{\text{eike}} \\
+I_{\text{nav}} & = M R^2
+\end{align}
+\end{solution}
+
+\part Treghetsmoment for massen m:
+\begin{solution}
+Treghetsmomentet for massen m (eikene) er gitt ved:
+\begin{align}
+I_{\text{eike}} & = \frac{1}{3} m L^2
+\end{align}
+\end{solution}
+
+\part Beregn hele hjulets treghetsmoment:
+\begin{solution}
+Hele hjulets treghetsmoment er summen av alle delkomponentenes treghetsmoment:
+\begin{align}
+I & = I_{\text{nav}} + 6 \cdot I_{\text{eike}} \\
   & = M R^2 + 6 \cdot \frac{1}{3} m L^2 \\
   & = \frac{1}{4} M D^2 + \frac{1}{2} m D^2 \\
   & = \frac{1}{4}(M + 2m) D^2 \\
-  & = \frac{1}{4}(8.00 \, \mathrm{kg} + 2 \cdot 1.20 \, \mathrm{kg}) \cdot (1.00 \, \mathrm{m})^2 \\
-  & = \frac{1}{4}(8.00 + 2.40) \, \mathrm{kg} \cdot 1.00 \, \mathrm{m}^2 \\
-  & = \frac{1}{4} \cdot 10.40 \, \mathrm{kg} \cdot 1.00 \, \mathrm{m}^2 \\
-  & = \doubleunderline{2.60 \, \mathrm{kg \cdot m^2}}
+  & = \frac{1}{4}(\SI{8.00}{\kilo\gram} + 2 \cdot \SI{1.20}{\kilo\gram}) \cdot (\SI{1.00}{\meter})^2 \\
+  & = \doubleunderline{\SI{2.60}{\kilo\gram\meter^2}}
 \end{align}
 \end{solution}
+
+\part Grafisk representasjon:
+\begin{solution}
+PLACE GRAPHICS HERE
+\end{solution}
+
 \end{parts}
+
 \end{questions}
 \end{document}

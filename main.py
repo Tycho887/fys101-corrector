@@ -141,25 +141,25 @@ def process_files_in_directory(input_dir="inputs", output_dir="output", marker="
                 os.makedirs(os.path.join(output_dir, sub_dir))
 
             output_path_1 = os.path.join(output_dir, sub_dir, f"{file_name.split('.')[0]}_corrected_1.tex")
-            # output_path_2 = os.path.join(output_dir, sub_dir, f"{file_name.split('.')[0]}_corrected_2.tex")
+            output_path_2 = os.path.join(output_dir, sub_dir, f"{file_name.split('.')[0]}_corrected_2.tex")
 
             print(f"Processing file: {file_name}...")
             latex_content = load_file(input_path)
 
             # Generate the first corrected version
-            # print("Processing version 1...")
+            print("Processing version 1...")
             corrected_content_1 = process_latex_content(latex_content, preamble, postamble, prompt, marker)
 
-            # # Generate the second corrected version (e.g., with a different temperature or approach if desired)
-            # print("Processing version 2...")
-            # corrected_content_2 = process_latex_content(latex_content, preamble, postamble, prompt, marker)
+            # Generate the second corrected version (e.g., with a different temperature or approach if desired)
+            print("Processing version 2...")
+            corrected_content_2 = process_latex_content(latex_content, preamble, postamble, prompt, marker)
 
             # Save both versions
             save_file(output_path_1, corrected_content_1)
             print(f"Saved corrected file version 1 to: {output_path_1}")
 
-            # save_file(output_path_2, corrected_content_2)
-            # print(f"Saved corrected file version 2 to: {output_path_2}")
+            save_file(output_path_2, corrected_content_2)
+            print(f"Saved corrected file version 2 to: {output_path_2}")
 
 
 if __name__ == "__main__":

@@ -10,116 +10,122 @@
 
 \begin{questions}
 
-\question FILL QUESTION
+\question Beregn det totale arealet hvert hjul er i kontakt med bakken:
 \begin{parts}
-\part Beregn det totale arealet hvert hjul er i kontakt med bakken:
+\part Gitt data:
 \begin{solution}
-For å finne det totale arealet som hvert hjul er i kontakt med bakken, må vi først forstå kreftene som virker på hjulene fra bilen og trykkfordelingen på hjulene. 
-
-Gitt:
 \begin{align}
-m &= \SI{1500}{\kilo\gram} \\
-P_y &= \SI{200}{\kilo\pascal}
+m & = \SI{1500}{\kilo\gram} \\
+P_y & = \SI{200}{\kilo\pascal}
 \end{align}
+\end{solution}
 
-Først, beregn den totale vekten av bilen:
+\part Forklar hvordan man finner det totale arealet:
+\begin{solution}
+For å finne det totale arealet som hvert hjul er i kontakt med bakken, må vi vurdere kreftene som hjulene opplever fra bilen og trykkfordelingen på hjulene. Trykket \( P \) er definert som kraft per areal, så vi kan bruke formelen:
+\[
+P = \frac{F}{A}
+\]
+hvor \( F \) er kraften som virker på hjulene, og \( A \) er arealet. Kraften \( F \) kan beregnes ved å bruke tyngdekraften som virker på bilen:
+\[
+F = m \cdot g
+\]
+hvor \( g \) er tyngdeakselerasjonen, \SI{9.81}{\meter\per\second\squared}.
+\end{solution}
+
+\part Beregn det totale arealet:
+\begin{solution}
+\centering
 \begin{align}
-F_g &= m \cdot g \\
-    &= \SI{1500}{\kilo\gram} \cdot \SI{9.81}{\meter\per\second\squared} \\
-    &= \SI{14715}{\newton}
+F & = m \cdot g \\
+  & = \SI{1500}{\kilo\gram} \cdot \SI{9.81}{\meter\per\second\squared} \\
+  & = \SI{14715}{\newton}
 \end{align}
-
-Anta at vekten er jevnt fordelt på de fire hjulene, så kraften på hvert hjul er:
+Deretter bruker vi trykkformelen for å finne arealet:
 \begin{align}
-F_{\text{per hjul}} &= \frac{F_g}{4} \\
-                    &= \frac{\SI{14715}{\newton}}{4} \\
-                    &= \SI{3678.75}{\newton}
-\end{align}
-
-Trykket \( P_y \) er relatert til kraften og arealet ved formelen:
-\begin{align}
-P_y &= \frac{F_{\text{per hjul}}}{A}
-\end{align}
-
-Løs for \( A \):
-\begin{align}
-A &= \frac{F_{\text{per hjul}}}{P_y} \\
-  &= \frac{\SI{3678.75}{\newton}}{\SI{200}{\kilo\pascal}} \\
-  &= \frac{\SI{3678.75}{\newton}}{\SI{200000}{\pascal}} \\
-  &= \doubleunderline{\SI{0.01839}{\meter\squared}}
+P_y & = \frac{F}{A} \\
+A & = \frac{F}{P_y} \\
+  & = \frac{\SI{14715}{\newton}}{\SI{200}{\kilo\pascal}} \\
+  & = \frac{\SI{14715}{\newton}}{\SI{200000}{\pascal}} \\
+  & = \doubleunderline{\SI{0.073575}{\meter\squared}}
 \end{align}
 \end{solution}
 \end{parts}
 
 
-\question FILL QUESTION
+
+\question Beregn trykket og tettheten for en blokk:
 \begin{parts}
 
-\part Kreftene på hvert hjul er gitt ved:
+\part Beregn trykket på hvert hjul:
 \begin{solution}
-\begin{align}
+Kreftene på hvert hjul er gitt ved:
+\begin{align*}
 F_{\text{ghjul}} &= \frac{F_{\text{gbil}}}{\text{antall hjul}} \\
 F_{\text{ghjul}} &= \frac{m \cdot g}{4} \tag{II}
-\end{align}
-\end{solution}
+\end{align*}
 
-\part Bruker trykk er gitt ved krefter per areal og løser for $A$:
-\begin{solution}
-\begin{align}
+Bruker trykk som er gitt ved krefter per areal og løser for $A$:
+\begin{align*}
 P &= \frac{F_{\text{ghjul}}}{A} \\
 P &= \frac{m \cdot g}{4 \cdot A} \\
 A &= \frac{m \cdot g}{4 \cdot P} \\
-  &= \frac{1500 \cdot \SI{9.8}{\newton\per\kilo\gram}}{4 \cdot \SI{200}{\kilo\pascal}} \\
-  &= \doubleunderline{\SI{0.018393}{\meter\squared}} \\
+  &= \frac{1500 \, \mathrm{kg} \cdot 9.8 \, \mathrm{m/s^2}}{4 \cdot 200 \cdot 10^{3} \, \mathrm{Pa}} \\
+  &= \SI{0.018393}{\meter\squared} \\
 A &= \doubleunderline{\SI{184}{\centi\meter\squared}}
-\end{align}
+\end{align*}
 Det totale arealet til den delen av hjulene som er i kontakt med bakken er \SI{184}{\centi\meter\squared}.
 \end{solution}
 
-\part Skal finne blokkens tetthet, og begynner med å finne oppdriften. Blokken er i ro, og benytter derfor Newtons 1. lov:
+\part Beregn tettheten til blokken:
 \begin{solution}
-\begin{align}
-\sum F &= 0 \\
-\pi + B - F_{g} &= 0 \\
-B &= F_{g} - T \\
-  &= \SI{5.00}{\newton} - \SI{4.55}{\newton} \\
-B &= \doubleunderline{\SI{0.45}{\newton}}
-\end{align}
-Oppdriften er det samme som tyngden til den fortrengte væsken (Arkimedes prinsipp).
-\end{solution}
+\begin{align*}
+F_g &= \SI{5.00}{\newton} \\
+T &= \SI{4.55}{\newton}
+\end{align*}
 
-\part Tettheten til blokken er gitt ved $\rho = \frac{m}{V}$, og setter inn likning:
-\begin{solution}
-\begin{align}
-B &= \rho_{v} \cdot V \cdot g \\
-V &= \frac{B}{\rho_{v} \cdot g} \tag{I} \\
+Skal finne blokkens tetthet, og begynner med å finne oppdriften. Blokken er i ro, og benytter derfor Newtons 1. lov:
+\begin{align*}
+\sum F &= 0 \\
+B - F_g + T &= 0 \\
+B &= F_g - T \\
+  &= \SI{5.00}{\newton} - \SI{4.55}{\newton} \\
+B &= \SI{0.45}{\newton}
+\end{align*}
+
+Oppdriften er det samme som tyngden til den fortrengte væsken (Arkimedes prinsipp):
+\begin{align*}
+B &= \rho_v \cdot V \cdot g \\
+V &= \frac{B}{\rho_v \cdot g} \tag{I}
+\end{align*}
+
+Tettheten til blokken er gitt ved $\rho = \frac{m}{V}$, og setter inn i likning:
+\begin{align*}
 \rho &= \frac{m}{V} \\
-    &= \frac{\rho_{v} \cdot m}{B} \\
-    &= \frac{\rho_{v} \cdot F_{g}}{B} \\
-    &= \frac{1000 \cdot \SI{5.00}{\newton}}{\SI{0.45}{\newton}} \\
-\rho &= \doubleunderline{\SI{11111.1}{\kilo\gram\per\meter\cubed}}
-\end{align}
-Tettheten til materialet blokken består av er omtrent \SI{11111.1}{\kilo\gram\per\meter\cubed}, som er rundt samme tetthet som bly.
+     &= \frac{\rho_v \cdot F_g}{B \cdot g} \\
+     &= \frac{1000 \, \mathrm{kg/m^3} \cdot \SI{5.00}{\newton}}{\SI{0.45}{\newton}} \\
+     &= \doubleunderline{\SI{11111}{\kilogram\per\meter\cubed}}
+\end{align*}
+Tettheten til materialet blokken består av er omtrent \SI{11111}{\kilogram\per\meter\cubed}, som er rundt samme tetthet som bly.
 \end{solution}
 
 \end{parts}
 
+
+
 \question FILL QUESTION
 \begin{parts}
 
-\part Beregn hastigheten $v_1$ ved hjelp av volumstrømmen:
+\part Beregn diameteren $d_2$ som tillater trykkendringen:
 \begin{solution}
-Volumstrømmen $I_v$ kan uttrykkes som:
+Vi begynner med å uttrykke volumstrømmen $I_v$ ved hjelp av tverrsnittsarealet $A_1$ og hastigheten $v_1$:
 \begin{align}
 I_v &= A_1 v_1 \\
 v_1 &= \frac{4 I_v}{\pi d_1^2} \tag{I}
 \end{align}
-hvor $A_1 = \pi \left(\frac{d_1}{2}\right)^2$ er tverrsnittsarealet.
-\end{solution}
+hvor $A_1 = \pi \left(\frac{d_1}{2}\right)^2$.
 
-\part Bruk Bernoullis likning for å finne hastigheten etter kompresjonen, $v_2$:
-\begin{solution}
-Bernoullis likning gir oss:
+Deretter bruker vi Bernoullis likning for å finne et uttrykk for hastigheten etter kompresjonen, $v_2$:
 \begin{align}
 P_2 + \frac{1}{2} \rho v_2^2 &= P_1 + \frac{1}{2} \rho v_1^2 \\
 \rho v_2^2 &= 2(P_1 - P_2) + \rho v_1^2 \\
@@ -127,59 +133,67 @@ v_2 &= \sqrt{\frac{2(P_1 - P_2)}{\rho} + v_1^2}
 \end{align}
 Ved å sette inn likning (I) får vi:
 \begin{align}
-v_2 &= \sqrt{2(P_1 - P_2) + \left(\frac{4 I_v}{\pi d_1^2}\right)^2}
+v_2 &= \sqrt{2\left(\frac{P_1 - P_2}{\rho}\right) + \left(\frac{4 I_v}{\pi d_1^2}\right)^2}
 \end{align}
-Etter beregning finner vi:
 \begin{align}
-v_2 &= \doubleunderline{\SI{12.706}{\meter\per\second}}
+v_2 &= \SI{12.706}{\meter\per\second}
 \end{align}
-\end{solution}
 
-\part Bruk kontinuitetslikningen for å finne diameteren $d_2$:
-\begin{solution}
-For en inkompressibel væske gjelder kontinuitetslikningen:
+Vi antar væsken som inkompressibel og bruker kontinuitetslikningen for å finne et uttrykk for $d_2$:
 \begin{align}
 A_2 v_2 &= A_1 v_1 \\
 \pi \left(\frac{d_2}{2}\right)^2 v_2 &= I_v \\
 d_2 &= \sqrt{\frac{4 I_v}{\pi v_2}}
 \end{align}
-Ved å sette inn verdiene får vi:
+Ved å sette inn de gitte verdiene:
 \begin{align}
-d_2 &= \sqrt{\frac{4 \cdot 2.80 \cdot \frac{1}{5}}{\pi \cdot 12.706}} \\
+d_2 &= \sqrt{\frac{4 \cdot \SI{2.80}{\liter\per\second} \cdot \frac{1}{5}}{\pi \cdot \SI{12.706}{\meter\per\second}}} \\
 d_2 &= \doubleunderline{\SI{1.68}{\centi\meter}}
 \end{align}
+Dette er diameteren som tillater trykkendringen.
 \end{solution}
 
 \end{parts}
+
+
 
 \question FILL QUESTION
 \begin{parts}
-
 \part Beregn trykket $P$ ved hjelp av trykkforskjellen:
 \begin{solution}
-Trykket $P$ kan beregnes ved hjelp av formelen for trykkforskjell:
+Trykket $P$ er gitt ved formelen:
 \begin{align}
 P &= P_{0} + \rho g h
 \end{align}
-Her er $\rho$ tettheten til oljen, $g$ er tyngdeakselerasjonen, og $h$ er høyden.
+hvor:
+\begin{itemize}
+  \item $P_{0}$ er det atmosfæriske trykket,
+  \item $\rho$ er tettheten til oljen, \SI{860}{\kilogram\per\meter\cubed},
+  \item $g$ er tyngdeakselerasjonen, \SI{9.81}{\meter\per\second\squared},
+  \item $h$ er høyden, \SI{250}{\centi\meter} = \SI{2.50}{\meter}.
+\end{itemize}
 \end{solution}
 
-\part Bruk Poiseuille's lov for å finne volumstrømmen:
+\part Bruk Poiseuilles lov for å finne volumstrømmen:
 \begin{solution}
-Poiseuille's lov gir oss volumstrømmen $Iv$ som:
+Poiseuilles lov gir oss volumstrømmen $I_v$ som:
 \begin{align}
-\Delta P &= \frac{8 \eta l}{\pi r^{4}} Iv \quad \left(\Delta P = P - P_{0}\right) \\
-Iv &= \frac{\pi \left(P - P_{0}\right) r^{4}}{8 \eta l}
+\Delta P &= \frac{8 \eta l}{\pi r^4} I_v \quad \left(\Delta P = P - P_{0}\right) \\
+I_v &= \frac{\pi (P - P_{0}) r^4}{8 \eta l}
 \end{align}
-Ved å sette inn uttrykket for $\Delta P$ fra trykkforskjellen, får vi:
+Ved å sette inn for $\Delta P = \rho g h$, får vi:
 \begin{align}
-Iv &= \frac{\pi \rho g h r^{4}}{8 \eta l} \\
-   &= \frac{\pi \cdot \SI{860}{\kilogram\per\cubic\meter} \cdot \SI{9.81}{\meter\per\second\squared} \cdot \SI{2.50}{\meter} \cdot \left(\SI{0.0075}{\meter}\right)^{4}}{8 \cdot \SI{0.180}{\pascal\second} \cdot \SI{0.05}{\meter}} \\
-   &= \doubleunderline{\SI{2.91}{\liter\per\second}}
+I_v &= \frac{\pi \rho g h r^4}{8 \eta l}
+\end{align}
+Ved å sette inn de gitte verdiene:
+\begin{align}
+I_v &= \frac{\pi \cdot \SI{860}{\kilogram\per\meter\cubed} \cdot \SI{9.81}{\meter\per\second\squared} \cdot \SI{2.50}{\meter} \cdot \left(\SI{0.75}{\centi\meter}\right)^4}{8 \cdot \SI{180}{\milli\pascal\second} \cdot \SI{5.00}{\centi\meter}} \\
+&= \frac{\pi \cdot 860 \cdot 9.81 \cdot 2.50 \cdot (0.0075)^4}{8 \cdot 0.180 \cdot 0.05} \\
+&= \doubleunderline{\SI{2.91}{\liter\per\second}}
 \end{align}
 Volumstrømmen når oljen først forlater tanken er \SI{2.91}{\liter\per\second}.
 \end{solution}
-
 \end{parts}
+
 \end{questions}
 \end{document}

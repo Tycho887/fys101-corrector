@@ -11,6 +11,7 @@
 \begin{questions}
 \question Definer nøkkelbegreper i "Del A":
 \begin{parts}
+
 \part Definer terminalfart:
 \begin{solution}
 Terminalfart er den største farten et legeme oppnår ved fall gjennom luft fra store høyder. Det skjer når tyngdekraften er balansert av luftmotstanden.
@@ -30,154 +31,189 @@ Sentrifugalkraft er en fiktiv kraft som brukes til å forklare bevegelse i et ak
 \begin{solution}
 Massesenter, også kjent som tyngdepunktet i et homogent tyngdefelt, er det punktet i (eller utenfor) et legeme som beveger seg som om legemets masse var samlet i dette punktet. Det er også det punktet der et legeme kan balanseres.
 \end{solution}
+
 \end{parts}
 
-\question Del $B$: Analyser kreftene på en bok i ro på et bord
-\begin{parts}
 
-\part Forklar tyngdekraften og normalkraften som virker på boka.
+\question Del B: Analyser kreftene på en bok i ro på et bord
+
+\begin{parts}
+\part Forklar de involverte kreftene:
 \begin{solution}
-Tyngdekraften på boka ($F_g$) er en fjernkraft, som virker mellom legemer som ikke er i fysisk kontakt. Den virker mellom boka og jorda. Normalkraften på boka ($F_n$) er en kontaktkraft, som virker mellom legemer som er i kontakt med hverandre, i dette tilfellet mellom boka og bordet. Ettersom boka er i ro, har vi $\sum F = 0$.
+Tyngdekraften på boka ($F_g$) er en fjernkraft, som virker mellom legemer som ikke er i fysisk kontakt. Den virker mellom boka og jorda. Normalkraften på boka ($F_n$) er en kontaktkraft, som virker mellom legemer som er i kontakt med hverandre, i dette tilfellet mellom boka og bordet. Ettersom boka er i ro, har vi at $\sum F = 0$.
 \end{solution}
 
-\part Analyser kreftene i $y$-retningen.
+\part Analyser kreftene i y-retningen:
 \begin{solution}
-For $y$-retningen (der vi har definert nedover som positiv) har vi:
+For y-retningen (der vi har definert nedover som positiv) har vi:
 \begin{align}
 \sum F_{y} &= 0 \\
 F_{g} - F_{n} &= 0 \\
 F_{g} &= F_{n}
 \end{align}
-De er altså like store og motsatt rettet fordi boka er i ro, men de er ulike typer krefter og har sine respektive motkrefter.
+Dette betyr at kreftene er like store og motsatt rettet fordi boka er i ro, men de er ulike typer krefter og har sine respektive motkrefter.
 \end{solution}
 
-\part Illustrer kreftene og deres motkrefter.
+\part Illustrer kreftene og deres motkrefter:
 \begin{solution}
-Placeholder for graphics: \includegraphics[width=0.5\linewidth]{path/to/image} \\
-$F_{n}$ - normalkraft \\
-$F_{n}^{\prime}$ - motkraft til normalkraft \\
-$F_{g}$ - tyngdekraft \\
-$F_{g}^{\prime}$ - motkraft til tyngdekraft
-\end{solution}
+PLACE GRAPHICS HERE
 
+\includegraphics[max width=\textwidth, center]{path/to/image}
+
+\begin{itemize}
+    \item $F_{n}$ - Normalkraft
+    \item $F_{n}^{\prime}$ - Motkraft til normalkraft
+    \item $F_{g}$ - Tyngdekraft
+    \item $F_{g}^{\prime}$ - Motkraft til tyngdekraft
+\end{itemize}
+\end{solution}
 \end{parts}
 
-\question FILL QUESTION
+
+
+\question Analyser systemet og beregn akselerasjonen og hastigheten til kloss 2:
 \begin{parts}
 
-\part Del C: Beregn akselerasjonen og hastigheten til kloss 2
+\part Del opp systemet i to delsystemer:
 \begin{solution}
 Vi deler opp systemet i to delsystemer:
 \begin{enumerate}
-    \item Kloss på skrått plan - bruker koordinatsystem parallelt med bevegelsesretning.
-    \item Kloss i fritt fall - definerer positiv retning nedover.
+    \item Kloss på skrått plan - koordinatsystem parallelt med bevegelsesretning.
+    \item Kloss som faller - definerer positiv retning nedover.
 \end{enumerate}
+Stram, masseløs snor gir $T_{1}=T_{2}=T$ og vi forutsetter $a_{1}=a_{2}=a$ med retninger som er definert som positivt.
+\end{solution}
 
-Vi analyserer hvert delsystem for seg for å finne akselerasjonen. Vi antar at denne er konstant slik at vi kan bruke bevegelsesligningene til å finne kloss 2 sin fart.
-
-\textbf{System 1:} Vi må dekomponere tyngdekraften for å analysere hver retning for seg:
+\part Analyser delsystem 1:
+\begin{solution}
+Vi må dekomponere tyngdekraften $F_g$ for å analysere hver retning for seg:
 \begin{align*}
-    F_{g x} &= F_{g} \sin \theta = m_{1} g \sin \theta \\
-    F_{g y} &= F_{g} \cos \theta = m_{1} g \cos \theta \\
-    f &= \mu_{k} F_{n}
+F_{g x} &= F_{g} \sin \theta = m_{1} g \sin \theta \\
+F_{g y} &= F_{g} \cos \theta = m_{1} g \cos \theta \\
+f &= \mu_{k} F_{n}
 \end{align*}
-
-Bruker Newtons andre lov, $\Sigma \vec{F} = m \vec{a}$, i $y$-retning:
+Bruker Newtons andre lov, $\Sigma \vec{F} = m \vec{a}$ i $y$-retning:
 \begin{align*}
-    \Sigma F_{y} &= m_{1} a_{y} = 0 \quad (\text{ingen bevegelse i } y\text{-retning}) \\
-    F_{n} - m_{1} g \cos \theta &= 0 \\
-    F_{n} &= m_{1} g \cos \theta
+\Sigma F_{y} &= m a_{y} = 0 \quad (\text{ingen bevegelse i } y\text{-retning}) \\
+F_{n} + F_{g y} &= 0 \\
+F_{n} - m_{1} g \cos \theta &= 0
 \end{align*}
+Derfor er $F_{n} = m_{1} g \cos \theta$.
 
 I $x$-retning:
 \begin{align*}
-    \Sigma F_{x} &= m_{1} a \\
-    T_{1} - m_{1} g \sin \theta - \mu_{k} F_{n} &= m_{1} a
+\Sigma F_{x} &= m a_{x}, \quad a_{x} = a \\
+T_{1} + F_{g x} + f &= m_{1} a \\
+T_{1} - m_{1} g \sin \theta - \mu_{k} F_{n} &= m_{1} a
 \end{align*}
-
 Setter inn for $F_{n}$:
 \begin{equation*}
-    T_{1} - m_{1} g \sin \theta - \mu_{k} m_{1} g \cos \theta = m_{1} a \tag{*}
+T_{1} - m_{1} g \sin \theta - \mu_{k} m_{1} g \cos \theta = m_{1} a \tag{*}
 \end{equation*}
+\end{solution}
 
-\textbf{System 2:} Ser kun på $y$-retning, har ingen krefter i $x$-retning:
+\part Analyser delsystem 2:
+\begin{solution}
+Ser kun på $y$-retning, ingen krefter i $x$-retning:
 \begin{align*}
-    \Sigma F_{y} &= m_{2} a \\
-    -T_{2} + m_{2} g &= m_{2} a \\
-    T_{2} &= m_{2} g - m_{2} a
+\Sigma F_{y} &= m_{2} a \\
+T_{2} + F_{g_{2}} &= m_{2} a \\
+-T_{2} + m_{2} g &= m_{2} a \\
+T_{2} &= m_{2} g - m_{2} a
 \end{align*}
-
+(fortegn utifra positiv retning nedover)
 Setter $T_{1} = T_{2} = T$ og setter inn i (*):
 \begin{align*}
-    m_{2} g - m_{2} a - m_{1} g \sin \theta - \mu_{k} m_{1} g \cos \theta &= (m_{1} + m_{2}) a
+m_{2} g - m_{2} a - m_{1} g \sin \theta - \mu_{k} m_{1} g \cos \theta &= m a \\
+m_{1} a + m_{2} a &= m_{2} g - m_{1} g \sin \theta - \mu_{k} m_{1} g \cos \theta \\
+a(m_{1} + m_{2}) &= g(m_{2} - m_{1} \sin \theta - \mu_{k} m_{1} g \cos \theta)
 \end{align*}
-
-Alle ledd med $a$ på venstre side og alle ledd med $g$ på høyre side:
-\begin{align*}
-    a(m_{1} + m_{2}) &= g(m_{2} - m_{1} \sin \theta - \mu_{k} m_{1} g \cos \theta)
-\end{align*}
-
 Løser mhp $a$:
-\begin{align*}
-    a &= \frac{g(m_{2} - m_{1} \sin \theta - \mu_{k} m_{1} g \cos \theta)}{m_{1} + m_{2}}
-\end{align*}
-
+\begin{equation*}
+a = \frac{g(m_{2} - m_{1} \sin \theta - \mu_{k} m_{1} g \cos \theta)}{m_{1} + m_{2}}
+\end{equation*}
 Setter inn verdier:
 \begin{align*}
-    a &= \frac{9.81 \, \mathrm{m/s^2} \left(0.200 \, \mathrm{kg} - 0.250 \, \mathrm{kg} \cdot \sin 30^{\circ} - 0.100 \cdot 9.81 \, \mathrm{m/s^2} \cdot \cos 30^{\circ}\right)}{0.250 \, \mathrm{kg} + 0.200 \, \mathrm{kg}} \\
-    &= \doubleunderline{1.163 \, \mathrm{m/s^2}}
+a &= \frac{9.81 \, \mathrm{m/s^2} \left(0.200 \, \mathrm{kg} - 0.250 \, \mathrm{kg} \cdot \sin 30^{\circ} - 0.100 \cdot 9.81 \, \mathrm{m/s^2} \cdot \cos 30^{\circ}\right)}{0.250 \, \mathrm{kg} + 0.200 \, \mathrm{kg}} \\
+&= \doubleunderline{1.163 \, \mathrm{m/s^2}}
 \end{align*}
+\end{solution}
 
-\textbf{Bevegelsesligning:}
+\part Beregn hastigheten til kloss 2:
+\begin{solution}
+Bruker bevegelsesligning:
 \begin{align*}
-    v^2 &= v_0^2 + 2a\Delta y, \quad v_0 = 0 \\
-    v &= \sqrt{2a\Delta y} \\
-    &= \sqrt{2 \cdot 1.163 \, \mathrm{m/s^2} \cdot 0.300 \, \mathrm{m}} \\
-    &= \doubleunderline{0.84 \, \mathrm{m/s}}
+v^{2} &= v_{0}^{2} + 2 a \Delta y, \quad v_{0} = 0 \\
+v &= \sqrt{2 a \Delta y} \\
+&= \sqrt{2 \cdot 1.163 \, \mathrm{m/s^2} \cdot 0.300 \, \mathrm{m}} \\
+&= \doubleunderline{0.84 \, \mathrm{m/s}}
 \end{align*}
-
 (To gjeldende siffer i svaret pga $30^{\circ}$ kan være alt fra $29.6^{\circ}$ til $30.4^{\circ}$)
 \end{solution}
 
 \end{parts}
 
 
-\question FILL QUESTION
-\begin{parts}
 
-\part Del A: Beregn hastigheten til bilen:
+\question Beregn kreftene som virker på en bil i en sirkulær bevegelse:
+\begin{parts}
+\part Gitt data for hastighet og radius:
 \begin{solution}
 \centering
 \begin{align}
+m & = \SI{750}{\kilo\gram} \\
+r & = \SI{160}{\meter} \\
 v & = \SI{90}{\kilo\meter\per\hour} \\
   & = \SI{90}{\kilo\meter\per\hour} \cdot \frac{\SI{1000}{\meter}}{\SI{1}{\kilo\meter}} \cdot \frac{\SI{1}{\hour}}{\SI{3600}{\second}} \\
   & = \doubleunderline{\SI{25}{\meter\per\second}}
 \end{align}
 \end{solution}
 
-\part Del B: Beregn den sentripetale kraften:
+\part Beregn den sentripetale akselerasjonen:
 \begin{solution}
 \centering
 \begin{align}
-F_c & = m \cdot \frac{v^2}{r} \\
-    & = \SI{750}{\kilo\gram} \cdot \frac{\left(\SI{25}{\meter\per\second}\right)^2}{\SI{160}{\meter}} \\
-    & = \doubleunderline{\SI{2921.875}{\newton}}
+a_{x} & = \frac{v^2}{r} \\
+      & = \frac{\left(\SI{25}{\meter\per\second}\right)^2}{\SI{160}{\meter}} \\
+      & = \doubleunderline{\SI{3.90625}{\meter\per\second\squared}}
 \end{align}
 \end{solution}
 
-\part Del C: Dekomponer kreftene i $x$- og $y$-retning:
+\part Beregn normalkraften i $x$-retning:
 \begin{solution}
 \centering
 \begin{align}
-\sum F_{x} &= m a_{x}, \quad a_{x} = \frac{v^2}{r} \quad \text{(sentripetalakselerasjon)} \\
-F_{n x} &= \frac{v^2}{r} \\
-F_{n} \sin \theta &= \frac{v^2}{r} \quad (*)
+F_{n x} & = m \cdot a_{x} \\
+        & = \SI{750}{\kilo\gram} \cdot \SI{3.90625}{\meter\per\second\squared} \\
+        & = \doubleunderline{\SI{2929.6875}{\newton}}
 \end{align}
 \end{solution}
 
+\part Beregn normalkraften i $y$-retning:
+\begin{solution}
+\centering
+\begin{align}
+F_{n} \sin \theta & = \frac{v^2}{r} \\
+\end{align}
+\end{solution}
 \end{parts}
 
+\begin{center}
+PLACE GRAPHICS HERE
+\end{center}
 
-Note: The problem statement and the context for the calculations are not fully provided, so placeholders and assumptions have been made based on the given equations and context.
+\question Forklar kreftene som virker på bilen:
+\begin{parts}
+\part Forklar hvordan friksjonskraften påvirker bilen:
+\begin{solution}
+Friksjonskraften må være tilstrekkelig for å holde bilen i sirkulær bevegelse uten å skli. Dette betyr at friksjonskraften må balansere den sentripetale kraften som kreves for å holde bilen på banen.
+\end{solution}
+
+\part Forklar hvordan normalkraften virker på bilen:
+\begin{solution}
+Normalkraften virker vinkelrett på underlaget og balanserer tyngdekraften som virker på bilen. Når bilen beveger seg i en sirkulær bane, vil normalkraften også ha en komponent som bidrar til den sentripetale akselerasjonen.
+\end{solution}
+\end{parts}
+
 \end{questions}
 \end{document}

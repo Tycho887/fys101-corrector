@@ -9,50 +9,49 @@
 \maketitle
 
 \begin{questions}
-\question FILL QUESTION
+\question FYS101 Løsningsforslag oblig 4
+
 \begin{parts}
+
 \part Del A: Arbeid - generelt
 \begin{solution}
-Arbeid utført av en kraft på et objekt er definert som produktet av kraftens komponent i bevegelsesretningen og forflytningen av objektet. Matematisk uttrykkes dette som:
+Arbeid er definert som produktet av kraften som virker på et objekt og forflytningen av objektet i kraftens retning. Matematisk uttrykkes dette som:
 \begin{align}
 W &= F \cdot d \cdot \cos(\theta)
 \end{align}
-hvor \( W \) er arbeidet, \( F \) er kraften, \( d \) er forflytningen, og \( \theta \) er vinkelen mellom kraften og forflytningen.
+hvor \(W\) er arbeidet, \(F\) er kraften, \(d\) er forflytningen, og \(\theta\) er vinkelen mellom kraften og forflytningen.
 \end{solution}
 
-\part Placeholder for graphics
+\part PLACE GRAPHICS HERE
 \begin{solution}
 Placeholder for graphics: \includegraphics[max width=\textwidth, center]{path/to/image}
 \end{solution}
+
 \end{parts}
 
-\question FILL QUESTION
+\question Potensiell energi - generelt
 \begin{parts}
-\part Forklar potensiell energi generelt:
+\part Forklar hva potensiell energi er:
 \begin{solution}
-Potensiell energi er energien som et objekt har på grunn av sin posisjon i et kraftfelt, som for eksempel et gravitasjonsfelt. Det er energien som kan omdannes til kinetisk energi når objektet beveger seg. Den generelle formelen for endring i potensiell energi er gitt ved:
+Potensiell energi er energien et objekt har på grunn av sin posisjon eller tilstand. For eksempel, et objekt som er løftet over bakken har potensiell energi på grunn av tyngdekraften. Denne energien kan omdannes til kinetisk energi når objektet faller.
+\end{solution}
+
+\part Utled uttrykket for endring i potensiell energi:
+\begin{solution}
+Endringen i potensiell energi, \(\Delta U\), mellom to punkter kan uttrykkes som:
 \begin{align}
 \Delta U &= U_{2} - U_{1} \\
         &= -\int_{1}^{2} \vec{F} \cdot d \vec{U}
 \end{align}
-Her representerer \( \vec{F} \) kraften som virker på objektet, og \( d \vec{U} \) er en infinitesimal forflytning i kraftfeltet.
+Her representerer \(\vec{F}\) kraften som virker på objektet, og \(d \vec{U}\) er den differensielle forflytningen. Integralet beregner arbeidet utført av kraften når objektet beveger seg fra posisjon 1 til posisjon 2.
 \end{solution}
 
-\part Beregn endringen i potensiell energi for et objekt som beveger seg i et kraftfelt:
+\part Illustrer konseptet med en grafisk fremstilling:
 \begin{solution}
-Anta at vi har en konstant kraft \( \vec{F} \) som virker på et objekt. Da kan vi beregne endringen i potensiell energi som følger:
-\begin{align}
-\Delta U &= -\int_{1}^{2} \vec{F} \cdot d \vec{U} \\
-        &= -\vec{F} \cdot \int_{1}^{2} d \vec{U} \\
-        &= -\vec{F} \cdot (\vec{U}_{2} - \vec{U}_{1})
-\end{align}
-Hvis kraften er konstant og i samme retning som forflytningen, kan vi forenkle dette til:
-\begin{align}
-\Delta U &= -F \cdot (U_{2} - U_{1})
-\end{align}
-Dette gir oss endringen i potensiell energi som følge av forflytningen i kraftfeltet.
+PLACE GRAPHICS HERE
 \end{solution}
 \end{parts}
+
 
 \question FILL QUESTION
 \begin{parts}
@@ -67,7 +66,7 @@ K_{1} + U_{g_{1}} + U_{f_{1}} &= K_{0} + U_{g_{0}} + U_{f_{0}} \\
 \frac{1}{2} m v_{1}^{2} + m g y_{1} + \frac{1}{2} k x_{1}^{2} &= \frac{1}{2} m v_{0}^{2} + m g y_{0} + \frac{1}{2} k x_{0}^{2}
 \end{align}
 
-Klossen starter i ro og slutter i ro, som gir $v_{0} = v_{1} = 0$, og vi sitter igjen med:
+Siden klossen starter i ro og slutter i ro, har vi $v_{0} = v_{1} = 0$, og vi sitter igjen med:
 
 \begin{align}
 \frac{1}{2} k x_{1}^{2} &= m g y_{0}
@@ -81,10 +80,10 @@ x_{1} &= \sqrt{\frac{2 m g y_{0}}{k}} \\
 x_{1} &= \doubleunderline{\SI{0.858}{\meter}}
 \end{align}
 
-Fjæren ble komprimert omtrent \SI{85.8}{\centimeter}.
+Fjæren ble komprimert omtrent \SI{85.8}{\centi\meter}.
 \end{solution}
 
-\part Del B: Arbeid utført av fjæren
+\part Del B: Arbeid fra fjæren
 \begin{solution}
 Blokken vil bli tilført arbeid fra fjæren som vil skyve den i negativ $x$-retning. Siden energien er bevart, vil klossen skyves tilbake til opprinnelig høyde.
 \end{solution}
@@ -92,69 +91,67 @@ Blokken vil bli tilført arbeid fra fjæren som vil skyve den i negativ $x$-retn
 \end{parts}
 
 
-\question FILL QUESTION
 
+\question FILL QUESTION
 \begin{parts}
 
-\part Ser på prosessen i figur (1) og beregn $v_{1}$:
-
+\part Part A: Beregn hastigheten $v_1$ ved bunnen av rampen.
 \begin{solution}
-Vi bruker arbeid-energi-loven:
+Vi bruker arbeid-energi-prinsippet:
 \begin{align}
-E_{1} &= E_{0} \\
-K_{1} + U_{1} &= K_{0} + U_{0} \\
-\frac{1}{2} m v_{1}^{2} + m g y_{1} &= \frac{1}{2} m v_{0}^{2} + m g y_{0} \\
-\frac{1}{2} m v_{1}^{2} &= m g y_{0} \\
-v_{1} &= \sqrt{2 g y_{0}} \\
-     &= \sqrt{2 \cdot 9.81 \frac{\mathrm{N}}{\mathrm{kg}} \cdot 3.0 \mathrm{m}} \\
-     &= \doubleunderline{\SI{7.67}{\meter\per\second}}
+E_1 &= E_0 \\
+K_1 + U_1 &= K_0 + U_0 \\
+\frac{1}{2} m v_1^2 + m g y_1 &= \frac{1}{2} m v_0^2 + m g y_0 \\
+\frac{1}{2} m v_1^2 &= m g y_0 \\
+v_1 &= \sqrt{2 g y_0} \\
+    &= \sqrt{2 \cdot 9.81 \, \frac{\mathrm{N}}{\mathrm{kg}} \cdot 3.0 \, \mathrm{m}} \\
+    &= \doubleunderline{\SI{7.7}{\meter\per\second}}
 \end{align}
-Blokken har en fart på \SI{7.67}{\meter\per\second} ved bunnen av rampen.
+Klossen har en hastighet på \SI{7.7}{\meter\per\second} ved bunnen av rampen.
 \end{solution}
 
-\part Beregn friksjonsarbeidet som virker på blokken i prosess (2):
-
+\part Part B: Beregn friksjonsarbeidet $W_R$ som virker på klossen i prosess (2).
 \begin{solution}
-Vi bruker arbeid-energi-loven igjen:
+Vi bruker arbeid-energi-prinsippet igjen:
 \begin{align}
-E_{2} &= E_{1} + W_{R} \\
-K_{2} + U_{2} &= K_{1} + U_{1} + W_{R} \\
-\frac{1}{2} m v_{2}^{2} + m g y_{2} &= \frac{1}{2} m v_{1}^{2} + m g y_{1} + W_{R}
+E_2 &= E_1 + W_R \\
+K_2 + U_2 &= K_1 + U_1 + W_R \\
+\frac{1}{2} m v_2^2 + m g y_2 &= \frac{1}{2} m v_1^2 + m g y_1 + W_R
 \end{align}
-Løser for friksjonsarbeidet $W_{R}$:
+Løs for friksjonsarbeidet $W_R$:
 \begin{align}
-W_{R} &= -\frac{1}{2} m v_{1}^{2} \\
-      &= -\frac{1}{2} \cdot 2.0 \mathrm{~kg} \cdot \left(\SI{7.67}{\meter\per\second}\right)^{2} \\
-      &= \doubleunderline{-\SI{59}{\joule}}
+W_R &= -\frac{1}{2} m v_1^2 \\
+    &= -\frac{1}{2} \cdot 2.0 \, \mathrm{kg} \cdot \left(7.7 \, \frac{\mathrm{m}}{\mathrm{s}}\right)^2 \\
+    &= \doubleunderline{-\SI{59}{\joule}}
 \end{align}
 Et arbeid på \SI{59}{\joule} forsvinner som resultat av friksjon.
 \end{solution}
 
-\part Finn friksjonskoeffisienten ved å bruke Newtons 2. lov i $y$-retning:
-
+\part Part C: Beregn friksjonskoeffisienten $\mu$ mellom klossen og det horisontale underlaget.
 \begin{solution}
+Vi bruker Newtons 2. lov i $y$-retningen:
 \begin{align}
-\sum F_{y} &= m a_{y} \quad (a_{y} = 0, \text{ all bevegelse skjer i } x\text{-retning}) \\
-F_{n} - F_{g} &= 0 \\
-F_{n} &= m g \quad \text{(I)} \\
-f &= \mu F_{n} \quad \text{(II)}
+\sum F_y &= m a_y \quad (a_y = 0, \text{ all bevegelse skjer i } x\text{-retning}) \\
+F_n - F_g &= 0 \\
+F_n &= m g \quad \text{(I)} \\
+f &= \mu F_n \quad \text{(II)}
 \end{align}
-Setter (I) inn i (II):
+Sett (I) inn i (II):
 \begin{align}
 f &= \mu m g \quad \text{(III)}
 \end{align}
 Friksjonsarbeidet er gitt ved:
 \begin{align}
-W_{R} &= f S \cdot \cos 180^{\circ} \quad \text{(IV)}
+W_R &= f s \cdot \cos 180^\circ \quad \text{(IV)}
 \end{align}
-Setter (III) inn i (IV) og løser for $\mu$:
+Sett (III) inn i (IV) og løs for $\mu$:
 \begin{align}
-W_{R} &= \mu m g S \\
-\mu &= -\frac{W_{R}}{m g S} \\
-    &= -\frac{\SI{-59}{\joule}}{2.0 \mathrm{~kg} \cdot 9.81 \frac{\mathrm{N}}{\mathrm{kg}} \cdot 9.0 \mathrm{~m}} \\
+W_R &= -\mu m g s \\
+\mu &= -\frac{W_R}{m g s} \\
+    &= -\frac{-\SI{59}{\joule}}{2.0 \, \mathrm{kg} \cdot 9.81 \, \mathrm{m/s^2} \cdot 9.0 \, \mathrm{m}} \\
     &= \doubleunderline{0.33}
 \end{align}
-Friksjonskoeffisienten mellom blokken og det horisontale underlaget er \doubleunderline{0.33}.
+Friksjonskoeffisienten mellom klossen og det horisontale underlaget er 0.33.
 \end{solution}
 
 \end{parts}
@@ -163,47 +160,46 @@ Friksjonskoeffisienten mellom blokken og det horisontale underlaget er \doubleun
 \question FILL QUESTION
 \begin{parts}
 
-\part Exercise 1: Definer en funksjon med to parametere som returnerer kraften utført av friksjon med en koeffisient $\mu$ på et horisontalt plan, basert på den normale kraften.
+\part Definer en funksjon med to parametere som returnerer kraften utført av friksjon med en friksjonskoeffisient $\mu$ på et horisontalt plan, basert på den normale kraften.
 \begin{solution}
-Friksjonskraften på et horisontalt plan kan beregnes ved hjelp av friksjonskoeffisienten $\mu$ og den normale kraften $N$. Formelen for friksjonskraften $f$ er gitt ved:
+Friksjonskraften $F_f$ kan defineres som produktet av den normale kraften $N$ og friksjonskoeffisienten $\mu$. Dette kan uttrykkes som:
 \begin{align}
-f &= \mu \cdot N
+F_f &= \mu \cdot N
 \end{align}
-Her er $N$ den normale kraften som kan beregnes som produktet av massen og tyngdeakselerasjonen $g$.
 \end{solution}
 
-\part Exercise 2: Lag en funksjon kalt 'kinetic_energy' som returnerer den kinetiske energien. Funksjonen skal ha to parametere.
+\part Lag en funksjon kalt 'kinetisk energi' som returnerer den kinetiske energien. Funksjonen skal ha to parametere: masse og hastighet.
 \begin{solution}
-Den kinetiske energien $K$ til en gjenstand med masse $m$ og hastighet $v$ er gitt ved:
+Den kinetiske energien $K$ til en gjenstand kan uttrykkes som:
 \begin{align}
-K &= \frac{1}{2} m v^2
+K &= \frac{1}{2} \cdot m \cdot v^2
 \end{align}
-Denne formelen uttrykker energien som en gjenstand har på grunn av sin bevegelse.
+hvor $m$ er massen og $v$ er hastigheten til gjenstanden.
 \end{solution}
 
-\part Exercise 3: Vi vet at en curlingstein med en hastighet på \SI{1.0}{\meter\per\second} reiser nøyaktig \SI{6.4}{\meter} og stopper rett ved sentrum av curlingmålet. Finn friksjonskoeffisienten $\mu$.
+\part En curlingstein med en hastighet på \SI{1.0}{\meter\per\second} reiser nøyaktig \SI{6.4}{\meter} og stopper i sentrum av curlingmålet. Finn friksjonskoeffisienten $\mu$.
 \begin{solution}
-Vi bruker prinsippet om energibevaring, hvor den mekaniske energien $E_{\text{mech}}$ er lik den kinetiske energien $K$ siden den potensielle energien $U$ ikke endres. Arbeidet utført av ikke-konservative krefter $W_{\text{nonconservative}}$ er relatert til endringen i mekanisk energi:
+Vi vet at den mekaniske energien $E_{\text{mech}}$ er lik den kinetiske energien $K$ siden potensiell energi $U$ ikke endres. Ved bruk av energiprinsippet $\Delta E_{\text{mech}} = -W_{\text{nonconservative}}$, kan vi finne friksjonskoeffisienten $\mu$:
 \begin{align}
-\Delta E_{\text{mech}} &= -W_{\text{nonconservative}} \\
-K &= \mu \cdot m \cdot g \cdot L
+\Delta E_{\text{mech}} &= K \\
+W_{\text{nonconservative}} &= \mu \cdot m \cdot g \cdot d \\
+\mu &= \frac{K}{m \cdot g \cdot d} \\
+\mu &= \frac{\frac{1}{2} \cdot m \cdot v^2}{m \cdot g \cdot \SI{6.4}{\meter}} \\
+\mu &= \frac{\frac{1}{2} \cdot \SI{20}{\kilo\gram} \cdot (\SI{1.0}{\meter\per\second})^2}{\SI{20}{\kilo\gram} \cdot \SI{9.81}{\meter\per\second\squared} \cdot \SI{6.4}{\meter}} \\
+\mu &= \doubleunderline{0.0080}
 \end{align}
-Løsning for $\mu$ gir:
-\begin{align}
-\mu &= \frac{K}{m \cdot g \cdot L} \\
-    &= \frac{\frac{1}{2} \cdot \SI{20}{\kilo\gram} \cdot (\SI{1}{\meter\per\second})^2}{\SI{20}{\kilo\gram} \cdot \SI{9.81}{\meter\per\second\squared} \cdot \SI{6.4}{\meter}} \\
-    &= \doubleunderline{0.0080}
-\end{align}
-Friksjonskoeffisienten $\mu$ er dermed \doubleunderline{0.0080}.
 \end{solution}
 
-\part Exercise 4: Plot hastigheten til curlingsteinen mens den beveger seg fra startlinjen med en startfart på \SI{1}{\meter\per\second} til sentrum av målet (ved \SI{6.4}{\meter}).
+\part Plot hastigheten til curlingsteinen mens den beveger seg fra startlinjen (hog line) til sentrum av målet, gitt friksjonskoeffisienten $\mu$.
 \begin{solution}
-Hastigheten $v$ til curlingsteinen som funksjon av avstanden $L$ kan uttrykkes som:
+Hastigheten $v$ til curlingsteinen som en funksjon av avstanden $L$ kan uttrykkes som:
 \begin{align}
-v &= \sqrt{2 \cdot K / m - 2 \cdot \mu \cdot g \cdot L}
+v &= \sqrt{\frac{2K}{m} - 2\mu g L}
 \end{align}
-Her definerer vi en avstandsarray fra \SI{0}{\meter} til \SI{6.4}{\meter} ved bruk av \texttt{np.linspace} med 100 datapunkter, og plottet viser hastigheten som en funksjon av avstanden.
+Vi definerer en avstandsarray fra \SI{0}{\meter} til \SI{6.4}{\meter} og plotter hastigheten ved hjelp av denne funksjonen.
+\begin{center}
+PLACE GRAPHICS HERE
+\end{center}
 \end{solution}
 
 \end{parts}

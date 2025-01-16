@@ -9,108 +9,139 @@
 \maketitle
 
 \begin{questions}
-\question FILL QUESTION
-\begin{parts}
-
-\part Del A: Forklar begrepet "kraftstøt" og hvordan det måles i både styrke og retning:
-\begin{solution}
-Kraftstøt, eller impuls, er en vektor som representerer endringen i bevegelsesmengde forårsaket av en kraft som virker over en tidsperiode. Det måles ved å integrere kraften over tiden den virker. Styrken av kraftstøtet er lik størrelsen på denne integralen, mens retningen er gitt av retningen til kraften.
-\end{solution}
-
-\part Beregn kraftstøt gitt en konstant kraft:
-\begin{solution}
-Anta at en konstant kraft $\vec{F}$ virker over en tidsperiode fra $t_i$ til $t_f$. Kraftstøtet $\vec{I}$ kan beregnes som:
-\begin{align}
-\vec{I} &= \int_{t_i}^{t_f} \vec{F} \, dt \\
-        &= \vec{F} \cdot (t_f - t_i)
-\end{align}
-Hvis $\vec{F} = \SI{10}{\newton}$ og virker fra $t_i = \SI{0}{\second}$ til $t_f = \SI{5}{\second}$, da er:
-\begin{align}
-\vec{I} &= \SI{10}{\newton} \cdot (\SI{5}{\second} - \SI{0}{\second}) \\
-        &= \doubleunderline{\SI{50}{\newton\second}}
-\end{align}
-\end{solution}
-
-\part Forklar betydningen av retningen i vektoren $\vec{I}$:
-\begin{solution}
-Retningen til kraftstøtvektoren $\vec{I}$ er den samme som retningen til kraften $\vec{F}$. Dette betyr at endringen i bevegelsesmengde skjer i samme retning som kraften virker. Hvis kraften er i positiv x-retning, vil også bevegelsesmengdeendringen være i positiv x-retning.
-\end{solution}
-
-\end{parts}
 
 \question FILL QUESTION
 \begin{parts}
-\part Forklar hva som menes med et elastisk støt:
+\part Forklar hva som menes med en kraftstøt:
 \begin{solution}
-Et elastisk støt er en kollisjon der den totale kinetiske energien til systemet er bevart før og etter støtet. Dette betyr at ingen kinetisk energi går tapt til andre former for energi, som varme eller lyd, under kollisjonen. Bevegelsesmengden er også bevart i et elastisk støt.
+En kraftstøt er en endring i bevegelsesmengde som oppstår når en kraft virker på et objekt over en tidsperiode. Det kan uttrykkes som integralet av kraften over tid:
+\begin{align}
+\vec{I} &= \int_{t_{i}}^{t_{f}} \vec{F} \, dt
+\end{align}
+Her representerer \(\vec{I}\) impuls, \(\vec{F}\) er kraften, og \(t_i\) og \(t_f\) er henholdsvis start- og sluttidspunktet for kraftens virkning.
 \end{solution}
 
-\part Forklar hva som menes med et uelastisk støt:
+\part Mål både styrke og retning av en kraftstøt:
 \begin{solution}
-Et uelastisk støt er en kollisjon der den totale kinetiske energien ikke er bevart. En del av den kinetiske energien blir omdannet til andre former for energi, som varme eller lyd. Til tross for dette er bevegelsesmengden fortsatt bevart i et uelastisk støt.
+For å måle både styrken og retningen av en kraftstøt, må vi beregne størrelsen av vektoren \(\vec{I}\) og dens retning. Dette kan gjøres ved å evaluere integralet:
+\begin{align}
+\vec{I} &= \int_{t_{i}}^{t_{f}} \vec{F} \, dt
+\end{align}
+Styrken til kraftstøtet er gitt ved størrelsen av \(\vec{I}\), mens retningen er gitt av retningen til vektoren \(\vec{I}\).
 \end{solution}
 \end{parts}
 
 
-\question FILL QUESTION
+\question Definer og beregn elastisk og uelastisk støt:
 \begin{parts}
 
-\part Part A: Beregn sluttfarten etter kollisjonen
+\part Definer elastisk støt:
 \begin{solution}
-Vi har en fullstendig elastisk kollisjon hvor bevegelsesmengden er bevart. Gitt:
+Et elastisk støt er en kollisjon der den totale kinetiske energien er bevart. Dette betyr at summen av den kinetiske energien til de involverte objektene før kollisjonen er lik summen av den kinetiske energien etter kollisjonen. Bevegelsesmengden er også bevart i et elastisk støt.
+\end{solution}
 
-\begin{align*}
+\part Definer uelastisk støt:
+\begin{solution}
+Et uelastisk støt er en kollisjon der den totale kinetiske energien ikke er bevart. En del av den kinetiske energien blir omdannet til andre energiformer, som varme eller lyd. Bevegelsesmengden er imidlertid fortsatt bevart i et uelastisk støt.
+\end{solution}
+
+\part Beregn bevegelsesmengden for et elastisk støt:
+\begin{solution}
+Anta at vi har to objekter med masser \( m_1 \) og \( m_2 \), og hastigheter før kollisjonen \( v_{1i} \) og \( v_{2i} \). Etter kollisjonen har de hastigheter \( v_{1f} \) og \( v_{2f} \). Bevegelsesmengden er bevart, så vi har:
+\begin{align}
+m_1 v_{1i} + m_2 v_{2i} &= m_1 v_{1f} + m_2 v_{2f}
+\end{align}
+\end{solution}
+
+\part Beregn den kinetiske energien for et elastisk støt:
+\begin{solution}
+Den totale kinetiske energien før og etter kollisjonen er lik:
+\begin{align}
+\frac{1}{2} m_1 v_{1i}^2 + \frac{1}{2} m_2 v_{2i}^2 &= \frac{1}{2} m_1 v_{1f}^2 + \frac{1}{2} m_2 v_{2f}^2
+\end{align}
+\end{solution}
+
+\part Beregn bevegelsesmengden for et uelastisk støt:
+\begin{solution}
+For et uelastisk støt, bevegelsesmengden er fortsatt bevart:
+\begin{align}
+m_1 v_{1i} + m_2 v_{2i} &= (m_1 + m_2) v_f
+\end{align}
+hvor \( v_f \) er den felles hastigheten etter kollisjonen.
+\end{solution}
+
+\part Beregn den kinetiske energien for et uelastisk støt:
+\begin{solution}
+Den totale kinetiske energien er ikke bevart, men vi kan beregne den tapte energien:
+\begin{align}
+\Delta KE &= \left(\frac{1}{2} m_1 v_{1i}^2 + \frac{1}{2} m_2 v_{2i}^2\right) - \left(\frac{1}{2} (m_1 + m_2) v_f^2\right)
+\end{align}
+\end{solution}
+
+\end{parts}
+
+
+\question Beregn hastigheten og kinetisk energi for et system etter en kollisjon:
+\begin{parts}
+
+\part Del A: Beregn sluttfarten etter en fullstendig elastisk kollisjon
+\begin{solution}
+Gitt data:
+\begin{align}
 m_1 &= m_2 = \SI{2000}{\kilo\gram} \\
 v_{1i} &= \SI{30}{\meter\per\second} \\
 v_{2i} &= \SI{10}{\meter\per\second}
-\end{align*}
+\end{align}
 
-Bevegelsesmengde før og etter kollisjonen:
-
-\begin{align*}
+For en fullstendig elastisk kollisjon, er bevegelsesmengden bevart:
+\begin{align}
 P_{1i} + P_{2i} &= P_f \\
 m v_{1i} + m v_{2i} &= 2m v_f
-\end{align*}
+\end{align}
 
-Løser for $v_f$:
-
-\begin{align*}
+Løsning for $v_f$:
+\begin{align}
 v_f &= \frac{v_{1i} + v_{2i}}{2} \\
     &= \frac{\SI{30}{\meter\per\second} + \SI{10}{\meter\per\second}}{2} \\
 v_f &= \doubleunderline{\SI{20}{\meter\per\second}}
-\end{align*}
-
-Den felles farten etter kollisjonen er \SI{20}{\meter\per\second}.
+\end{align}
+Den felles hastigheten etter kollisjonen er \SI{20}{\meter\per\second}.
 \end{solution}
 
-\part Part B: Beregn andelen av kinetisk energi som tapes
+\part Del B: Beregn andelen av kinetisk energi som tapes i kollisjonen
 \begin{solution}
-Vi finner uttrykk for den kinetiske energien til systemet før og etter kollisjonen:
+Kinetisk energi før kollisjonen:
+\begin{align}
+K_{\text{sys } i} &= K_{1i} + K_{2i} \\
+                  &= \frac{1}{2} m v_{1i}^2 + \frac{1}{2} m v_{2i}^2 \\
+                  &= \frac{1}{2} m \left(v_{1i}^2 + v_{2i}^2\right)
+\end{align}
 
-\begin{align*}
-K_{\text{sys }i} &= K_{1i} + K_{2i} \\
-                 &= \frac{1}{2} m v_{1i}^2 + \frac{1}{2} m v_{2i}^2 \\
-                 &= \frac{1}{2} m \left(v_{1i}^2 + v_{2i}^2\right) \\
-K_{\text{sys }f} &= \frac{1}{2}(2m) v_f^2 \\
-                 &= m v_f^2
-\end{align*}
+Kinetisk energi etter kollisjonen:
+\begin{align}
+K_{\text{sys } f} &= \frac{1}{2} (2m) v_f^2 \\
+                  &= m v_f^2
+\end{align}
 
 Andelen av kinetisk energi som tapes:
+\begin{align}
+\text{Andel tap} &= \frac{\Delta K}{K_{\text{sys } i}} \\
+                 &= \frac{K_{\text{sys } i} - K_{\text{sys } f}}{K_{\text{sys } i}} \\
+                 &= \frac{\frac{1}{2} m \left(v_{1i}^2 + v_{2i}^2\right) - m v_f^2}{\frac{1}{2} m \left(v_{1i}^2 + v_{2i}^2\right)}
+\end{align}
 
-\begin{align*}
-\text{Andel tapt} &= \frac{\Delta K}{K_{\text{sys }i}} \\
-                  &= \frac{K_{\text{sys }i} - K_{\text{sys }f}}{K_{\text{sys }i}} \\
-                  &= \frac{\frac{1}{2} m \left(v_{1i}^2 + v_{2i}^2\right) - m v_f^2}{\frac{1}{2} m \left(v_{1i}^2 + v_{2i}^2\right)} \\
-                  &= \frac{\frac{1}{2} \left(v_{1i}^2 + v_{2i}^2\right) - v_f^2}{\frac{1}{2} \left(v_{1i}^2 + v_{2i}^2\right)} \\
-                  &= 1 - \frac{2 v_f^2}{v_{1i}^2 + v_{2i}^2} \\
-                  &= 1 - \frac{2 \cdot (\SI{20}{\meter\per\second})^2}{(\SI{30}{\meter\per\second})^2 + (\SI{10}{\meter\per\second})^2} \\
-                  &= \doubleunderline{0,20}
-\end{align*}
-
-\SI{20}{\percent} av den kinetiske energien tapes og omdannes til andre energiformer som varme.
+Forenkling:
+\begin{align}
+&= \frac{\frac{1}{2} \left(v_{1i}^2 + v_{2i}^2\right) - v_f^2}{\frac{1}{2} \left(v_{1i}^2 + v_{2i}^2\right)} \\
+&= 1 - \frac{2 v_f^2}{v_{1i}^2 + v_{2i}^2} \\
+&= 1 - \frac{2 \cdot (\SI{20}{\meter\per\second})^2}{(\SI{30}{\meter\per\second})^2 + (\SI{10}{\meter\per\second})^2} \\
+&= \doubleunderline{0,20}
+\end{align}
+20\% av den kinetiske energien tapes. Energien omdannes til andre energiformer som varme.
 \end{solution}
 
 \end{parts}
+
 
 
 \question FILL QUESTION
@@ -118,41 +149,37 @@ Andelen av kinetisk energi som tapes:
 
 \part Part A: Beregn hastigheten $v_1$ etter kollisjonen:
 \begin{solution}
-Vi starter med å bruke den gitte ligningen for å finne $v_1$:
-
+Vi starter med å bruke cosinus for å finne komponenten av hastigheten i retning $\theta_1$:
 \begin{align}
-\cos \theta_{1} &= \frac{v_{1}}{v_{i1}} \\
-v_{1} &= v_{i1} \cos \theta_{1} \\
-&= \SI{2.0}{\meter} \cdot \cos 30^{\circ} \\
-&= \SI{2.0}{\meter} \cdot \frac{\sqrt{3}}{2} \\
-&= \SI{1.732}{\meter}
+u_1 &= v_{i1} \cos \theta_1 \\
+    &= \SI{2.0}{\meter} \cdot \cos 30^{\circ} \\
+    &= \SI{1.732}{\meter}
 \end{align}
-
-Dermed er hastigheten $v_1 = \doubleunderline{\SI{1.732}{\meter\per\second}}$.
+Derfor er hastigheten $v_1$ etter kollisjonen \doubleunderline{\SI{1.732}{\meter\per\second}}.
 \end{solution}
 
 \part Part B: Beregn hastigheten $v_2$ ved hjelp av arbeid-energi-setningen:
 \begin{solution}
-Vi bruker arbeid-energi-setningen for å finne $v_2$:
-
+Vi bruker bevaring av kinetisk energi:
 \begin{align}
-K_{i1} + K_{i2} &= K_{1} + K_{2} \\
-\frac{1}{2} m v_{i1}^{2} + \frac{1}{2} m v_{i2}^{2} &= \frac{1}{2} m v_{1}^{2} + \frac{1}{2} m v_{2}^{2} \\
-v_{2} &= \sqrt{v_{i1}^{2} - v_{1}^{2}} \\
-&= \sqrt{\left(\SI{2.0}{\meter\per\second}\right)^{2} - \left(\SI{1.732}{\meter\per\second}\right)^{2}} \\
-&= \sqrt{4 - 3} \\
-&= \SI{1.0}{\meter\per\second}
+K_{i1} + K_{i2} &= K_1 + K_2 \\
+\frac{1}{2} m v_{i1}^2 + \frac{1}{2} m v_{i2}^2 &= \frac{1}{2} m v_1^2 + \frac{1}{2} m v_2^2
 \end{align}
-
-Dermed er hastigheten $v_2 = \doubleunderline{\SI{1.0}{\meter\per\second}}$.
+Siden $v_{i2} = 0$, forenkler vi til:
+\begin{align}
+v_2 &= \sqrt{v_{i1}^2 - v_1^2} \\
+    &= \sqrt{\left(\SI{2.0}{\meter\per\second}\right)^2 - \left(\SI{1.732}{\meter\per\second}\right)^2} \\
+    &= \doubleunderline{\SI{1.0}{\meter\per\second}}
+\end{align}
 \end{solution}
 
-\part Part C: Kommenter på kollisjonens natur:
+\part Part C: Vurder om støtet er elastisk:
 \begin{solution}
-Støtet er dermed elastisk, siden den kinetiske energien er bevart gjennom kollisjonen. Dette betyr at ingen energi går tapt til deformasjon eller varme, og begge legemene fortsetter å bevege seg med hastigheter $v_1 = \SI{1.732}{\meter\per\second}$ og $v_2 = \SI{1.0}{\meter\per\second}$ i henholdsvis $30^{\circ}$ og $60^{\circ}$ i forhold til horisontalen.
+Et støt er elastisk hvis den totale kinetiske energien er bevart. Siden vi har brukt bevaring av kinetisk energi i beregningene våre, kan vi konkludere med at støtet er elastisk.
 \end{solution}
 
 \end{parts}
+
 
 
 \question FILL QUESTION
@@ -160,49 +187,42 @@ Støtet er dermed elastisk, siden den kinetiske energien er bevart gjennom kolli
 
 \part Del A: Beregn friksjonsarbeidet når klossene bremser opp.
 \begin{solution}
-Friksjonsarbeidet, $W_f$, er gitt ved:
+Friksjonsarbeidet er gitt ved:
 \begin{align}
-W_f &= -f \cdot x \\
-f &= \mu \cdot F_n
+W_{f} &= -f \cdot x \\
+f &= \mu \cdot F_{n}
 \end{align}
-Ved å bruke Newtons andre lov i y-retning, finner vi $F_n$:
+Bruker Newtons andre lov i y-retning for å finne et uttrykk for $F_{n}$:
 \begin{align}
-\sum F_y &= 0 \\
-F_n - F_g &= 0 \\
-F_n &= (m + M) \cdot g
-\end{align}
-Derfor blir friksjonsarbeidet:
-\begin{align}
-W_f &= -\mu \cdot (m + M) \cdot g \cdot x
+\sum F_{y} &= 0 \\
+F_{n} - F_{g} &= 0 \\
+F_{n} &= (m + M) \cdot g
 \end{align}
 \end{solution}
 
-\part Del B: Bruk arbeid-energi-likningen for å finne et uttrykk for $V_0$.
+\part Del B: Bruk arbeid-energi likningen for å finne et uttrykk for $V_{0}$.
 \begin{solution}
-Arbeid-energi-likningen gir:
+Arbeid-energi likningen gir:
 \begin{align}
-E_1 &= E_0 + W_f \\
-K_1 &= K_0 + W_f \\
-\frac{1}{2}(m+M) V_1^2 &= \frac{1}{2}(m+M) V_0^2 - \mu (m+M) g x
-\end{align}
-Ved å løse for $V_0$, får vi:
-\begin{align}
-\frac{1}{2} V_0^2 &= \mu g x \\
-V_0 &= \sqrt{2 \mu g x}
+E_{1} &= E_{0} + W_{f} \\
+K_{1} &= K_{0} + W_{f} \\
+\frac{1}{2}(m+M) V_{1}^{2} &= \frac{1}{2}(m+M) V_{0}^{2} - \mu (m+M) g x \\
+\frac{1}{2} V_{0}^{2} &= \mu g x \\
+V_{0} &= \sqrt{2 \mu g x}
 \end{align}
 \end{solution}
 
-\part Del C: Beregn $v_0$ for et elastisk støt.
+\part Del C: Beregn $v_{0}$ for et elastisk støt.
 \begin{solution}
-For et elastisk støt gjelder $p_1 = p_0$:
+For et elastisk støt gjelder bevaring av bevegelsesmengde:
 \begin{align}
-(m+M) V_0 &= m v_0 + M V_1
+(m+M) V_{0} &= m v_{0} + M V_{1}^{0}
 \end{align}
-Løsning for $v_0$ gir:
+Løser for $v_{0}$:
 \begin{align}
-v_0 &= \frac{m+M}{m} V_0 \\
+v_{0} &= \frac{m+M}{m} V_{0} \\
 &= \frac{0.400 \, \mathrm{kg} + 13 \, \mathrm{kg}}{0.400 \, \mathrm{kg}} \cdot 1.085 \, \mathrm{m/s} \\
-v_0 &= \doubleunderline{\SI{36}{\meter\per\second}}
+v_{0} &= \doubleunderline{\SI{36}{\meter\per\second}}
 \end{align}
 \end{solution}
 

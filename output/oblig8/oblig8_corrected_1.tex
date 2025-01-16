@@ -9,90 +9,46 @@
 \maketitle
 
 \begin{questions}
+
 \question FILL QUESTION
 \begin{parts}
 
 \part Bruk Newtons andre lov for rotasjon:
 \begin{solution}
-Vi starter med å bruke Newtons andre lov for rotasjon, som sier at summen av dreiemomentene (\(\Sigma \tau\)) er lik treghetsmomentet (\(I\)) multiplisert med vinkelakselerasjonen (\(\alpha\)):
-
-\[
-\Sigma \tau = I \alpha
-\]
-
-For en sirkelbevegelse, er lineær akselerasjon (\(a\)) relatert til vinkelakselerasjon ved \(a = \alpha R\). Dermed kan vi skrive:
-
-\[
-T R = \frac{2}{5} M R^2 \cdot \frac{a}{R}
-\]
-
-Dette forenkler til:
-
-\[
-T = \frac{2}{5} M a
-\]
-
-Dette er likning (I).
+Vi starter med uttrykket for dreiemomentet:
+\begin{align}
+\Sigma \tau &= I \alpha \quad \text{hvor} \quad a = \alpha R \\
+T R &= \frac{2}{5} M R^{2} \cdot \frac{a}{R} \\
+T &= \frac{2}{5} M a \tag{I}
+\end{align}
 \end{solution}
 
-\part Bruk Newtons andre lov for klossen i \(y\)-retning:
+\part Bruk Newtons andre lov for klossen i $y$-retning:
 \begin{solution}
-For klossen som beveger seg i \(y\)-retning, bruker vi Newtons andre lov:
-
-\[
-\sum F_y = m a_y
-\]
-
-Siden all bevegelse skjer i \(y\)-retning, er \(a_y = a\). Vi har:
-
-\[
-E_g - T = m a
-\]
-
-Dette er likning (II).
+Vi ser på kreftene som virker på klossen:
+\begin{align}
+\sum F_y &= m a_y \quad \text{(hvor $a_y = a$, all bevegelse skjer i $y$-retning)} \\
+E_g - T &= m a \tag{II}
+\end{align}
+Setter likning (I) inn i likning (II):
+\begin{align}
+m g - \frac{2}{5} M a &= m a \\
+a \left(m + \frac{2}{5} M\right) &= m g \\
+a &= \frac{m}{m + \frac{2}{5} M} g \tag{III}
+\end{align}
 \end{solution}
 
-\part Sett inn likning (I) i likning (II) og løs for akselerasjon:
+\part Beregn spenningen $T$ ved å sette likning (III) inn i likning (I):
 \begin{solution}
-Vi setter inn likning (I) i likning (II):
-
-\[
-m g - \frac{2}{5} M a = m a
-\]
-
-For å løse for \(a\), omorganiserer vi:
-
-\[
-a \left(m + \frac{2}{5} M\right) = m g
-\]
-
-Dermed er akselerasjonen:
-
-\[
-a = \frac{m}{m + \frac{2}{5} M} g
-\]
-
-Dette er likning (III).
-\end{solution}
-
-\part Sett inn likning (III) i likning (I) for å finne spenningen \(T\):
-\begin{solution}
-Vi setter inn uttrykket for \(a\) fra likning (III) i likning (I):
-
-\[
-T = \frac{2}{5} M \frac{m}{m + \frac{2}{5} M} g
-\]
-
-For å forenkle uttrykket, multipliserer vi:
-
-\[
-T = \frac{2 m M}{5 m + 2 M} g
-\]
-
-Dette gir oss uttrykket for spenningen \(T\).
+\begin{align}
+T &= \frac{2}{5} M \frac{m}{m + \frac{2}{5} M} g \\
+T &= \frac{2 m M}{5 m + 2 M} g \\
+T &= \frac{2 g}{\frac{5}{M} + \frac{2}{m}}
+\end{align}
 \end{solution}
 
 \end{parts}
+
 
 
 \question FILL QUESTION
@@ -100,177 +56,186 @@ Dette gir oss uttrykket for spenningen \(T\).
 
 \part Finner spinnet når hjulet roterer:
 \begin{solution}
-\centering
+For å finne spinnet \(L\) når hjulet roterer, bruker vi formelen:
 \begin{align}
-L & = m_h \cdot r \cdot \omega \cdot r^2 \\
-  & = \frac{F_{gh}}{g} \cdot \omega \cdot r^2 \quad \left(F_{gh} = m_h \cdot g \rightarrow m_h = \frac{F_{gh}}{g}\right) \\
-  & = \frac{30 \, \mathrm{N}}{9.81 \, \mathrm{m/s^2}} \cdot 12 \, \mathrm{rad/s} \cdot \left(28 \times 10^{-2} \, \mathrm{m}\right)^2 \\
-  & = \doubleunderline{18 \, \mathrm{kg \cdot m^2/s}}
+L &= m_h r \omega r \\
+  &= \frac{F_{gh} \omega r^2}{g} \quad \left(F_{gh} = m_h g \rightarrow m_h = \frac{F_{gh}}{g}\right) \\
+  &= \frac{30 \mathrm{~N}}{9.81 \frac{\mathrm{m}}{\mathrm{s}^2}} \cdot 12 \frac{\mathrm{rad}}{\mathrm{s}} \cdot \left(28 \cdot 10^{-2} \mathrm{~m}\right)^2 \\
+  &= \doubleunderline{18 \mathrm{~kg} \cdot \mathrm{m}^2/\mathrm{s}}
+\end{align}
+Spinnet er \(18 \mathrm{~kg} \cdot \mathrm{m}^2/\mathrm{s}\) som et resultat av at hjulet roteres.
+\end{solution}
+
+\part Utrykket for presesjonsvinkelhastighet:
+\begin{solution}
+Presesjonsvinkelhastigheten \(\omega_p\) er gitt ved:
+\begin{align}
+\omega_p &= \frac{M_g D}{2 I_w} \\
+         &= \frac{F_{gh} D}{2 L} \\
+         &= \frac{30 \mathrm{~N} \cdot 50 \cdot 10^{-2} \mathrm{~m}}{2 \cdot 18 \mathrm{~kg} \cdot \mathrm{m}^2/\mathrm{s}} \\
+         &= \doubleunderline{0.42 \mathrm{~rad/s}}
 \end{align}
 \end{solution}
 
-\part Utrykket for presesjonsvinkelhastighet er gitt ved:
+\part Finner tiden \(T\):
 \begin{solution}
-\centering
+Tiden \(T\) er gitt ved:
 \begin{align}
-\omega_p & = \frac{M_g \cdot D}{2 \cdot I \cdot \omega} \\
-         & = \frac{F_{gh} \cdot D}{2 \cdot L} \\
-         & = \frac{30 \, \mathrm{N} \cdot 50 \times 10^{-2} \, \mathrm{m}}{2 \cdot 18 \, \mathrm{kg \cdot m^2/s}} \\
-         & = \doubleunderline{0.42 \, \mathrm{rad/s}}
+T &= \frac{1}{f} \quad \left(f = \frac{\omega}{2 \pi}\right) \\
+  &= \frac{2 \pi}{\omega} \\
+  &= \frac{2 \pi}{0.42 \mathrm{~rad/s}} \\
+  &= \doubleunderline{15 \mathrm{~s}}
 \end{align}
 \end{solution}
 
-\part Finner tiden $T$ ved:
+\part Spinnet assosiert med bevegelse til massesenteret:
 \begin{solution}
-\centering
+Spinnet \(L_p\) assosiert med bevegelse til massesenteret er gitt ved:
 \begin{align}
-T & = \frac{1}{f} \quad \left(f = \frac{\omega}{2\pi}\right) \\
-  & = \frac{2\pi}{\omega} \\
-  & = \frac{2\pi}{0.42 \, \mathrm{rad/s}} \\
-  & = \doubleunderline{15 \, \mathrm{s}}
+L_p &= I_{cm} \omega_p \quad \left(I_{cm} = m \left(\frac{D}{2}\right)^2\right) \\
+    &= \frac{F_{gh} D^2 \omega_p}{4 g} \\
+    &= \frac{30 \mathrm{~N} \cdot (0.50 \mathrm{~m})^2 \cdot 0.42 \mathrm{~rad/s}}{4 \cdot 9.81 \mathrm{~m/s}^2} \\
+    &= \doubleunderline{0.080 \mathrm{~kg} \cdot \mathrm{m}^2/\mathrm{s}}
 \end{align}
-\end{solution}
-
-\part Spinnet assosiert med bevegelse til massesenteret blir gitt ved:
-\begin{solution}
-\centering
-\begin{align}
-L_p & = I_{cm} \cdot \omega_p \quad \left(I_{cm} = m \left(\frac{D}{2}\right)^2\right) \\
-    & = m \left(\frac{D}{2}\right)^2 \cdot \omega_p \\
-    & = \frac{F_{gh} \cdot D^2 \cdot \omega_p}{4 \cdot g} \\
-    & = \frac{30 \, \mathrm{N} \cdot (0.50 \, \mathrm{m})^2 \cdot 0.42 \, \mathrm{rad/s}}{4 \cdot 9.81 \, \mathrm{m/s^2}} \\
-    & = \doubleunderline{0.080 \, \mathrm{kg \cdot m^2/s}}
-\end{align}
+Spinnet grunnet presesjon er \(0.080 \mathrm{~kg} \cdot \mathrm{m}^2/\mathrm{s}\).
 \end{solution}
 
 \end{parts}
 
 
-\section*{Del B}
-
 \question FILL QUESTION
-
 \begin{parts}
-
-\part Forklar hva kinetisk energi er:
+\part Forklar hva lineær kinetisk energi er:
 \begin{solution}
-Kinetisk energi er energien et objekt har på grunn av sin bevegelse. Den er gitt ved formelen:
+Lineær kinetisk energi er energien et objekt har på grunn av sin bevegelse langs en rett linje. Den beregnes ved hjelp av formelen:
 \[
-E_k = \frac{1}{2} m v^2
+KE = \frac{1}{2} m v^2
 \]
-hvor \(m\) er massen til objektet og \(v\) er hastigheten.
+hvor \( m \) er massen til objektet og \( v \) er hastigheten.
 \end{solution}
 
-\part Beregn den kinetiske energien for et objekt med masse \SI{10}{\kilo\gram} og hastighet \SI{5}{\meter\per\second}:
+\part Beregn den lineære kinetiske energien for et objekt med masse \SI{5}{\kilo\gram} og hastighet \SI{10}{\meter\per\second}:
 \begin{solution}
 \centering
 \begin{align}
-E_k &= \frac{1}{2} \cdot \SI{10}{\kilo\gram} \cdot \left(\SI{5}{\meter\per\second}\right)^2 \\
-    &= \frac{1}{2} \cdot \SI{10}{\kilo\gram} \cdot \SI{25}{\meter\squared\per\second\squared} \\
-    &= \SI{125}{\joule} \\
-    &= \doubleunderline{\SI{125}{\joule}}
+KE & = \frac{1}{2} \times \SI{5}{\kilo\gram} \times \left(\SI{10}{\meter\per\second}\right)^2 \\
+   & = \frac{1}{2} \times \SI{5}{\kilo\gram} \times \SI{100}{\meter\squared\per\second\squared} \\
+   & = \SI{2.5}{\kilo\gram} \times \SI{100}{\meter\squared\per\second\squared} \\
+   & = \doubleunderline{\SI{250}{\joule}}
 \end{align}
 \end{solution}
-
-\part Forklar Python-funksjonen gitt i oppgaven:
-\begin{solution}
-Funksjonen \texttt{linear\_kinetic\_energy(m, v)} beregner den kinetiske energien til et objekt med masse \(m\) og hastighet \(v\). Den returnerer verdien \(\frac{1}{2} \times m \times v^2\), som er den matematiske formelen for kinetisk energi.
-\end{solution}
-
 \end{parts}
 
 \question Beregn treghetsmomentet for en solid sylinder:
 \begin{parts}
-
-\part Del A: Definer treghetsmoment for en solid sylinder:
+\part Forklar hva treghetsmomentet er:
 \begin{solution}
-Treghetsmomentet for en solid sylinder er et mål på hvor mye motstand en sylinder har mot rotasjon rundt sin akse. For en solid sylinder med masse \(M\) og radius \(R\), er treghetsmomentet gitt ved formelen:
+Treghetsmomentet, også kjent som rotasjonsinerti, er et mål på hvor mye motstand et objekt har mot endringer i sin rotasjonsbevegelse. For en solid sylinder, er treghetsmomentet gitt ved formelen:
 \[
 I = \frac{1}{2} M R^2
 \]
+hvor \(M\) er massen til sylinderen og \(R\) er radiusen.
 \end{solution}
 
-\part Del B: Beregn treghetsmomentet for en sylinder med masse \SI{10}{\kilo\gram} og radius \SI{0.5}{\meter}:
+\part Beregn treghetsmomentet for en sylinder med masse \SI{10}{\kilo\gram} og radius \SI{0.5}{\meter}:
 \begin{solution}
 \centering
 \begin{align}
-I & = \frac{1}{2} M R^2 \\
-  & = \frac{1}{2} \times \SI{10}{\kilo\gram} \times \left(\SI{0.5}{\meter}\right)^2 \\
-  & = \frac{1}{2} \times \SI{10}{\kilo\gram} \times \SI{0.25}{\meter\squared} \\
+I & = \frac{1}{2} \cdot M \cdot R^2 \\
+  & = \frac{1}{2} \cdot \SI{10}{\kilo\gram} \cdot \left(\SI{0.5}{\meter}\right)^2 \\
+  & = \frac{1}{2} \cdot \SI{10}{\kilo\gram} \cdot \SI{0.25}{\meter\squared} \\
   & = \SI{1.25}{\kilo\gram\meter\squared} \\
   & = \doubleunderline{\SI{1.25}{\kilo\gram\meter\squared}}
 \end{align}
 \end{solution}
-
 \end{parts}
 
 \question FILL QUESTION
 \begin{parts}
 
-\part Forklar hva angulær kinetisk energi er:
+\part Define angular kinetic energy:
 \begin{solution}
-Angulær kinetisk energi er energien et roterende objekt har på grunn av sin rotasjon. Den er avhengig av objektets treghetsmoment og vinkelhastighet. Formelen for angulær kinetisk energi er gitt ved:
+Angular kinetic energy is the energy possessed by a rotating object due to its motion. It is given by the formula:
 \[
 E_k = \frac{1}{2} I \omega^2
 \]
-hvor \( I \) er treghetsmomentet og \( \omega \) er vinkelhastigheten.
+where \(I\) is the moment of inertia and \(\omega\) is the angular velocity.
 \end{solution}
 
-\part Korriger koden for å beregne angulær kinetisk energi:
+\part Correct the given Python function for calculating angular kinetic energy:
 \begin{solution}
-Den korrigerte Python-koden for å beregne angulær kinetisk energi er som følger:
+The provided Python function calculates the angular kinetic energy using the formula:
 \begin{verbatim}
 def angular_kinetic_energy(I, omega):
     return 0.5 * I * omega**2
 \end{verbatim}
-Denne funksjonen tar inn treghetsmomentet \( I \) og vinkelhastigheten \( \omega \), og returnerer den angulære kinetiske energien.
+This function correctly implements the formula for angular kinetic energy, where \(I\) is the moment of inertia and \(\omega\) is the angular velocity.
 \end{solution}
 
-\part Beregn den angulære kinetiske energien for et objekt med \( I = \SI{10}{\kilogram\meter\squared} \) og \( \omega = \SI{5}{\radian\per\second} \):
+\part Calculate the angular kinetic energy for a given moment of inertia and angular velocity:
 \begin{solution}
-\centering
+Given:
+\begin{align*}
+I & = \SI{10}{\kilogram\meter\squared} \\
+\omega & = \SI{5}{\radian\per\second}
+\end{align*}
+
+The angular kinetic energy is calculated as follows:
 \begin{align}
-E_k &= \frac{1}{2} \cdot I \cdot \omega^2 \\
-    &= \frac{1}{2} \cdot \SI{10}{\kilogram\meter\squared} \cdot \left(\SI{5}{\radian\per\second}\right)^2 \\
-    &= \frac{1}{2} \cdot \SI{10}{\kilogram\meter\squared} \cdot \SI{25}{\radian\squared\per\second\squared} \\
-    &= \SI{125}{\joule} \\
-    &= \doubleunderline{\SI{125}{\joule}}
+E_k &= \frac{1}{2} I \omega^2 \\
+    &= \frac{1}{2} \times \SI{10}{\kilogram\meter\squared} \times \left(\SI{5}{\radian\per\second}\right)^2 \\
+    &= \frac{1}{2} \times \SI{10}{\kilogram\meter\squared} \times \SI{25}{\radian\squared\per\second\squared} \\
+    &= \SI{125}{\joule}
 \end{align}
+Therefore, the angular kinetic energy is \doubleunderline{\SI{125}{\joule}}.
 \end{solution}
 
 \end{parts}
 
-\question FILL QUESTION
+
+\question Beregn massen til svinghjulet som kreves for å stoppe bilen ved å overføre all kinetisk energi fra bilen til svinghjulet:
 \begin{parts}
 
-\part Beregn massen $M$ av svinghjulet som kreves for å stoppe bilen.
+\part Definer de nødvendige formlene:
 \begin{solution}
-Vi har følgende data for bilen:
+For å beregne massen til svinghjulet, må vi bruke formelen for kinetisk energi og moment of inertia. Den kinetiske energien til bilen er gitt ved:
 \begin{align}
-m &= \SI{1200}{\kilo\gram} \\
-v &= \SI{120}{\kilo\meter\per\hour} = \SI{120}{\kilo\meter\per\hour} \cdot \frac{\SI{1000}{\meter}}{\SI{1}{\kilo\meter}} \cdot \frac{\SI{1}{\hour}}{\SI{3600}{\second}} = \SI{33.33}{\meter\per\second}
+K_{\text{bil}} &= \frac{1}{2} m v^2
 \end{align}
-
-For svinghjulet:
+Den kinetiske rotasjonsenergien til svinghjulet er:
 \begin{align}
-R &= \SI{0.12}{\meter} \\
-\omega &= \SI{60000}{\revolutions\per\minute} = \SI{60000}{\revolutions\per\minute} \cdot \frac{2\pi \, \mathrm{rad}}{\SI{1}{\revolution}} \cdot \frac{\SI{1}{\minute}}{\SI{60}{\second}} = \SI{6283.19}{\radian\per\second}
+K_{\text{svinghjul}} &= \frac{1}{2} I \omega^2
 \end{align}
-
-Kinetisk energi for bilen er lik kinetisk rotasjonsenergi for svinghjulet:
+Moment of inertia for et svinghjul er:
 \begin{align}
-\frac{1}{2} m v^{2} &= \frac{1}{2} I \omega^{2}
-\end{align}
-
-Med treghetsmomentet $I = \frac{1}{2} M R^{2}$, setter vi inn og løser for $M$:
-\begin{align}
-\frac{1}{2} m v^{2} &= \frac{1}{2} \cdot \frac{1}{2} M R^{2} \omega^{2} \\
-M &= \frac{2 m v^{2}}{R^{2} \omega^{2}} \\
-  &= \frac{2 \cdot \SI{1200}{\kilo\gram} \cdot \left(\SI{33.33}{\meter\per\second}\right)^{2}}{\left(\SI{0.12}{\meter}\right)^{2} \cdot \left(\SI{6283.19}{\radian\per\second}\right)^{2}} \\
-  &= \doubleunderline{\SI{4.7}{\kilo\gram}}
+I &= \frac{1}{2} M R^2
 \end{align}
 \end{solution}
 
+\part Beregn massen til svinghjulet:
+\begin{solution}
+Vi setter opp likningen for energibevaring:
+\begin{align}
+K_{\text{bil}} &= K_{\text{svinghjul}} \\
+\frac{1}{2} m v^2 &= \frac{1}{2} \left(\frac{1}{2} M R^2\right) \omega^2
+\end{align}
+Løs for \( M \):
+\begin{align}
+M &= \frac{2 m v^2}{R^2 \omega^2}
+\end{align}
+Sett inn verdiene:
+\begin{align}
+M &= \frac{2 \cdot \SI{1200}{\kilogram} \cdot \left(\SI{120}{\kilo\meter\per\hour} \cdot \frac{\SI{1000}{\meter}}{\SI{1}{\kilo\meter}} \cdot \frac{\SI{1}{\hour}}{\SI{3600}{\second}}\right)^2}{\left(\SI{12e-2}{\meter}\right)^2 \cdot \left(\SI{60000}{\per\minute} \cdot \frac{2\pi}{\SI{60}{\second}}\right)^2} \\
+M &= \doubleunderline{\SI{4.7}{\kilogram}}
+\end{align}
+\end{solution}
+
+\part Visualiser resultatene:
+\begin{solution}
+PLACE GRAPHICS HERE
+\end{solution}
+
 \end{parts}
+
 \end{questions}
 \end{document}

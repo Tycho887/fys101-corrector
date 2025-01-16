@@ -1,0 +1,155 @@
+\documentclass[answers,a4paper,12pt]{exam}
+\input{preamble.tex}
+
+\title{{\bf{FYS101 Mekanikk}} \\ \Large{\answersareprinted Oblig XX}} 
+\author{Institutt for Fysikk, REALTEK}
+\date{Uke xx}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+
+\question Lesnings forslag oblig 9
+
+\begin{parts}
+
+\part Del A: Beregn tyngdefeltet ved romstasjonen
+\begin{solution}
+Vi har følgende data:
+\begin{align*}
+R_{E} &= \SI{6370}{\kilo\meter} \\
+h &= \SI{400}{\kilo\meter} \\
+M_{E} &= \SI{5.97e24}{\kilo\gram}
+\end{align*}
+
+Tyngdefeltet $g$ ved romstasjonen kan beregnes ved å bruke Newtons gravitasjonslov:
+\begin{align}
+g &= \frac{G M_{E}}{\left(R_{E}+h\right)^{2}} \\
+  &= \frac{\SI{6.673e-11}{\newton\meter\squared\per\kilo\gram\squared} \cdot \SI{5.97e24}{\kilo\gram}}{\left(\SI{6370e3}{\meter} + \SI{400e3}{\meter}\right)^{2}} \\
+  &= \doubleunderline{\SI{8.69}{\newton\per\kilo\gram}}
+\end{align}
+
+Tyngdefeltet har omtrent samme verdi på romstasjonen som ved jordoverflaten.
+\end{solution}
+
+\part Del B: Forklar hvorfor astronauter opplever muskelsvakhet
+\begin{solution}
+Det som fører til muskelsvakhet er ikke mangel på tyngdekraften, men at astronautene ikke opplever noen normal kraft. Mangelen på sammentrykkende krefter fører til at musklene og beina blir svakere.
+\end{solution}
+
+\end{parts}
+
+
+
+
+\question Beregn jordas masse ved hjelp av Newtons andre lov og gravitasjonsloven:
+\begin{parts}
+
+\part Definer de nødvendige formlene:
+\begin{solution}
+For å beregne jordas masse, $M_E$, bruker vi gravitasjonskraften og sentripetalakselerasjonen. Vi starter med Newtons andre lov for månen:
+\begin{align}
+\sum F &= M_M a \quad \left(a = \frac{v^2}{r}\right)
+\end{align}
+Gravitasjonskraften mellom jorda og månen er gitt ved:
+\begin{align}
+F_g &= \frac{G M_M M_E}{r_m^2}
+\end{align}
+Sentripetalakselerasjonen for månen er:
+\begin{align}
+a &= \frac{v^2}{r_m}
+\end{align}
+\end{solution}
+
+\part Beregn jordas masse:
+\begin{solution}
+Vi setter likningene for gravitasjonskraft og sentripetalakselerasjon lik hverandre:
+\begin{align}
+\frac{G M_M M_E}{r_m^2} &= M_M \frac{v^2}{r_m}
+\end{align}
+Forenkler ved å kansellere $M_M$:
+\begin{align}
+G M_E &= v^2 r_m
+\end{align}
+Hastigheten $v$ er gitt ved:
+\begin{align}
+v &= \frac{2 \pi r_m}{T}
+\end{align}
+Setter inn for $v$:
+\begin{align}
+G M_E &= \left(\frac{2 \pi r_m}{T}\right)^2 r_m
+\end{align}
+Løser for $M_E$:
+\begin{align}
+M_E &= \frac{4 \pi^2 r_m^3}{G T^2}
+\end{align}
+Setter inn verdiene:
+\begin{align}
+M_E &= \frac{4 \pi^2 \left(3.841 \times 10^8 \, \mathrm{m}\right)^3}{6.673 \times 10^{-11} \, \mathrm{N \cdot m^2/kg^2} \cdot (2358720 \, \mathrm{s})^2} \\
+M_E &= \doubleunderline{6.02 \times 10^{24} \, \mathrm{kg}}
+\end{align}
+\end{solution}
+
+\part Sammenlign med tabellverdi:
+\begin{solution}
+Den beregnede massen for jorda er $6.02 \times 10^{24} \, \mathrm{kg}$, som er i god overensstemmelse med den tabulerte verdien $5.97 \times 10^{24} \, \mathrm{kg}$.
+\end{solution}
+
+\end{parts}
+
+
+
+\question Energien til en satellitt med masse \( m \) som går i bane rundt jorda er gitt ved:
+\begin{parts}
+\part Forklar energien til en satellitt:
+\begin{solution}
+Energien \( E \) til en satellitt består av kinetisk energi \( K \) og potensiell energi \( U \). Formelen for total energi er:
+\begin{align}
+E &= K + U \\
+E &= \frac{1}{2} m v^2 - \frac{G M_E m}{R}
+\end{align}
+der \( R \) er avstanden mellom satellitten og jordas sentrum, \( G \) er gravitasjonskonstanten, \( M_E \) er jordas masse, og \( v \) er satellittens hastighet.
+\end{solution}
+
+\part Bruker Newtons andre lov for å finne farten \( v \) satellitten beveger seg med i bane:
+\begin{solution}
+Ifølge Newtons andre lov, summen av kreftene er lik massen multiplisert med akselerasjonen:
+\begin{align}
+\sum F &= m a \quad \left(a = \frac{v^2}{R}\right) \\
+F_g &= \frac{m v^2}{R} \\
+\frac{G M_E m}{R^2} &= \frac{m v^2}{R} \\
+v^2 &= \frac{G M_E}{R}
+\end{align}
+\end{solution}
+
+\part Sett likning (II) inn i likning (I) for å finne et uttrykk for totalenergien til satellitten:
+\begin{solution}
+Ved å sette inn uttrykket for \( v^2 \) fra forrige del:
+\begin{align}
+E &= \frac{1}{2} \frac{G M_E m}{R} - \frac{G M_E m}{R} \\
+E &= -\frac{G M_E m}{2 R}
+\end{align}
+Dette viser at totalenergien er negativ, noe som indikerer en bundet bane.
+\end{solution}
+
+\part Finner energiforskjellen til satellitten for de to ulike banene:
+\begin{solution}
+Energiforskjellen mellom to baner er gitt ved:
+\begin{align}
+\Delta E &= E_2 - E_1 \\
+&= -\frac{G M_E m}{2(R_E + h_2)} + \frac{G M_E m}{2(R_E + h_1)} \\
+&= \frac{1}{2} G M_E m \left(\frac{1}{R_E + h_1} - \frac{1}{R_E + h_2}\right)
+\end{align}
+Ved å sette inn verdiene:
+\begin{align}
+\Delta E &= 6.67 \times 10^{-11} \, \mathrm{Nm^2/kg^2} \times 5.97 \times 10^{24} \, \mathrm{kg} \times 500 \, \mathrm{kg} \\
+&\quad \times \left(\frac{1}{6370 \times 10^3 \, \mathrm{m} + 1000 \times 10^2 \, \mathrm{m}} - \frac{1}{6370 \times 10^3 + 35790 \times 10^3 \, \mathrm{m}}\right) \\
+\Delta E &= \doubleunderline{1.11 \times 10^{10} \, \mathrm{J}}
+\end{align}
+Det krever \SI{11.1}{\giga\joule} mer energi for å få satellitten i den geosynkrone satellittbanen enn i den "vanlige" satellittbanen.
+\end{solution}
+\end{parts}
+
+\end{questions}
+\end{document}

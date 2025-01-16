@@ -1,0 +1,230 @@
+\documentclass[answers,a4paper,12pt]{exam}
+\input{preamble.tex}
+
+\title{{\bf{FYS101 Mekanikk}} \\ \Large{\answersareprinted Oblig XX}} 
+\author{Institutt for Fysikk, REALTEK}
+\date{Uke xx}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+
+\question FYS101 Løsningsforslag oblig 4
+
+\question Del A: Arbeid - generelt
+\begin{parts}
+
+\part Forklar hva som menes med arbeid i fysikk:
+\begin{solution}
+Arbeid i fysikk er definert som produktet av kraften som virker på et objekt og forflytningen av objektet i retningen av kraften. Matematisk uttrykkes dette som:
+\[
+W = F \cdot d \cdot \cos(\theta)
+\]
+hvor \( W \) er arbeidet, \( F \) er kraften, \( d \) er forflytningen, og \( \theta \) er vinkelen mellom kraften og forflytningen.
+\end{solution}
+
+\part Beregn arbeidet utført av en kraft:
+\begin{solution}
+Anta at en kraft \( F = \SI{50}{\newton} \) virker på et objekt som forflyttes \( d = \SI{10}{\meter} \) i retningen av kraften. Da er arbeidet:
+\begin{align}
+W &= F \cdot d \cdot \cos(0^\circ) \\
+  &= \SI{50}{\newton} \cdot \SI{10}{\meter} \cdot \cos(0) \\
+  &= \SI{50}{\newton} \cdot \SI{10}{\meter} \\
+  &= \doubleunderline{\SI{500}{\joule}}
+\end{align}
+\end{solution}
+
+\part Grafisk representasjon av arbeid:
+\begin{solution}
+PLACE GRAPHICS HERE
+\end{solution}
+
+\end{parts}
+
+
+
+\question Potensiell energi - generelt
+\begin{parts}
+\part Forklar hva potensiell energi er:
+\begin{solution}
+Potensiell energi er energien et objekt har på grunn av sin posisjon i et kraftfelt, som for eksempel et gravitasjonsfelt. Det er energien som kan lagres og frigjøres når objektet beveger seg i kraftfeltet.
+\end{solution}
+
+\part Utled uttrykket for endring i potensiell energi:
+\begin{solution}
+Endringen i potensiell energi, \(\Delta U\), mellom to punkter kan uttrykkes som integralet av kraften \(\vec{F}\) over en bane fra punkt 1 til punkt 2. Dette kan skrives som:
+\begin{align}
+\Delta U &= U_{2} - U_{1} \\
+        &= -\int_{1}^{2} \vec{F} \cdot d \vec{U}
+\end{align}
+Dette uttrykket viser at endringen i potensiell energi er lik det negative arbeidet utført av kraften når objektet beveger seg fra punkt 1 til punkt 2.
+\end{solution}
+
+\part Illustrer konseptet med en grafisk representasjon:
+\begin{solution}
+PLACE GRAPHICS HERE
+\end{solution}
+\end{parts}
+
+
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Del A: Energi bevaring og arbeid-energi-loven
+\begin{solution}
+Vi har bevaring av energi ettersom det ikke virker noen friksjonskraft på klossen. Vi bruker arbeid-energi-loven:
+
+\begin{align}
+E_{1} &= E_{0} \\
+K_{1} + U_{g_{1}} + U_{f_{1}} &= K_{0} + U_{g_{0}} + U_{f_{0}} \\
+\frac{1}{2} m v_{1}^{2} + m g y_{1} + \frac{1}{2} k x_{1}^{2} &= \frac{1}{2} m v_{0}^{2} + m g y_{0} + \frac{1}{2} k x_{0}^{2}
+\end{align}
+
+Siden klossen starter i ro og slutter i ro, har vi $v_{0} = v_{1} = 0$, og vi sitter igjen med:
+
+\begin{align}
+\frac{1}{2} k x_{1}^{2} &= m g y_{0}
+\end{align}
+
+Vi løser for $x_{1}$:
+
+\begin{align}
+x_{1} &= \sqrt{\frac{2 m g y_{0}}{k}} \\
+      &= \sqrt{\frac{2 \cdot \SI{3.00}{\kilo\gram} \cdot \SI{9.81}{\meter\per\second\squared} \cdot \SI{5.00}{\meter}}{\SI{400}{\newton\per\meter}}} \\
+x_{1} &= \doubleunderline{\SI{0.858}{\meter}}
+\end{align}
+
+Fjæren ble komprimert omtrent \SI{85.8}{\centi\meter}.
+\end{solution}
+
+\part Del B: Arbeid utført av fjæren
+\begin{solution}
+Blokken vil bli tilført arbeid fra fjæren som vil skyve den i negativ $x$-retning. Siden energien er bevart, vil klossen skyves tilbake til opprinnelig høyde. PLACE GRAPHICS HERE
+\end{solution}
+
+\end{parts}
+
+
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Del A: Beregn hastigheten $v_1$ ved bunnen av rampen.
+\begin{solution}
+Vi bruker arbeid-energi-loven for å finne hastigheten $v_1$:
+\begin{align}
+E_1 &= E_0 \\
+K_1 + U_1 &= K_0 + U_0 \\
+\frac{1}{2} m v_1^2 + m g y_1 &= \frac{1}{2} m v_0^2 + m g y_0 \\
+\frac{1}{2} m v_1^2 &= m g y_0 \\
+v_1 &= \sqrt{2 g y_0} \\
+    &= \sqrt{2 \cdot 9.81 \, \frac{\mathrm{N}}{\mathrm{kg}} \cdot 3.0 \, \mathrm{m}} \\
+    &= \doubleunderline{\SI{7.7}{\meter\per\second}}
+\end{align}
+Klossen har en hastighet på \SI{7.7}{\meter\per\second} ved bunnen av rampen.
+\end{solution}
+
+\part Del B: Beregn friksjonsarbeidet $W_R$ som virker på klossen i prosess (2).
+\begin{solution}
+Vi bruker arbeid-energi-loven igjen:
+\begin{align}
+E_2 &= E_1 + W_R \\
+K_2 + U_2 &= K_1 + U_1 + W_R \\
+\frac{1}{2} m v_2^2 + m g y_2 &= \frac{1}{2} m v_1^2 + m g y_1 + W_R
+\end{align}
+Siden $v_2 = 0$ og $y_2 = 0$, kan vi løse for friksjonsarbeidet $W_R$:
+\begin{align}
+W_R &= -\frac{1}{2} m v_1^2 \\
+    &= -\frac{1}{2} \cdot 2.0 \, \mathrm{kg} \cdot \left(7.7 \, \frac{\mathrm{m}}{\mathrm{s}}\right)^2 \\
+    &= \doubleunderline{-\SI{59}{\joule}}
+\end{align}
+Et arbeid på \SI{59}{\joule} forsvinner som resultat av friksjon.
+\end{solution}
+
+\part Del C: Beregn friksjonskoeffisienten $\mu$ mellom klossen og det horisontale underlaget.
+\begin{solution}
+Vi bruker Newtons andre lov i $y$-retningen:
+\begin{align}
+\sum F_y &= m a_y \quad (a_y = 0, \text{ all bevegelse skjer i } x\text{-retning}) \\
+F_n - F_g &= 0 \\
+F_n &= m g \quad \text{(I)} \\
+f &= \mu F_n \quad \text{(II)}
+\end{align}
+Setter (I) inn i (II):
+\begin{align}
+f &= \mu m g \quad \text{(III)}
+\end{align}
+Friksjonsarbeidet er gitt ved:
+\begin{align}
+W_R &= f s \cdot \cos 180^\circ \quad \text{(IV)}
+\end{align}
+Setter (III) inn i (IV) og løser for $\mu$:
+\begin{align}
+W_R &= -\mu m g s \\
+\mu &= -\frac{W_R}{m g s} \\
+    &= -\frac{-\SI{59}{\joule}}{2.0 \, \mathrm{kg} \cdot 9.81 \, \mathrm{m/s^2} \cdot 9.0 \, \mathrm{m}} \\
+    &= \doubleunderline{0.33}
+\end{align}
+Friksjonskoeffisienten mellom klossen og det horisontale underlaget er 0.33.
+\end{solution}
+
+\end{parts}
+
+
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Exercise 1: Define a function with two parameters that returns the force done by friction with a coefficient \(\mu\) on a horizontal plane, based on the normal force.
+\begin{solution}
+The force of friction \(F_{\text{friction}}\) can be calculated using the formula:
+\begin{align}
+F_{\text{friction}} &= \mu \cdot N
+\end{align}
+where \(N\) is the normal force and \(\mu\) is the coefficient of friction.
+\end{solution}
+
+\part Exercise 2: Create a function called 'kinetic_energy' which returns the kinetic energy. The function should have two parameters only: mass and speed.
+\begin{solution}
+The kinetic energy \(K\) is given by the formula:
+\begin{align}
+K &= \frac{1}{2} \cdot m \cdot v^2
+\end{align}
+where \(m\) is the mass and \(v\) is the speed.
+\end{solution}
+
+\part Exercise 3: Find the friction coefficient \(\mu\) for a curling stone that stops after traveling \SI{6.4}{\meter} with an initial speed of \SI{1.0}{\meter\per\second}.
+\begin{solution}
+Using the principle of energy conservation, we have:
+\begin{align}
+\Delta E_{\text{mech}} &= -W_{\text{nonconservative}} \\
+K &= \frac{1}{2} \cdot m \cdot v^2 \\
+\mu &= \frac{K}{m \cdot g \cdot L}
+\end{align}
+Substituting the known values:
+\begin{align}
+K &= \frac{1}{2} \cdot \SI{20.0}{\kilo\gram} \cdot (\SI{1.0}{\meter\per\second})^2 \\
+\mu &= \frac{\SI{10.0}{\joule}}{\SI{20.0}{\kilo\gram} \cdot \SI{9.81}{\meter\per\second\squared} \cdot \SI{6.4}{\meter}} \\
+\mu &= \doubleunderline{0.0080}
+\end{align}
+\end{solution}
+
+\part Exercise 4: Knowing the friction coefficient \(\mu\), plot the speed of the curling stone as it moves from the starting line to the center of the target.
+\begin{solution}
+The speed \(v\) of the curling stone as a function of distance \(L\) is given by:
+\begin{align}
+v &= \sqrt{2 \cdot \left(\frac{K}{m} - \mu \cdot g \cdot L\right)}
+\end{align}
+Using Python and matplotlib, we can plot this function over the distance from \SI{0}{\meter} to \SI{6.4}{\meter}.
+\end{solution}
+
+\begin{center}
+PLACE GRAPHICS HERE
+\end{center}
+
+\end{parts}
+
+\end{questions}
+\end{document}

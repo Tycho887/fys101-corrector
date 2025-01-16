@@ -1,0 +1,269 @@
+\documentclass[answers,a4paper,12pt]{exam}
+\input{preamble.tex}
+
+\title{{\bf{FYS101 Mekanikk}} \\ \Large{\answersareprinted Oblig XX}} 
+\author{Institutt for Fysikk, REALTEK}
+\date{Uke xx}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+\question FILL QUESTION
+\begin{parts}
+\part Forklar hva en kraftstøt er:
+\begin{solution}
+En kraftstøt er en plutselig og kortvarig kraft som virker på et objekt, og som kan endre objektets bevegelsestilstand. Det måles som integralet av kraften over tiden den virker, og kan uttrykkes som:
+\begin{align}
+\vec{I} &= \int_{t_{i}}^{t_{f}} \vec{F} \, dt
+\end{align}
+hvor \(\vec{I}\) er impuls, \(\vec{F}\) er kraften, og \(t_i\) og \(t_f\) er start- og sluttidspunktet for kraftens virkning.
+\end{solution}
+
+\part Beregn impuls gitt en konstant kraft:
+\begin{solution}
+Anta at en konstant kraft \(\vec{F} = \SI{10}{\newton}\) virker i \SI{5}{\second}. Da er impulsen:
+\begin{align}
+\vec{I} &= \int_{0}^{5} \SI{10}{\newton} \, dt \\
+        &= \SI{10}{\newton} \cdot \left(5 - 0\right) \\
+        &= \doubleunderline{\SI{50}{\newton\second}}
+\end{align}
+\end{solution}
+
+\part Diskuter betydningen av impuls i fysikk:
+\begin{solution}
+Impuls er et viktig konsept i fysikk fordi det beskriver hvordan kraft over tid kan endre bevegelsestilstanden til et objekt. Det er direkte relatert til endringen i bevegelsesmengde, og er derfor avgjørende i kollisjoner og eksplosjoner hvor krefter virker over korte tidsintervaller.
+\end{solution}
+\end{parts}
+
+\question Definer nøkkelbegreper i "Del B":
+\begin{parts}
+\part Definer elastisk støt:
+\begin{solution}
+Et elastisk støt er en kollisjon der den totale kinetiske energien er bevart før og etter støtet. Dette betyr at ingen energi går tapt til deformasjon eller varme, og bevegelsesmengden er også bevart.
+\end{solution}
+
+\part Definer uelastisk støt:
+\begin{solution}
+Et uelastisk støt er en kollisjon der den totale kinetiske energien ikke er bevart. En del av energien blir omdannet til andre former som varme eller lyd, men bevegelsesmengden er fortsatt bevart.
+\end{solution}
+\end{parts}
+
+\question Beregn bevegelsesmengde og kinetisk energi for et elastisk støt:
+\begin{parts}
+\part Gitt data for bevegelsesmengde:
+\begin{solution}
+Anta at vi har to objekter med masser \( m_1 \) og \( m_2 \), og hastigheter før støtet \( v_{1i} \) og \( v_{2i} \). Bevegelsesmengden før støtet er:
+\begin{align}
+p_{\text{før}} &= m_1 \cdot v_{1i} + m_2 \cdot v_{2i}
+\end{align}
+Etter et elastisk støt, er bevegelsesmengden:
+\begin{align}
+p_{\text{etter}} &= m_1 \cdot v_{1f} + m_2 \cdot v_{2f} \\
+p_{\text{før}} &= p_{\text{etter}}
+\end{align}
+\end{solution}
+
+\part Beregn kinetisk energi:
+\begin{solution}
+Den kinetiske energien før støtet er:
+\begin{align}
+KE_{\text{før}} &= \frac{1}{2} m_1 v_{1i}^2 + \frac{1}{2} m_2 v_{2i}^2
+\end{align}
+Etter et elastisk støt, er den kinetiske energien:
+\begin{align}
+KE_{\text{etter}} &= \frac{1}{2} m_1 v_{1f}^2 + \frac{1}{2} m_2 v_{2f}^2 \\
+KE_{\text{før}} &= KE_{\text{etter}}
+\end{align}
+\end{solution}
+\end{parts}
+
+\question Beregn bevegelsesmengde og kinetisk energi for et uelastisk støt:
+\begin{parts}
+\part Gitt data for bevegelsesmengde:
+\begin{solution}
+For et uelastisk støt, bevegelsesmengden er fortsatt bevart:
+\begin{align}
+p_{\text{før}} &= m_1 \cdot v_{1i} + m_2 \cdot v_{2i} \\
+p_{\text{etter}} &= m_1 \cdot v_{1f} + m_2 \cdot v_{2f} \\
+p_{\text{før}} &= p_{\text{etter}}
+\end{align}
+\end{solution}
+
+\part Beregn kinetisk energi:
+\begin{solution}
+Den kinetiske energien før støtet er:
+\begin{align}
+KE_{\text{før}} &= \frac{1}{2} m_1 v_{1i}^2 + \frac{1}{2} m_2 v_{2i}^2
+\end{align}
+Etter et uelastisk støt, er den kinetiske energien:
+\begin{align}
+KE_{\text{etter}} &= \frac{1}{2} m_1 v_{1f}^2 + \frac{1}{2} m_2 v_{2f}^2
+\end{align}
+Her er \( KE_{\text{før}} > KE_{\text{etter}} \) fordi noe av energien har blitt omdannet til andre former.
+\end{solution}
+\end{parts}
+
+
+\question Beregn hastigheten og kinetisk energi for et system etter en kollisjon:
+\begin{parts}
+
+\part Del A: Beregn sluttfarten etter en fullstendig elastisk kollisjon
+\begin{solution}
+Gitt data:
+\begin{align}
+m_1 &= m_2 = \SI{2000}{\kilo\gram} \\
+v_{1i} &= \SI{30}{\meter\per\second} \\
+v_{2i} &= \SI{10}{\meter\per\second}
+\end{align}
+
+For en fullstendig elastisk kollisjon er bevegelsesmengden bevart:
+\begin{align}
+P_{1i} + P_{2i} &= P_f \\
+m v_{1i} + m v_{2i} &= 2m v_f
+\end{align}
+
+Løsning for $v_f$:
+\begin{align}
+v_f &= \frac{v_{1i} + v_{2i}}{2} \\
+    &= \frac{\SI{30}{\meter\per\second} + \SI{10}{\meter\per\second}}{2} \\
+v_f &= \doubleunderline{\SI{20}{\meter\per\second}}
+\end{align}
+\end{solution}
+
+\part Del B: Beregn endringen i kinetisk energi
+\begin{solution}
+Kinetisk energi før kollisjonen:
+\begin{align}
+K_{\text{sys } i} &= K_{1i} + K_{2i} \\
+                  &= \frac{1}{2} m v_{1i}^2 + \frac{1}{2} m v_{2i}^2 \\
+                  &= \frac{1}{2} m (v_{1i}^2 + v_{2i}^2)
+\end{align}
+
+Kinetisk energi etter kollisjonen:
+\begin{align}
+K_{\text{sys } f} &= \frac{1}{2}(2m) v_f^2 \\
+                  &= m v_f^2
+\end{align}
+
+Andelen av kinetisk energi som tapes:
+\begin{align}
+\text{Andel tapt} &= \frac{\Delta K}{K_{\text{sys } i}} \\
+                  &= \frac{K_{\text{sys } i} - K_{\text{sys } f}}{K_{\text{sys } i}} \\
+                  &= \frac{\frac{1}{2} m (v_{1i}^2 + v_{2i}^2) - m v_f^2}{\frac{1}{2} m (v_{1i}^2 + v_{2i}^2)} \\
+                  &= \frac{\frac{1}{2} (v_{1i}^2 + v_{2i}^2) - v_f^2}{\frac{1}{2} (v_{1i}^2 + v_{2i}^2)} \\
+                  &= 1 - \frac{2 v_f^2}{v_{1i}^2 + v_{2i}^2} \\
+                  &= 1 - \frac{2 \cdot (\SI{20}{\meter\per\second})^2}{(\SI{30}{\meter\per\second})^2 + (\SI{10}{\meter\per\second})^2} \\
+                  &= \doubleunderline{0,20}
+\end{align}
+
+\text{Svar:} \SI{20}{\percent} av den kinetiske energien tapes. Energien omdannes til andre energiformer som varme.
+\end{solution}
+
+\end{parts}
+
+
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Del A: Beregn hastigheten $v_1$ etter kollisjonen:
+\begin{solution}
+Vi starter med å bruke den gitte ligningen for å finne $u_1$:
+\begin{align}
+u_1 &= v_{i1} \cos \theta_1 \\
+    &= \SI{2.0}{\meter} \cdot \cos 30^{\circ} \\
+    &= \SI{2.0}{\meter} \cdot \frac{\sqrt{3}}{2} \\
+    &= \SI{1.732}{\meter}
+\end{align}
+Derfor er hastigheten $v_1 = \doubleunderline{\SI{1.732}{\meter\per\second}}$.
+\end{solution}
+
+\part Del B: Beregn hastigheten $v_2$ ved hjelp av arbeid-energi-prinsippet:
+\begin{solution}
+Vi bruker arbeid-energi-setningen:
+\begin{align}
+K_{i1} + K_{i2} &= K_1 + K_2 \\
+\frac{1}{2} m v_{i1}^2 + \frac{1}{2} m v_{i2}^2 &= \frac{1}{2} m v_1^2 + \frac{1}{2} m v_2^2
+\end{align}
+Siden $v_{i2} = 0$, forenkler dette til:
+\begin{align}
+v_2 &= \sqrt{v_{i1}^2 - v_1^2} \\
+    &= \sqrt{\left(\SI{2.0}{\meter\per\second}\right)^2 - \left(\SI{1.732}{\meter\per\second}\right)^2} \\
+    &= \sqrt{4 - 3} \\
+    &= \doubleunderline{\SI{1.0}{\meter\per\second}}
+\end{align}
+\end{solution}
+
+\part Del C: Diskuter om støtet er elastisk:
+\begin{solution}
+Et støt er elastisk hvis den totale kinetiske energien er bevart. Siden vi har brukt arbeid-energi-setningen og funnet at energien er bevart, kan vi konkludere med at støtet er elastisk.
+\end{solution}
+
+\end{parts}
+
+
+
+\question FILL QUESTION
+\begin{parts}
+
+\part Del A: Kinetisk energi og friksjonsarbeid
+\begin{solution}
+Den kinetiske energien til klossene går over til friksjonsarbeid når klossene bremser opp. Friksjonsarbeidet er gitt ved:
+\begin{align}
+W_{f} &= -f x \\
+f &= \mu \cdot F_{n}
+\end{align}
+\end{solution}
+
+\part Del B: Normalkraften ved bruk av Newtons andre lov i y-retning
+\begin{solution}
+Vi bruker Newtons andre lov i y-retning for å finne et uttrykk for normalkraften $F_n$:
+\begin{align}
+\sum F_{y} &= 0 \\
+F_{n} - F_{g} &= 0 \\
+F_{n} &= (m+M) \cdot g
+\end{align}
+\end{solution}
+
+\part Del C: Energiforhold og bevegelse
+\begin{solution}
+Forholdet mellom initial og endelig energi er gitt ved:
+\begin{align}
+\frac{E_{0}}{E_{1}} &= \frac{\frac{1}{2} m v_{i}^{2}}{\frac{1}{2} (m+M) v_{1}^{2}} \\
+&= \frac{v_{i}^{2}}{v_{1}^{2} + v_{2}^{2}} \\
+&= \frac{\left(2.0 \frac{\mathrm{m}}{3}\right)^{2}}{\left(1.732 \frac{\mathrm{m}}{3}\right)^{2} + \left(1.0 \frac{\mathrm{m}}{0}\right)^{2}} \\
+E_{0} &= 1.0
+\end{align}
+\end{solution}
+
+\part Del D: Arbeid-energi likningen for å finne $v_{0}$
+\begin{solution}
+Vi bruker arbeid-energi likningen for å finne et uttrykk for $v_{0}$:
+\begin{align}
+E_{1} &= E_{0} + W_{f} \\
+K_{1} &= K_{0} + W_{f} \\
+\frac{1}{2}(m+M) V_{1}^{2} &= \frac{1}{2}(m+M) V_{0}^{2} - \mu (m+M) g x \\
+\frac{1}{2} V_{0}^{2} &= \mu g x \\
+V_{0} &= \sqrt{2 \mu g x}
+\end{align}
+\end{solution}
+
+\part Del E: Elastisk støt og bevaring av bevegelsesmengde
+\begin{solution}
+For et elastisk støt, gjelder bevaring av bevegelsesmengde:
+\begin{align}
+(m+M) V_{0} &= m v_{0} + M V_{1}^{0}
+\end{align}
+Løsning for $v_{0}$:
+\begin{align}
+v_{0} &= \frac{m+M}{m} V_{0} \\
+&= \frac{0.400 \, \mathrm{kg} + 13 \, \mathrm{kg}}{0.400 \, \mathrm{kg}} \cdot 1.085 \, \mathrm{m/s} \\
+v_{0} &= \doubleunderline{\SI{36}{\meter\per\second}}
+\end{align}
+\end{solution}
+
+\end{parts}
+
+\end{questions}
+\end{document}
